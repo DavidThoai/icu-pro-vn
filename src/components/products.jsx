@@ -1,0 +1,315 @@
+import { useState } from 'react'
+import t889 from '../images/t889.jpg'
+import t889_5 from '../images/t889-4.jpg'
+import t889_6 from '../images/t889-5.jpg'
+import t889_7 from '../images/t889-6.jpg'
+import t889_8 from '../images/t889-7.jpg'
+import t889_9 from '../images/t889-8.jpg'
+import t889_12 from '../images/t889-9.jpg'
+import t889Video from '../images/t889-video.mp4'
+import c268 from '../images/c268.jpg'
+import c268_1 from '../images/c268-1.jpg'
+import c268_2 from '../images/c268-2.jpg'
+import c268_3 from '../images/c268-3.jpg'
+import c268_4 from '../images/c268-4.jpg'
+import c268_5 from '../images/c268-5.jpg'
+import c268_6 from '../images/c268-6.jpg'
+import c268Video from '../images/c268-video.mp4'
+import c369 from '../images/c369.jpg'
+import c369_1 from '../images/c369-1.jpg'
+import c369_2 from '../images/c369-2.jpg'
+import c369_3 from '../images/c369-3.jpg'
+import c369_4 from '../images/c369-4.jpg'
+import c369_5 from '../images/c369-5.jpg'
+import c369_6 from '../images/c369-6.jpg'
+import c369Video from '../images/c369-video.mp4'
+import c368 from '../images/c368.jpg'
+import c368_1 from '../images/c368-1.jpg'
+import c368_2 from '../images/c368-2.jpg'
+import c368_3 from '../images/c368-3.jpg'
+import c368_4 from '../images/c368-4.jpg'
+import c368_5 from '../images/c368-5.jpg'
+import c368_6 from '../images/c368-6.jpg'
+import c368Video from '../images/c368-video.mp4'
+import c686 from '../images/new1.jpg'
+import c686_1 from '../images/c686-1.jpg'
+import c686_2 from '../images/c686-2.jpg'
+import c686_3 from '../images/c686-3.jpg'
+import c686_4 from '../images/c686-4.jpg'
+import c686_5 from '../images/c686-5.jpg'
+import c686_6 from '../images/c686-6.jpg'
+import c686Video from '../images/c686-video.mp4'
+import a889 from '../images/a889.jpg'
+import b889 from '../images/b889.jpg'
+import sieuam from '../images/sieuam.jpg'
+import silver from '../images/new3.jpg'
+import silver_1 from '../images/silver-1.jpg'
+import silver_2 from '../images/silver-2.jpg'
+import silver_3 from '../images/silver-3.jpg'
+import silver_4 from '../images/silver-4.jpg'
+import silver_5 from '../images/silver-5.jpg'
+import silver_6 from '../images/silver-6.jpg'
+import silver_7 from '../images/silver-7.jpg'
+import ab_1 from '../images/ab-1.jpg'
+import ab_2 from '../images/ab-2.jpg'
+import ab_3 from '../images/ab-3.jpg'
+import ab_4 from '../images/ab-4.jpg'
+import ab_5 from '../images/ab-5.jpg'
+import ab_6 from '../images/ab-6.jpg'
+import ab_7 from '../images/ab-7.jpg'
+import ab_8 from '../images/ab-8.jpg'
+import abVideo from '../images/ab-video.mp4'
+import pet_1 from '../images/pet-1.jpg'
+import pet_2 from '../images/pet-2.jpg'
+import pet_3 from '../images/pet-3.jpg'
+import pet_4 from '../images/pet-4.jpg'
+import pet_5 from '../images/pet-5.jpg'
+import petVideo from '../images/pet-video.mp4'
+
+const families = [
+  {
+    code: 'DUNG DỊCH TẨY RỬA CÔNG NGHIỆP · GARA',
+    accent: 'blue',
+    items: [
+      {
+        img: t889, alt: 'ICU T889 tẩy carbon động cơ', code: 'T889', name: 'Tẩy carbon động cơ',
+        gallery: [t889_5, t889_6, t889_7, t889_8],
+        video: t889Video,
+        seo: 'Dung dịch tẩy carbon động cơ ICU T889 chuyên dụng cho hệ thống xả ô tô. Đánh bay cặn carbon tích tụ trên DPF, SCR, EGR, giúp tăng lực máy và giảm hao nhiên liệu. Tương thích chuẩn khí thải Euro 4, 5, 6.',
+        claims: ['Đánh bay carbon – tăng lực máy', 'An toàn DPF · SCR · EGR', 'Chuẩn Euro 4 · 5 · 6'],
+        use: 'Pha 1 chai (1 lít) với 40 lít nước sạch. Tháo đầu bộ lọc DPF, đổ dung dịch vào và ngâm 30 phút. Xả sạch dưới vòi nước chảy mạnh.',
+        formula: 'Dung dịch kiềm tính chuyên dụng, an toàn cho hệ thống xúc tác DPF · SCR · EGR. Không chứa acid, không ăn mòn kim loại.',
+      },
+      {
+        img: c268, alt: 'ICU C268 tẩy rửa sàn đá công nghiệp', code: 'C268', name: 'Tẩy rửa sàn đá',
+        gallery: [c268_1, c268_2, c268_3, c268_4],
+        video: c268Video,
+        seo: 'ICU C268 dung dịch tẩy rửa sàn đá công nghiệp, gốc kiềm mạnh, loại bỏ dầu mỡ và ố vàng trên đá cẩm thạch, hoa cương, gạch men. Phù hợp nhà xưởng, xí nghiệp, gia dụng.',
+        claims: ['Gốc kiềm mạnh – dầu mỡ, ố vàng', 'Đá cẩm thạch · hoa cương · gạch men'],
+        use: 'Pha loãng theo độ bẩn: bẩn ít 1/30, trung bình 1/20, rất bẩn 1/10. Thấm 5–10 phút rồi lau sạch. Đeo găng tay và kính bảo hộ.',
+        formula: 'Thành phần: MEG, trinatri phosphat, metasilicat natri, KOH, LAS. Không trộn với hóa chất khác.',
+      },
+      {
+        img: c369, alt: 'ICU C369 tẩy rỉ sét chuyên dụng', code: 'C369', name: 'Tẩy rỉ sét',
+        gallery: [c369_1, c369_2, c369_3, c369_4],
+        video: c369Video,
+        seo: 'ICU C369 dung dịch tẩy rỉ sét chuyên dụng cho sắt thép. Công thức 1 thành phần, không ăn mòn thép, không ảnh hưởng bê tông cốt thép. Tiết kiệm thời gian và chi phí nhân công.',
+        claims: ['Không ăn mòn thép', '1 thành phần – dễ dùng'],
+        use: 'Thoa trực tiếp lên bề mặt rỉ sét, không cần pha. Lau sạch ngay khi rỉ đã tan. Không cần kỹ thuật chuyên môn.',
+        formula: 'Công thức 1 thành phần, phản ứng nhanh với oxide sắt, không gây ăn mòn thép.',
+      },
+      {
+        img: c368, alt: 'ICU C368 vệ sinh đa năng dàn lạnh máy giặt', code: 'C368', name: 'Vệ sinh đa năng',
+        gallery: [c368_1, c368_2, c368_3, c368_4],
+        video: c368Video,
+        seo: 'ICU C368 dung dịch vệ sinh đa năng cho dàn lạnh, dàn nóng điều hòa và lồng máy giặt. Diệt khuẩn 99%, không acid, không ăn mòn. Đánh bay cặn canxi, khử mùi nấm mốc.',
+        claims: ['Dàn lạnh · dàn nóng · máy giặt', 'Diệt khuẩn 99% · không acid'],
+        use: 'Dàn lạnh/nóng: pha 1:1 đến 1:6. Lồng máy giặt: đổ 100–200 ml mỗi chu kỳ. Để 5–10 phút rồi xả sạch.',
+        formula: 'Dung dịch gốc kiềm cao, không acid, an toàn cho nhôm và đồng. Diệt khuẩn 99%.',
+      },
+      {
+        img: c686, alt: 'ICU C686 trợ hàn thiếc nhôm inox', code: 'C686', name: 'Trợ hàn',
+        gallery: [c686_1, c686_2, c686_3, c686_4],
+        video: c686Video,
+        seo: 'ICU C686 dung dịch trợ hàn chuyên dụng cho thiếc, nhôm và inox. Tăng độ bám dính mối hàn, vệ sinh mối hàn điện tử. Dùng trực tiếp, không cần pha loãng.',
+        claims: ['Tăng độ bám dính mối hàn', 'Thiếc · nhôm · inox', 'Vệ sinh mối hàn điện tử'],
+        use: 'Dùng trực tiếp từ chai, áp dụng lên bề mặt trước khi hàn. Dung tích 20 ml.',
+        formula: 'Dung dịch hỗ trợ hàn, tăng tính ướt và bám dính cho mối hàn thiếc, nhôm, inox.',
+      },
+    ],
+  },
+  {
+    code: 'DUNG DỊCH TẨY BẨN CHUYÊN DỤNG CHO VÀNG · BẠC · ĐÁ QUÝ',
+    accent: 'gold',
+    items: [
+      {
+        img: a889, alt: 'ICU A889 tẩy rửa trang sức vàng bạc đá quý', code: 'A889', name: 'Tẩy rửa trang sức',
+        gallery: [ab_1, ab_2, ab_3, ab_4],
+        video: abVideo,
+        seo: 'ICU A889 dung dịch tẩy rửa trang sức chuyên dụng cho vàng, bạc, đá quý và kim cương. Sạch sáng tức thì, không hao mòn bề mặt. Hệ thống 2 dịch A + B, dung tích 250 ml.',
+        claims: ['Sạch sáng – không hao mòn', 'Vàng · bạc · đá quý · kim cương'],
+        use: 'Đổ dịch A, thêm dịch B đến khi phản ứng dừng. Ngâm 3 phút, rửa lại bằng nước sạch, lau khô bằng khăn mềm.',
+        formula: 'Hệ thống 2 dịch A + B. Công thức dịu, không mài mòn, an toàn cho da tay.',
+      },
+      {
+        img: b889, alt: 'ICU B889 tẩy rửa trang sức vết bẩn lâu ngày', code: 'B889', name: 'Tẩy rửa trang sức',
+        gallery: [ab_1, ab_2, ab_3, ab_4],
+        video: abVideo,
+        seo: 'ICU B889 dung dịch tẩy rửa trang sức xử lý vết bẩn lâu ngày. Hệ thống 2 dịch A + B cho vàng, bạc, đá quý, kim cương. Sạch sáng, không hao mòn. Dung tích 200 ml.',
+        claims: ['Xử lý vết bẩn lâu ngày', '2 dịch A + B'],
+        use: 'Pha 1 nắp nước + 3 giọt dịch B. Lau bằng khăn sạch, rửa nước nóng, sấy khô.',
+        formula: 'Dịch B đậm đặc, kết hợp dịch A tạo phản ứng làm sạch sâu. Không hao mòn kim loại và đá quý.',
+      },
+      {
+        img: sieuam, alt: 'ICU Siêu Âm dung dịch rửa trang sức máy siêu âm', code: 'SIÊU ÂM', name: 'Rửa siêu âm',
+        seo: 'ICU Siêu Âm dung dịch chuyên dụng cho máy rửa siêu âm trang sức. Làm sạch và làm sáng vàng, bạc, đá quý, kim cương bằng sóng siêu âm. Không hao mòn, an toàn cho da tay.',
+        claims: ['Dùng cho máy siêu âm', 'Không hao mòn – an toàn da tay'],
+        use: 'Đổ dung dịch phủ lấp bề mặt trang sức trong máy siêu âm. Chạy 15–30 giây mỗi mẻ. Rửa lại nước sạch, sấy khô.',
+        formula: 'Dung dịch gốc nước, không dung môi, an toàn cho mọi loại trang sức và đá quý.',
+      },
+      {
+        img: silver, alt: 'ICU C819 vệ sinh trang sức bạc nano xanh', code: 'C819', name: 'Vệ sinh bạc – Nano xanh',
+        gallery: [silver_1, silver_2, silver_3, silver_4],
+        seo: 'ICU C819 dung dịch vệ sinh trang sức bạc Nano xanh chuyên dụng. Phục hồi độ sáng bạc, tẩy oxy hóa và ố đen. Phù hợp bạc 925 và sterling. Chai nhỏ gọn, dùng trực tiếp.',
+        claims: ['Phục hồi độ sáng bạc', 'Tẩy oxy hóa, ố đen', 'Bạc 925 · sterling'],
+        use: 'Nhúng trang sức bạc vào dung dịch. Để vài giây đến khi bạc sáng lại. Rửa nước sạch, lau khô.',
+        formula: 'Dung dịch chuyên dụng cho bạc, loại bỏ sulfide bạc (ố đen) mà không mài mòn bề mặt.',
+      },
+    ],
+  },
+  {
+    code: 'FURRYSHINE PET · CLEAN BEAUTY & SCIENCE',
+    id: 'furryshine',
+    accent: 'mint',
+    items: [
+      {
+        img: pet_1, alt: 'Furryshine Pet sữa tắm thảo dược yến mạch', code: 'FS-01', name: 'Sữa tắm thảo dược Yến mạch',
+        gallery: [pet_2, pet_3, pet_4, pet_5],
+        video: petVideo,
+        seo: 'Furryshine Pet sữa tắm thảo dược chiết xuất yến mạch, làm dịu da và giảm ngứa cho da nhạy cảm của chó mèo. pH 7.2 cân bằng chuẩn da thú cưng, không kích ứng mắt, 100% organic.',
+        claims: ['Chiết xuất yến mạch – dịu da', 'pH 7.2 chuẩn da thú cưng', 'Không kích ứng mắt'],
+        use: 'Pha 10 ml sản phẩm với 1 lít nước ấm. Làm ướt lông, massage nhẹ 3–5 phút, xả sạch lại bằng nước.',
+        formula: 'Chiết xuất yến mạch, Aloe Vera, Glycerin thực vật, pH 7.2. Không chứa SLS, paraben, cồn công nghiệp.',
+      },
+      {
+        img: pet_2, alt: 'Furryshine Pet sữa tắm tràm trà kháng khuẩn', code: 'FS-02', name: 'Sữa tắm Tràm trà',
+        gallery: [pet_1, pet_3, pet_4, pet_5],
+        video: petVideo,
+        seo: 'Furryshine Pet sữa tắm tinh dầu tràm trà, kháng khuẩn tự nhiên, diệt nấm và khử mùi hôi hiệu quả. An toàn cho da nhạy cảm, không gây kích ứng. Phù hợp chó mèo năng động.',
+        claims: ['Kháng khuẩn tự nhiên', 'Diệt nấm – khử mùi hôi', 'An toàn da nhạy cảm'],
+        use: 'Pha 10 ml với 1 lít nước ấm, làm ướt lông, massage 3–5 phút, xả sạch.',
+        formula: 'Tinh dầu tràm trà (tea tree oil), chiết xuất cúc la mã, Glycerin thực vật. Không paraben, không SLS.',
+      },
+      {
+        img: pet_3, alt: 'Furryshine Pet nước rửa sàn và bề mặt', code: 'FS-03', name: 'Nước rửa sàn & bề mặt',
+        gallery: [pet_1, pet_2, pet_4, pet_5],
+        video: petVideo,
+        seo: 'Furryshine Pet nước rửa sàn và bề mặt, diệt khuẩn 99%, an toàn khi thú cưng liếm. Dùng cho sàn nhà, chuồng nuôi, khu vực ăn uống. Hương tràm trà dịu nhẹ, không hóa chất độc hại.',
+        claims: ['Diệt khuẩn 99%', 'An toàn khi thú cưng liếm', 'Sàn · chuồng · khu vực ăn uống'],
+        use: 'Pha 10 ml với 1 lít nước. Lau sàn bằng khăn sạch, không cần xả lại.',
+        formula: 'Gốc thực vật organic, tinh dầu tràm trà. Không chứa hóa chất tẩy mạnh, an toàn cho thú cưng.',
+      },
+      {
+        img: pet_4, alt: 'Furryshine Pet xịt khử mùi lông', code: 'FS-04', name: 'Xịt khử mùi lông',
+        gallery: [pet_1, pet_2, pet_3, pet_5],
+        video: petVideo,
+        seo: 'Furryshine Pet xịt khử mùi lông giữa các lần tắm. Hương hoa nhẹ nhàng, không kích ứng da, an toàn cho chó mèo con. Giúp lông thơm mát và mềm mượt mỗi ngày.',
+        claims: ['Khử mùi giữa các lần tắm', 'Hương hoa nhẹ', 'An toàn cho thú cưng con'],
+        use: 'Xịt trực tiếp lên lông từ khoảng 20 cm, chải đều. Không cần xả lại.',
+        formula: 'Chiết xuất hoa, yến mạch, nước tinh khiết. Không cồn, không kích ứng da.',
+      },
+      {
+        img: pet_5, alt: 'Furryshine Pet dung dịch vệ sinh tai', code: 'FS-05', name: 'Dung dịch vệ sinh tai',
+        gallery: [pet_1, pet_2, pet_3, pet_4],
+        video: petVideo,
+        seo: 'Furryshine Pet dung dịch vệ sinh tai chuyên dụng, làm sạch ráy tai và ngừa viêm. Dịu nhẹ, không cay, an toàn cho chó mèo. Dùng định kỳ 1–2 lần mỗi tuần.',
+        claims: ['Làm sạch ráy tai', 'Ngừa viêm tai', 'Dịu nhẹ, không cay'],
+        use: 'Nhỏ 3–5 giọt vào tai, massage gốc tai 30 giây, để thú cưng lắc đầu và lau sạch bên ngoài.',
+        formula: 'Nước muối sinh lý, chiết xuất tràm trà, lô hội. Không cồn, không kháng sinh.',
+      },
+      {
+        img: pet_3, alt: 'Furryshine Pet nước xả lông mềm mượt', code: 'FS-06', name: 'Nước xả lông mềm mượt',
+        gallery: [pet_1, pet_2, pet_4, pet_5],
+        video: petVideo,
+        seo: 'Furryshine Pet nước xả lông chống rối, giúp lông bóng mượt và giảm rụng. Dưỡng chất thực vật nuôi dưỡng từ chân lông, hương thơm tự nhiên lưu hương nhẹ.',
+        claims: ['Chống rối – bóng mượt', 'Giảm rụng lông', 'Hương tự nhiên'],
+        use: 'Sau khi tắm, thoa đều lên lông ướt, massage 2–3 phút, xả sạch.',
+        formula: 'Glycerin thực vật, chiết xuất cúc la mã, vitamin E. Không silicone, không paraben.',
+      },
+    ],
+  },
+]
+
+function ProductCard({ p }) {
+  const [tab, setTab] = useState('info')
+  const [activeImg, setActiveImg] = useState(0)
+  const tabs = [
+    { id: 'info', label: 'Thông tin' },
+    { id: 'use', label: 'Cách dùng' },
+    { id: 'formula', label: 'Công thức' },
+  ]
+  const allThumbs = p.gallery ? [p.img, ...p.gallery] : [p.img]
+  const showVideo = p.video && activeImg === -1
+  const currentImg = activeImg >= 0 ? allThumbs[activeImg] : null
+  return (
+    <article className="product" key={p.code}>
+      <div className="product-img">
+        {showVideo ? (
+          <video src={p.video} controls autoPlay loop muted playsInline />
+        ) : (
+          <img src={currentImg || p.img} alt={p.alt} loading="lazy" />
+        )}
+        <div className="shine" aria-hidden="true" />
+      </div>
+      <div className="product-thumbs">
+        {allThumbs.map((img, i) => (
+          <span
+            key={i}
+            className={`thumb${activeImg === i ? ' active' : ''}`}
+            onClick={() => setActiveImg(i)}
+          >
+            <img src={img} alt="" />
+          </span>
+        ))}
+        {p.video && (
+          <span
+            className={`thumb video-thumb${activeImg === -1 ? ' active' : ''}`}
+            onClick={() => setActiveImg(-1)}
+            title="Video sản phẩm"
+          >
+            <span className="video-icon">▶</span>
+          </span>
+        )}
+      </div>
+      <div className="product-body">
+        <div className="product-head">
+          <span className="code">{p.code}</span>
+          <h4>{p.name}</h4>
+        </div>
+        <div className="product-tabs">
+          {tabs.map((t) => (
+            <button
+              key={t.id}
+              className={`tab${tab === t.id ? ' active' : ''}`}
+              onClick={() => setTab(t.id)}
+              type="button"
+            >
+              {t.label}
+            </button>
+          ))}
+        </div>
+        <div className="tab-content">
+          {tab === 'info' && (
+            <>
+              <p className="product-seo">{p.seo}</p>
+              <ul className="claims">
+                {p.claims.map((c) => <li key={c}>{c}</li>)}
+              </ul>
+            </>
+          )}
+          {tab === 'use' && <p className="product-use">{p.use}</p>}
+          {tab === 'formula' && <p className="product-formula">{p.formula}</p>}
+        </div>
+      </div>
+    </article>
+  )
+}
+
+export default function Products() {
+  return (
+    <section className="products" id="san-pham" data-od-id="products">
+      <div className="wrap">
+        {families.map((fam) => (
+          <div className="family" key={fam.code} id={fam.id || undefined}>
+            <div className="family-head">
+              <p className={`family-code ${fam.accent}`}>{fam.code}</p>
+            </div>
+            <div className="product-grid">
+              {fam.items.map((p) => <ProductCard key={p.code} p={p} />)}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  )
+}
