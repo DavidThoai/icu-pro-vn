@@ -72,12 +72,15 @@ import fs03_3 from '../images/fs03-3.jpg'
 import fs03_4 from '../images/fs03-4.jpg'
 import fs03Video from '../images/fs03-video.mp4'
 import stamp15 from '../images/stamp-15.png'
+import icuLogo from '../images/company-logo.png'
+import furryshineLogo from '../images/furryshine-logo.png'
 
 const families = [
   {
     code: 'DUNG DỊCH TẨY RỬA CÔNG NGHIỆP · GARA',
     accent: 'blue',
     id: 'tay-rua-cong-nghiep',
+    logo: icuLogo,
     items: [
       {
         img: t889, alt: 'ICU T889 tẩy carbon động cơ', code: 'T889', name: 'Tẩy carbon động cơ',
@@ -130,6 +133,7 @@ const families = [
     code: 'DUNG DỊCH TẨY BẨN CHUYÊN DỤNG CHO VÀNG · BẠC · ĐÁ QUÝ',
     accent: 'gold',
     id: 'vang-bac-da-quy',
+    logo: icuLogo,
     items: [
       {
         img: a889, alt: 'ICU A889 tẩy rửa trang sức vàng bạc đá quý', code: 'A889', name: 'Tẩy rửa trang sức',
@@ -169,6 +173,7 @@ const families = [
   {
     code: 'FURRYSHINE PET · CLEAN BEAUTY & SCIENCE',
     id: 'furryshine',
+    logo: furryshineLogo,
     accent: 'mint',
     items: [
       {
@@ -312,6 +317,7 @@ export default function Products() {
         {families.map((fam) => (
           <div className="family" key={fam.code} id={fam.id || undefined}>
             <div className="family-head">
+              {fam.logo && <img src={fam.logo} alt="" className="family-logo" />}
               <p className={`family-code ${fam.accent}`}>{fam.code}</p>
             </div>
             <div className="product-grid">

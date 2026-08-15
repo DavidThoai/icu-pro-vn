@@ -362,6 +362,18 @@ section {
   display: flex;
   align-items: center;
   gap: 16px;
+  flex-wrap: wrap;
+}
+
+.family-logo {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+.family-head:has(.family-code.mint) .family-logo {
+  height: 44px;
 }
 
 .family-code {
@@ -381,8 +393,9 @@ section {
 }
 
 .family-code.mint {
+  font-size: clamp(0.67rem, 1.26vw, 1.0rem);
   color: oklch(0.42 0.12 165);
-  text-shadow: 0 1px 0 oklch(0.95 0.02 165), 0 2px 6px oklch(0.45 0.1 165 / 0.22);
+  text-shadow: 0 1px 0 oklch(0.95 0.02 165), 0 2px 4px oklch(0.45 0.1 165 / 0.18);
 }
 
 .family-head::after {
