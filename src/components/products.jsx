@@ -83,7 +83,7 @@ import stamp15 from '../images/stamp-15.png'
 const families = [
   {
     code: 'DUNG DỊCH TẨY RỬA CÔNG NGHIỆP · GARA',
-    accent: 'blue',
+    accent: 'cyan',
     id: 'tay-rua-cong-nghiep',
     items: [
       {

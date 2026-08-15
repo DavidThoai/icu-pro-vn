@@ -208,8 +208,10 @@ section {
 .logo-img {
   height: 112px;
   width: 112px;
-  object-fit: cover;
-  border-radius: 18px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 16px;
+  padding: 6px;
   display: block;
   box-shadow: 0 3px 14px oklch(0.35 0.02 260 / 0.22);
 }
@@ -373,6 +375,21 @@ section {
   align-items: center;
   gap: 16px;
   flex-wrap: wrap;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.family-head:hover {
+  transform: translateY(-2px);
+}
+
+.family-head:hover .family-code {
+  transform: scale(1.3);
+  transform-origin: left center;
+  filter: drop-shadow(0 4px 10px oklch(0.2 0.04 250 / 0.3));
+}
+
+.family-code {
+  transition: transform 200ms ease, filter 200ms ease;
 }
 
 
@@ -393,8 +410,8 @@ section {
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  animation: sheen-sweep 1s ease-in-out infinite;
-  filter: drop-shadow(0 1px 0 oklch(0.95 0.01 250)) drop-shadow(0 2px 5px oklch(0.25 0.06 250 / 0.4));
+  animation: sheen-sweep 1.3s ease-in-out infinite;
+  filter: drop-shadow(0 1px 0 oklch(0.95 0.01 250)) drop-shadow(0 2px 3px oklch(0.25 0.06 250 / 0.2));
 }
 
 .family-code.gold {
@@ -408,8 +425,24 @@ section {
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  animation: sheen-sweep 1s ease-in-out infinite;
-  filter: drop-shadow(0 1px 0 oklch(0.98 0.02 95)) drop-shadow(0 2px 5px oklch(0.4 0.08 80 / 0.45));
+  animation: sheen-sweep 1.3s ease-in-out infinite;
+  filter: drop-shadow(0 1px 0 oklch(0.98 0.02 95)) drop-shadow(0 2px 3px oklch(0.4 0.08 80 / 0.22));
+}
+
+
+.family-code.cyan {
+  color: #0891b2;
+  background: linear-gradient(115deg,
+    #0e7490 30%,
+    #22d3ee 50%,
+    #0e7490 70%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: sheen-sweep 1.3s ease-in-out infinite;
+  filter: drop-shadow(0 1px 0 oklch(0.96 0.02 200)) drop-shadow(0 2px 3px oklch(0.3 0.08 200 / 0.2));
 }
 
 .family-code.mint {
@@ -424,8 +457,8 @@ section {
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  animation: sheen-sweep 1s ease-in-out infinite;
-  filter: drop-shadow(0 1px 0 oklch(0.97 0.02 165)) drop-shadow(0 2px 5px oklch(0.3 0.07 165 / 0.4));
+  animation: sheen-sweep 1.3s ease-in-out infinite;
+  filter: drop-shadow(0 1px 0 oklch(0.97 0.02 165)) drop-shadow(0 2px 3px oklch(0.3 0.07 165 / 0.2));
 }
 
 /* Anh sang luot qua chu: chuyen dong 0.5s (25% cua 2s), nghi 1.5s roi lap lai */
@@ -1090,13 +1123,22 @@ section {
   gap: 24px;
 }
 
+.f-logos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 .f-logo {
-  height: 112px;
-  width: 112px;
-  object-fit: cover;
-  border-radius: 18px;
+  height: 88px;
+  width: 88px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 14px;
+  padding: 6px;
   display: block;
-  margin: 0 0 12px;
+  margin: 0;
   box-shadow: 0 3px 14px oklch(0.35 0.02 260 / 0.22);
 }
 
@@ -1384,7 +1426,7 @@ section {
 .float-chat {
   position: fixed;
   right: 20px;
-  bottom: 22px;
+  bottom: 52px;
   z-index: 1000;
   display: flex;
   flex-direction: column;
@@ -1564,7 +1606,7 @@ section {
   }
   .float-chat {
     right: 13px;
-    bottom: 14px;
+    bottom: 38px;
     gap: 14px;
   }
 }

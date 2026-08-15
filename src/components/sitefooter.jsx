@@ -1,11 +1,17 @@
-import logo from '../images/company-logo.png'
+import logoDanghan from '../images/danghan-logo.png'
+import logoIcu from '../images/icu-logo.png'
+import logoFurry from '../images/furryshine-logo.png'
 
 export default function SiteFooter() {
   return (
     <footer className="site-footer" data-od-id="footer">
       <div className="wrap footer-grid">
         <div>
-          <img src={logo} alt="ICU" className="f-logo" />
+          <div className="f-logos">
+          <img src={logoDanghan} alt="DANGHAN" className="f-logo" />
+          <img src={logoIcu} alt="ICU" className="f-logo" />
+          <img src={logoFurry} alt="FurryShine" className="f-logo" />
+        </div>
         </div>
         <nav aria-label="Liên kết chân trang">
           <a href="#san-pham" className="nav-item nav-blue">Sản Phẩm</a>

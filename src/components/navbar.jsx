@@ -1,4 +1,4 @@
-import logo from '../images/company-logo.png'
+import logo from '../images/danghan-logo.png'
 
 export default function NavBar({ scrolled }) {
   return (

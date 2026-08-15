@@ -77,9 +77,10 @@ export default function App() {
     codes.forEach((el) => {
       try {
         const isGold = el.classList.contains('gold')
+        const isCyan = el.classList.contains('cyan')
         const isMint = el.classList.contains('mint')
-        const cLo = isGold ? '230,180,40' : isMint ? '60,200,160' : '70,140,255'
-        const cHi = isGold ? '255,220,90' : isMint ? '120,240,200' : '130,200,255'
+        const cLo = isGold ? '230,180,40' : isMint ? '60,200,160' : isCyan ? '0,180,220' : '70,140,255'
+        const cHi = isGold ? '255,220,90' : isMint ? '120,240,200' : isCyan ? '80,230,255' : '130,200,255'
         const text = el.textContent
         el.textContent = ''
         text.split('').forEach((ch, i) => {
@@ -89,12 +90,12 @@ export default function App() {
           el.appendChild(sp)
           anims.push(sp.animate(
             [
-              { textShadow: '0 0 3px rgba(' + cLo + ',.3), 0 1px 2px rgba(20,30,60,.5)' },
-              { textShadow: '0 0 10px rgba(' + cHi + ',.95), 0 0 24px rgba(' + cHi + ',.6), 0 1px 2px rgba(20,30,60,.5)' },
-              { textShadow: '0 0 10px rgba(' + cHi + ',.95), 0 0 24px rgba(' + cHi + ',.6), 0 1px 2px rgba(20,30,60,.5)' },
-              { textShadow: '0 0 3px rgba(' + cLo + ',.3), 0 1px 2px rgba(20,30,60,.5)' },
+              { textShadow: '0 0 2px rgba(' + cLo + ',.3), 0 1px 1px rgba(20,30,60,.4)' },
+              { textShadow: '0 0 5px rgba(' + cHi + ',.95), 0 0 12px rgba(' + cHi + ',.6), 0 1px 1px rgba(20,30,60,.4)' },
+              { textShadow: '0 0 5px rgba(' + cHi + ',.95), 0 0 12px rgba(' + cHi + ',.6), 0 1px 1px rgba(20,30,60,.4)' },
+              { textShadow: '0 0 2px rgba(' + cLo + ',.3), 0 1px 1px rgba(20,30,60,.4)' },
             ],
-            { duration: 3000, iterations: Infinity, delay: i * 120, easing: 'linear' }
+            { duration: 3900, iterations: Infinity, delay: i * 156, easing: 'linear' }
           ))
         })
       } catch (e) {}
