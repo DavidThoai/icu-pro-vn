@@ -106,7 +106,7 @@ const tabs = [
         ingredients: 'Tinh dầu tràm trà, chiết xuất cúc la mã, glycerin thực vật, chất tạo bọt tự nhiên, nước tinh khiết.',
       },
       {
-        name: 'FS-03 — Nước rửa sàn & bề mặt',
+        name: 'FS-03 — Enzyme Khử Mùi Nước Tiểu (Pet)',
         who: 'FS-03',
         desc: 'Diệt khuẩn 99% bằng hợp chất amoni bậc 4 (QAC) nồng độ an toàn, không để lại hóa chất độc hại khi thú cưng liếm. Dùng cho sàn nhà, chuồng nuôi, khu vực ăn uống. Hương tràm trà dịu nhẹ.',
         ph: 'pH 7.5–8.5',
