@@ -1106,7 +1106,7 @@ section {
 .topnav nav a.nav-item {
   font-weight: 700;
   padding: 7px 13px;
-  border-radius: 999px;
+  border-radius: 10px;
   border: 1.5px solid transparent;
   transition: color 130ms ease, background 130ms ease, border-color 130ms ease, box-shadow 130ms ease;
 }
@@ -1182,7 +1182,7 @@ section {
 
 /* Nut Nhan Bao Gia - do ICU */
 .topnav nav a.nav-cta {
-  border-radius: 999px;
+  border-radius: 10px;
   padding: 9px 20px;
   box-shadow: 0 3px 10px oklch(0.48 0.19 25 / 0.3);
 }
