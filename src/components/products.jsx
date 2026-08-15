@@ -42,6 +42,12 @@ import c686Video from '../images/c686-video.mp4'
 import a889 from '../images/a889.jpg'
 import b889 from '../images/b889.jpg'
 import sieuam from '../images/sieuam.jpg'
+import sieuam_1 from '../images/sieuam-1.jpg'
+import sieuam_2 from '../images/sieuam-2.jpg'
+import sieuam_3 from '../images/sieuam-3.jpg'
+import sieuam_4 from '../images/sieuam-4.jpg'
+import sieuam_5 from '../images/sieuam-5.jpg'
+import sieuamVideo from '../images/sieuam-video.mp4'
 import silver from '../images/new3.jpg'
 import silver_1 from '../images/silver-1.jpg'
 import silver_2 from '../images/silver-2.jpg'
@@ -150,11 +156,13 @@ const families = [
         formula: 'Dịch B đậm đặc, kết hợp dịch A tạo phản ứng làm sạch sâu. Không hao mòn kim loại và đá quý.',
       },
       {
-        img: sieuam, alt: 'ICU Siêu Âm dung dịch rửa trang sức máy siêu âm', code: 'SIÊU ÂM', name: 'Rửa siêu âm',
-        seo: 'ICU Siêu Âm dung dịch chuyên dụng cho máy rửa siêu âm trang sức. Làm sạch và làm sáng vàng, bạc, đá quý, kim cương bằng sóng siêu âm. Không hao mòn, an toàn cho da tay.',
-        claims: ['Dùng cho máy siêu âm', 'Không hao mòn – an toàn da tay'],
-        use: 'Đổ dung dịch phủ lấp bề mặt trang sức trong máy siêu âm. Chạy 15–30 giây mỗi mẻ. Rửa lại nước sạch, sấy khô.',
-        formula: 'Dung dịch gốc nước, không dung môi, an toàn cho mọi loại trang sức và đá quý.',
+        img: sieuam_1, alt: 'ICU Dung dịch siêu âm rửa trang sức vàng bạc đá quý', code: 'SIÊU ÂM', name: 'Rửa siêu âm',
+        gallery: [sieuam_2, sieuam_3, sieuam_4, sieuam_5],
+        video: sieuamVideo,
+        seo: 'ICU Dung dịch siêu âm 200ml chuyên dụng cho máy rửa siêu âm. Làm sạch sâu và sáng bóng vàng, bạc, đá quý, kim cương, đồng hồ, kính mắt trong 15-60 giây. Công thức an toàn, không hao mòn, bảo vệ trang sức.',
+        claims: ['Sạch sâu - sáng như mới', 'An toàn cho vàng · bạc · đá quý · kim cương', 'Chỉ 15-60 giây mỗi mẻ'],
+        use: 'Pha loãng dung dịch với nước theo tỷ lệ 1:5-90, đổ vào máy rửa siêu âm, ngâm trang sức 15-60 giây. Rửa lại nước sạch, lau khô.',
+        formula: 'Dung dịch gốc nước, không dung môi, an toàn cho mọi loại trang sức và đá quý. Không gây hại da tay.',
       },
       {
         img: silver, alt: 'ICU C819 vệ sinh trang sức bạc nano xanh', code: 'C819', name: 'Vệ sinh bạc – Nano xanh',
