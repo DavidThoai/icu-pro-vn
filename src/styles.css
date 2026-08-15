@@ -110,7 +110,7 @@ h2 em {
 }
 
 section {
-  padding: clamp(30px, 3.6vw, 40px) 0;
+  padding: clamp(22px, 2.6vw, 30px) 0;
 }
 
 .section-header {
@@ -358,7 +358,7 @@ section {
 
 .products {
   background: transparent;
-  padding-top: clamp(12px, 1.6vw, 20px);
+  padding-top: clamp(8px, 1vw, 12px);
 }
 
 .family + .family {
@@ -392,7 +392,7 @@ section {
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  animation: sheen-sweep 5.5s ease-in-out infinite;
+  animation: sheen-sweep 2s ease-in-out infinite;
   filter: drop-shadow(0 1px 0 oklch(0.95 0.01 250)) drop-shadow(0 2px 5px oklch(0.25 0.06 250 / 0.4));
 }
 
@@ -406,7 +406,7 @@ section {
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  animation: sheen-sweep 5.5s ease-in-out infinite;
+  animation: sheen-sweep 2s ease-in-out infinite;
   filter: drop-shadow(0 1px 0 oklch(0.98 0.02 95)) drop-shadow(0 2px 5px oklch(0.4 0.08 80 / 0.45));
 }
 
@@ -421,16 +421,16 @@ section {
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  animation: sheen-sweep 5.5s ease-in-out infinite;
+  animation: sheen-sweep 2s ease-in-out infinite;
   filter: drop-shadow(0 1px 0 oklch(0.97 0.02 165)) drop-shadow(0 2px 5px oklch(0.3 0.07 165 / 0.4));
 }
 
-/* Anh sang luot nhe qua chu - khong doi mau, khong roi mat */
+/* Anh sang luot qua chu: chuyen dong 0.5s (25% cua 2s), nghi 1.5s roi lap lai */
 @-webkit-keyframes sheen-sweep {
   0% {
     background-position: 120% center;
   }
-  55% {
+  25% {
     background-position: -80% center;
   }
   100% {
@@ -442,7 +442,7 @@ section {
   0% {
     background-position: 120% center;
   }
-  55% {
+  25% {
     background-position: -80% center;
   }
   100% {
@@ -1132,11 +1132,15 @@ section {
 }
 
 .f-meta {
-  text-align: right;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 6px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 24px;
+  margin-top: 22px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
 }
 
 .f-meta p {
@@ -1164,7 +1168,7 @@ section {
 }
 
 .f-note {
-  font-size: 18.5px !important;
+  font-size: 19.5px !important;
   color: var(--on-dark) !important;
 }
 
@@ -1497,10 +1501,10 @@ section {
 
 /* Nhay nhe khi vua tai trang (1 lan) */
 .float-chat .float-zalo {
-  animation: float-in 0.5s ease-out both, float-wiggle 3.2s ease-in-out 1.2s infinite;
+  animation: float-in 0.5s ease-out both, float-wiggle 4s ease-in-out 1s infinite;
 }
 .float-chat .float-facebook {
-  animation: float-in 0.5s ease-out 0.12s both, float-wiggle 3.6s ease-in-out 1.5s infinite;
+  animation: float-in 0.5s ease-out 0.12s both, float-wiggle 4s ease-in-out 1.3s infinite;
 }
 
 @keyframes float-in {
@@ -1516,19 +1520,22 @@ section {
   }
 }
 
-/* Rung nhe lien tuc - moi gioi thieu chu y */
+/* Rung nhe: chuyen dong 3s (75% cua 4s), nghi 1s roi lap lai */
 @keyframes float-wiggle {
-  0%, 86%, 100% {
+  0%, 75%, 100% {
     transform: rotate(0) scale(1);
   }
+  79% {
+    transform: rotate(-8deg) scale(1.06);
+  }
+  83% {
+    transform: rotate(7deg) scale(1.06);
+  }
+  86% {
+    transform: rotate(-4deg) scale(1.03);
+  }
   90% {
-    transform: rotate(-7deg) scale(1.05);
-  }
-  94% {
-    transform: rotate(6deg) scale(1.05);
-  }
-  98% {
-    transform: rotate(-3deg) scale(1.02);
+    transform: rotate(3deg) scale(1.03);
   }
 }
 

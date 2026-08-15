@@ -6,7 +6,6 @@ export default function SiteFooter() {
       <div className="wrap footer-grid">
         <div>
           <img src={logo} alt="ICU" className="f-logo" />
-          <p className="f-tagline">Sạch sáng tức thì – không hao mòn.</p>
         </div>
         <nav aria-label="Liên kết chân trang">
           <a href="#san-pham" className="nav-item nav-blue">Sản Phẩm</a>
@@ -17,6 +16,7 @@ export default function SiteFooter() {
           <a href="#lien-he" className="nav-item nav-red">Nhận Báo Giá</a>
         </nav>
         <div className="f-meta">
+          <p className="f-tagline">Sạch Sáng Tức Thì – Không Hao Mòn.</p>
           <p>Công ty TNHH SX &amp; TM Đặng Hân · <a href="https://www.icu.pro.vn">www.icu.pro.vn</a></p>
           <p className="f-note">© 2026 ICU · DANG HAN TAP CO., LTD</p>
         </div>
