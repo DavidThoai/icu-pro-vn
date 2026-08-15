@@ -220,13 +220,20 @@ section {
   font-size: 24.75px;
   line-height: 1.2;
   color: var(--on-dark);
-  text-shadow: 0 1px 0 oklch(0.95 0.01 250), 0 2px 6px oklch(0.3 0.02 260 / 0.25);
+  text-shadow:
+    0 1px 0 oklch(0.95 0.01 250),
+    0 2px 2px oklch(0.3 0.02 260 / 0.3),
+    0 4px 8px oklch(0.2 0.02 260 / 0.35),
+    0 6px 16px oklch(0.15 0.02 260 / 0.25);
 }
 
 .logo-sub {
   font-weight: 700;
   font-size: 21.75px;
   color: var(--on-dark-muted);
+  text-shadow:
+    0 1px 0 oklch(0.95 0.01 250),
+    0 2px 4px oklch(0.25 0.02 260 / 0.3);
 }
 
 .topnav nav {
@@ -319,31 +326,31 @@ section {
 
 .stamp-discount {
   position: absolute;
-  top: -12px;
-  left: -12px;
-  width: clamp(96px, 11vw, 150px);
+  top: -8px;
+  left: -8px;
+  width: clamp(67px, 7.7vw, 105px);
   height: auto;
   z-index: 5;
   pointer-events: none;
-  filter: drop-shadow(0 4px 12px oklch(0.2 0.02 260 / 0.55));
-  transform: rotate(-8deg);
+  filter: drop-shadow(0 3px 8px oklch(0.35 0.06 25 / 0.4));
+  transform: rotate(-10deg);
   transition: transform 200ms ease;
 }
 
 .product:hover .stamp-discount {
-  transform: rotate(-3deg) scale(1.06);
+  transform: rotate(-5deg) scale(1.05);
 }
 
 .product.wide .stamp-discount {
-  top: -10px;
-  left: -10px;
+  top: -7px;
+  left: -7px;
 }
 
 @media (max-width: 620px) {
   .stamp-discount {
-    top: -8px;
-    left: -8px;
-    width: 84px;
+    top: -5px;
+    left: -5px;
+    width: 59px;
   }
 }
 
@@ -376,74 +383,71 @@ section {
   font-weight: 800;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  animation: neon-shift-blue 3.2s linear infinite;
-  text-shadow:
-    0 0 6px oklch(0.75 0.16 230),
-    0 0 16px oklch(0.6 0.18 240),
-    0 0 34px oklch(0.5 0.2 250 / 0.8),
-    0 1px 2px oklch(0.2 0.05 260 / 0.6);
+  background: linear-gradient(115deg,
+    oklch(0.42 0.14 248) 30%,
+    oklch(0.62 0.13 240) 50%,
+    oklch(0.42 0.14 248) 70%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: sheen-sweep 5.5s ease-in-out infinite;
+  filter: drop-shadow(0 1px 0 oklch(0.95 0.01 250)) drop-shadow(0 2px 5px oklch(0.25 0.06 250 / 0.4));
 }
 
 .family-code.gold {
-  animation: neon-shift-gold 3.2s linear infinite;
-  text-shadow:
-    0 0 6px oklch(0.85 0.15 85),
-    0 0 16px oklch(0.75 0.16 75),
-    0 0 34px oklch(0.65 0.18 70 / 0.85),
-    0 1px 2px oklch(0.25 0.05 70 / 0.6);
+  background: linear-gradient(115deg,
+    oklch(0.55 0.11 78) 30%,
+    oklch(0.8 0.12 85) 50%,
+    oklch(0.55 0.11 78) 70%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: sheen-sweep 5.5s ease-in-out infinite;
+  filter: drop-shadow(0 1px 0 oklch(0.98 0.02 95)) drop-shadow(0 2px 5px oklch(0.4 0.08 80 / 0.45));
 }
 
 .family-code.mint {
   font-size: clamp(0.96rem, 1.8vw, 1.44rem);
-  animation: neon-shift-mint 3.2s linear infinite;
-  text-shadow:
-    0 0 6px oklch(0.8 0.14 165),
-    0 0 16px oklch(0.68 0.16 170),
-    0 0 34px oklch(0.58 0.18 175 / 0.85),
-    0 1px 2px oklch(0.25 0.05 170 / 0.6);
+  background: linear-gradient(115deg,
+    oklch(0.48 0.11 166) 30%,
+    oklch(0.72 0.11 160) 50%,
+    oklch(0.48 0.11 166) 70%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: sheen-sweep 5.5s ease-in-out infinite;
+  filter: drop-shadow(0 1px 0 oklch(0.97 0.02 165)) drop-shadow(0 2px 5px oklch(0.3 0.07 165 / 0.4));
 }
 
-/* Neon: doi mau + phat sang lien tuc */
-@-webkit-keyframes neon-shift-blue {
-  0%, 100% { color: oklch(0.62 0.2 235); }
-  25% { color: oklch(0.7 0.18 210); }
-  50% { color: oklch(0.65 0.19 260); }
-  75% { color: oklch(0.75 0.16 200); }
+/* Anh sang luot nhe qua chu - khong doi mau, khong roi mat */
+@-webkit-keyframes sheen-sweep {
+  0% {
+    background-position: 120% center;
+  }
+  55% {
+    background-position: -80% center;
+  }
+  100% {
+    background-position: -80% center;
+  }
 }
 
-@keyframes neon-shift-blue {
-  0%, 100% { color: oklch(0.62 0.2 235); }
-  25% { color: oklch(0.7 0.18 210); }
-  50% { color: oklch(0.65 0.19 260); }
-  75% { color: oklch(0.75 0.16 200); }
-}
-
-@-webkit-keyframes neon-shift-gold {
-  0%, 100% { color: oklch(0.78 0.16 80); }
-  25% { color: oklch(0.85 0.15 70); }
-  50% { color: oklch(0.88 0.14 60); }
-  75% { color: oklch(0.8 0.15 90); }
-}
-
-@keyframes neon-shift-gold {
-  0%, 100% { color: oklch(0.78 0.16 80); }
-  25% { color: oklch(0.85 0.15 70); }
-  50% { color: oklch(0.88 0.14 60); }
-  75% { color: oklch(0.8 0.15 90); }
-}
-
-@-webkit-keyframes neon-shift-mint {
-  0%, 100% { color: oklch(0.72 0.16 165); }
-  25% { color: oklch(0.8 0.14 155); }
-  50% { color: oklch(0.75 0.15 180); }
-  75% { color: oklch(0.85 0.12 150); }
-}
-
-@keyframes neon-shift-mint {
-  0%, 100% { color: oklch(0.72 0.16 165); }
-  25% { color: oklch(0.8 0.14 155); }
-  50% { color: oklch(0.75 0.15 180); }
-  75% { color: oklch(0.85 0.12 150); }
+@keyframes sheen-sweep {
+  0% {
+    background-position: 120% center;
+  }
+  55% {
+    background-position: -80% center;
+  }
+  100% {
+    background-position: -80% center;
+  }
 }
 
 .family-head::after {
@@ -1078,7 +1082,7 @@ section {
 .footer-grid {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 24px;
 }
@@ -1095,13 +1099,14 @@ section {
 
 .f-tagline {
   margin: 0;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 22px;
+  font-weight: 800;
   color: var(--on-dark);
   text-shadow:
     0 1px 0 oklch(0.95 0.01 250),
-    0 2px 4px oklch(0.25 0.02 260 / 0.35),
-    0 4px 12px oklch(0.2 0.02 260 / 0.3);
+    0 2px 3px oklch(0.3 0.02 260 / 0.35),
+    0 4px 8px oklch(0.2 0.02 260 / 0.4),
+    0 7px 18px oklch(0.15 0.02 260 / 0.3);
 }
 
 .site-footer nav {
@@ -1136,12 +1141,14 @@ section {
 
 .f-meta p {
   margin: 0;
-  font-size: 18.5px;
-  font-weight: 600;
+  font-size: 19.5px;
+  font-weight: 700;
   color: var(--on-dark);
   text-shadow:
     0 1px 0 oklch(0.95 0.01 250),
-    0 2px 6px oklch(0.25 0.02 260 / 0.35);
+    0 2px 3px oklch(0.3 0.02 260 / 0.35),
+    0 4px 8px oklch(0.2 0.02 260 / 0.4),
+    0 7px 18px oklch(0.15 0.02 260 / 0.3);
 }
 
 .f-meta a {
