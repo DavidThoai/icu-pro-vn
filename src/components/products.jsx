@@ -65,6 +65,12 @@ import pet_3 from '../images/pet-3.jpg'
 import pet_4 from '../images/pet-4.jpg'
 import pet_5 from '../images/pet-5.jpg'
 import petVideo from '../images/pet-video.mp4'
+import fs03_main from '../images/fs03-main.jpg'
+import fs03_1 from '../images/fs03-1.jpg'
+import fs03_2 from '../images/fs03-2.jpg'
+import fs03_3 from '../images/fs03-3.jpg'
+import fs03_4 from '../images/fs03-4.jpg'
+import fs03Video from '../images/fs03-video.mp4'
 import stamp15 from '../images/stamp-15.png'
 
 const families = [
@@ -184,13 +190,13 @@ const families = [
         formula: 'Tinh dầu tràm trà (tea tree oil), chiết xuất cúc la mã, Glycerin thực vật. Không paraben, không SLS.',
       },
       {
-        img: pet_3, alt: 'Furryshine Pet nước rửa sàn và bề mặt', code: 'FS-03', name: 'Nước rửa sàn & bề mặt',
-        gallery: [pet_1, pet_2, pet_4, pet_5],
-        video: petVideo,
-        seo: 'Furryshine Pet nước rửa sàn và bề mặt, diệt khuẩn 99%, an toàn khi thú cưng liếm. Dùng cho sàn nhà, chuồng nuôi, khu vực ăn uống. Hương tràm trà dịu nhẹ, không hóa chất độc hại.',
-        claims: ['Diệt khuẩn 99%', 'An toàn khi thú cưng liếm', 'Sàn · chuồng · khu vực ăn uống'],
-        use: 'Pha 10 ml với 1 lít nước. Lau sàn bằng khăn sạch, không cần xả lại.',
-        formula: 'Gốc thực vật organic, tinh dầu tràm trà. Không chứa hóa chất tẩy mạnh, an toàn cho thú cưng.',
+        img: fs03_main, alt: 'Furryshine Enzyme khử mùi nước tiểu thú cưng', code: 'FS-03', name: 'Enzyme Khử Mùi Nước Tiểu (Pet)',
+        gallery: [fs03_1, fs03_2, fs03_3, fs03_4],
+        video: fs03Video,
+        seo: 'Furryshine Enzyme khử mùi nước tiểu, phân chó mèo tận gốc bằng enzyme tự nhiên. Diệt khuẩn 99,9%, an toàn tuyệt đối cho thú cưng và gia đình. Dùng cho nền nhà, chuồng nuôi, khay vệ sinh, nệm thú cưng. Hương bạc hà tự nhiên, thân thiện môi trường.',
+        claims: ['Khử mùi nước tiểu tận gốc 99,9%', 'Enzyme tự nhiên - an toàn cho thú cưng', 'Nền nhà - chuồng - khay vệ sinh - nệm'],
+        use: 'Xịt trực tiếp lên vùng cần xử lý, để 5-10 phút cho enzyme thấm sâu, lau sạch hoặc để khô tự nhiên. Lặp lại nếu mùi nặng.',
+        formula: 'Enzyme sinh học tự nhiên, vi sinh có lợi, hương bạc hà. Không chứa hóa chất độc hại, phân hủy sinh học an toàn.',
       },
       {
         img: pet_4, alt: 'Furryshine Pet xịt khử mùi lông', code: 'FS-04', name: 'Xịt khử mùi lông',
