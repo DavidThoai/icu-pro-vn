@@ -72,66 +72,45 @@ export default function App() {
   useEffect(() => {
     const anims = []
 
-    // Tieu de tab: anh sang glow nhip nhang (WAAPI khong bi chan boi CSS)
+    // Tieu de tab: glow domino - tung tab sang lan luot (0.5s dong + 0.5s nghi = 1s/chu ky)
     const codes = document.querySelectorAll('.family-code')
-    codes.forEach((el) => {
+    codes.forEach((el, i) => {
       try {
+        const isGold = el.classList.contains('gold')
+        const isMint = el.classList.contains('mint')
+        const cLo = isGold ? '230,180,40' : isMint ? '60,200,160' : '70,140,255'
+        const cHi = isGold ? '255,220,90' : isMint ? '120,240,200' : '130,200,255'
         anims.push(el.animate(
           [
-            { textShadow: '0 0 6px rgba(70,140,255,.45), 0 0 16px rgba(60,120,255,.3), 0 1px 2px rgba(20,30,60,.5)' },
-            { textShadow: '0 0 12px rgba(130,200,255,.95), 0 0 30px rgba(90,160,255,.6), 0 1px 2px rgba(20,30,60,.5)' },
-            { textShadow: '0 0 6px rgba(70,140,255,.45), 0 0 16px rgba(60,120,255,.3), 0 1px 2px rgba(20,30,60,.5)' },
+            { textShadow: '0 0 6px rgba(' + cLo + ',.45), 0 0 14px rgba(' + cLo + ',.3), 0 1px 2px rgba(20,30,60,.5)' },
+            { textShadow: '0 0 12px rgba(' + cHi + ',.95), 0 0 28px rgba(' + cHi + ',.6), 0 1px 2px rgba(20,30,60,.5)' },
+            { textShadow: '0 0 6px rgba(' + cLo + ',.45), 0 0 14px rgba(' + cLo + ',.3), 0 1px 2px rgba(20,30,60,.5)' },
           ],
-          { duration: 2000, iterations: Infinity, easing: 'ease-in-out' }
+          { duration: 1000, iterations: Infinity, delay: i * 250, easing: 'ease-in-out' }
         ))
       } catch (e) {}
     })
 
-    // Tieu de vang: glow vang
-    const golds = document.querySelectorAll('.family-code.gold')
-    golds.forEach((el) => {
-      try {
-        anims.push(el.animate(
-          [
-            { textShadow: '0 0 6px rgba(230,180,40,.5), 0 0 16px rgba(210,150,20,.35), 0 1px 2px rgba(60,40,5,.5)' },
-            { textShadow: '0 0 12px rgba(255,220,90,.95), 0 0 30px rgba(240,180,40,.65), 0 1px 2px rgba(60,40,5,.5)' },
-            { textShadow: '0 0 6px rgba(230,180,40,.5), 0 0 16px rgba(210,150,20,.35), 0 1px 2px rgba(60,40,5,.5)' },
-          ],
-          { duration: 2000, iterations: Infinity, easing: 'ease-in-out' }
-        ))
-      } catch (e) {}
-    })
-
-    // Tieu de mint: glow xanh bac ha
-    const mints = document.querySelectorAll('.family-code.mint')
-    mints.forEach((el) => {
-      try {
-        anims.push(el.animate(
-          [
-            { textShadow: '0 0 6px rgba(60,200,160,.5), 0 0 16px rgba(40,180,140,.35), 0 1px 2px rgba(10,50,40,.5)' },
-            { textShadow: '0 0 12px rgba(120,240,200,.95), 0 0 30px rgba(70,210,170,.65), 0 1px 2px rgba(10,50,40,.5)' },
-            { textShadow: '0 0 6px rgba(60,200,160,.5), 0 0 16px rgba(40,180,140,.35), 0 1px 2px rgba(10,50,40,.5)' },
-          ],
-          { duration: 2000, iterations: Infinity, easing: 'ease-in-out' }
-        ))
-      } catch (e) {}
-    })
-
-    // Icon noi: rung nhe 3s + nghi 1s (4s/chu ky), lech nhau
+    // Icon noi: rung 10s + nghi 0.5s (10.5s/chu ky), domino lech 0.8s
     const btns = document.querySelectorAll('.float-btn')
     btns.forEach((el, i) => {
       try {
         anims.push(el.animate(
           [
-            { transform: 'rotate(0deg) scale(1)' },
-            { transform: 'rotate(-8deg) scale(1.06)', offset: 0.75 },
-            { transform: 'rotate(7deg) scale(1.06)', offset: 0.8 },
-            { transform: 'rotate(-4deg) scale(1.03)', offset: 0.85 },
-            { transform: 'rotate(3deg) scale(1.03)', offset: 0.9 },
+            { transform: 'rotate(0deg) scale(1)', offset: 0 },
+            { transform: 'rotate(-8deg) scale(1.06)', offset: 0.05 },
+            { transform: 'rotate(7deg) scale(1.06)', offset: 0.15 },
+            { transform: 'rotate(-5deg) scale(1.05)', offset: 0.25 },
+            { transform: 'rotate(5deg) scale(1.05)', offset: 0.35 },
+            { transform: 'rotate(-4deg) scale(1.03)', offset: 0.45 },
+            { transform: 'rotate(4deg) scale(1.03)', offset: 0.55 },
+            { transform: 'rotate(-3deg) scale(1.02)', offset: 0.65 },
+            { transform: 'rotate(2deg) scale(1.02)', offset: 0.75 },
+            { transform: 'rotate(-2deg) scale(1.01)', offset: 0.85 },
             { transform: 'rotate(0deg) scale(1)', offset: 0.95 },
-            { transform: 'rotate(0deg) scale(1)' },
+            { transform: 'rotate(0deg) scale(1)', offset: 1 },
           ],
-          { duration: 4000, iterations: Infinity, delay: 1000 + i * 400, easing: 'ease-in-out' }
+          { duration: 10500, iterations: Infinity, delay: 500 + i * 800, easing: 'ease-in-out' }
         ))
       } catch (e) {}
     })
