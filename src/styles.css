@@ -1001,12 +1001,15 @@ section {
   gap: 18px;
 }
 
-.site-footer nav a {
-  text-decoration: none;
+.site-footer nav a.nav-item {
+  display: inline-block;
   font-size: 16.5px;
-  border-bottom: 1px solid transparent;
-  transition: color 120ms ease, border-color 120ms ease;
-  color: var(--on-dark-muted);
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 10px;
+  border: 1.5px solid transparent;
+  text-decoration: none;
+  transition: color 130ms ease, background 130ms ease, border-color 130ms ease, box-shadow 130ms ease;
 }
 
 .site-footer nav a:hover {
@@ -1180,6 +1183,22 @@ section {
   box-shadow: 0 4px 12px oklch(0.44 0.13 300 / 0.35);
 }
 
+
+/* Nhan Bao Gia footer - do ICU */
+.topnav nav a.nav-red,
+.site-footer nav a.nav-red {
+  color: oklch(0.48 0.19 25);
+  border-color: oklch(0.48 0.19 25 / 0.4);
+  background: oklch(0.48 0.19 25 / 0.08);
+}
+.topnav nav a.nav-red:hover,
+.site-footer nav a.nav-red:hover {
+  color: #fff;
+  background: oklch(0.48 0.19 25);
+  border-color: oklch(0.48 0.19 25);
+  box-shadow: 0 4px 12px oklch(0.48 0.19 25 / 0.35);
+}
+
 /* Nut Nhan Bao Gia - do ICU */
 .topnav nav a.nav-cta {
   border-radius: 10px;
@@ -1223,10 +1242,14 @@ section {
   transition: transform 160ms ease, box-shadow 160ms ease;
 }
 
-.float-btn svg {
+.float-img {
   position: relative;
   z-index: 2;
-  filter: drop-shadow(0 1px 2px oklch(0.2 0.02 260 / 0.35));
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
 }
 
 /* Vong pulse phia sau nut */
@@ -1240,24 +1263,20 @@ section {
 }
 
 .float-zalo {
-  background: linear-gradient(145deg, #2a8bff, #0068ff 55%, #0052cc);
-  box-shadow:
-    0 6px 18px oklch(0.5 0.16 250 / 0.5),
-    inset 0 1px 0 oklch(1 0 0 / 0.35);
+  background: transparent;
+  box-shadow: 0 6px 18px oklch(0.5 0.16 250 / 0.45);
 }
 
 .float-zalo::before {
   background: radial-gradient(circle, oklch(0.6 0.16 250 / 0.55) 0%, transparent 70%);
 }
 
-.float-messenger {
-  background: linear-gradient(145deg, #00c6ff, #0084ff 55%, #0066e6);
-  box-shadow:
-    0 6px 18px oklch(0.55 0.15 240 / 0.5),
-    inset 0 1px 0 oklch(1 0 0 / 0.35);
+.float-facebook {
+  background: transparent;
+  box-shadow: 0 6px 18px oklch(0.55 0.15 240 / 0.45);
 }
 
-.float-messenger::before {
+.float-facebook::before {
   background: radial-gradient(circle, oklch(0.6 0.15 235 / 0.55) 0%, transparent 70%);
 }
 
@@ -1295,10 +1314,8 @@ section {
     inset 0 1px 0 oklch(1 0 0 / 0.35);
 }
 
-.float-messenger:hover {
-  box-shadow:
-    0 10px 26px oklch(0.55 0.15 240 / 0.6),
-    inset 0 1px 0 oklch(1 0 0 / 0.35);
+.float-facebook:hover {
+  box-shadow: 0 10px 26px oklch(0.55 0.15 240 / 0.6);
 }
 
 @keyframes float-pulse {
@@ -1320,7 +1337,7 @@ section {
 .float-chat .float-zalo {
   animation: float-in 0.5s ease-out both;
 }
-.float-chat .float-messenger {
+.float-chat .float-facebook {
   animation: float-in 0.5s ease-out 0.12s both;
 }
 

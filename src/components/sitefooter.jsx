@@ -9,10 +9,12 @@ export default function SiteFooter() {
           <p className="f-tagline">Sạch sáng tức thì – không hao mòn.</p>
         </div>
         <nav aria-label="Liên kết chân trang">
-          <a href="#san-pham">Sản phẩm</a>
-          <a href="#furryshine">Furryshine</a>
-          <a href="#cong-thuc">Công thức</a>
-          <a href="#lien-he">Liên hệ</a>
+          <a href="#san-pham" className="nav-item nav-blue">Sản Phẩm</a>
+          <a href="#tay-rua-cong-nghiep" className="nav-item nav-cyan">Tẩy Rửa Công Nghiệp</a>
+          <a href="#vang-bac-da-quy" className="nav-item nav-gold">Vàng · Bạc · Đá Quý</a>
+          <a href="#furryshine" className="nav-item nav-mint">Furryshine Pet</a>
+          <a href="#cong-thuc" className="nav-item nav-violet">Công Thức &amp; Sử Dụng</a>
+          <a href="#lien-he" className="nav-item nav-red">Nhận Báo Giá</a>
         </nav>
         <div className="f-meta">
           <p>Công ty TNHH SX &amp; TM Đặng Hân · <a href="https://www.icu.pro.vn">www.icu.pro.vn</a></p>
