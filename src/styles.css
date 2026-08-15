@@ -1548,7 +1548,8 @@ section {
 /* ---------- Google Map ---------- */
 
 .contact-map {
-  margin-top: 22px;
+  grid-column: 1 / -1;
+  margin-top: 0;
   border: 1px solid var(--border);
   border-radius: 14px;
   overflow: hidden;
@@ -1560,6 +1561,12 @@ section {
   width: 100%;
   height: 300px;
   border: 0;
+}
+
+@media (min-width: 900px) {
+  .contact-map iframe {
+    height: 420px;
+  }
 }
 
 

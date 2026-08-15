@@ -66,15 +66,7 @@ export default function Contact() {
             </li>
           </ul>
 
-          <div className="contact-map">
-            <iframe
-              title="Bản đồ văn phòng ICU"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919!2d106.6405616!3d10.8743401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175295bc3c25b7d:0x220ead6dee25db6a!2zQ8O0bmcgVHkgVE5ISCBTWCAmIFRNIMSQ4bq2TkcgSMOCTg==!5e0!3m2!1svi!2s!4v1786772487"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              allowFullScreen
-            ></iframe>
-          </div>
+          
         </div>
 
         <div className="form-card">
@@ -168,6 +160,16 @@ export default function Contact() {
               <p className="form-note">LIÊN HỆ NGAY ĐỂ NHẬN CHÍNH SÁCH ƯU ĐÃI HÔM NAY.</p>
             </form>
           )}
+        </div>
+
+        <div className="contact-map">
+          <iframe
+            title="Bản đồ văn phòng ICU"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919!2d106.6405616!3d10.8743401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175295bc3c25b7d:0x220ead6dee25db6a!2zQ8O0bmcgVHkgVE5ISCBTWCAmIFRNIMSQ4bq2TkcgSMOCTg==!5e0!3m2!1svi!2s!4v1786772487"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            allowFullScreen
+          ></iframe>
         </div>
       </div>
     </section>
