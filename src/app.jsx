@@ -122,8 +122,7 @@ export default function App() {
             { transform: 'rotate(2deg) scale(1.01)', offset: 0.667 },
             { transform: 'rotate(-2deg) scale(1)', offset: 0.722 },
             { transform: 'rotate(0deg) scale(1)', offset: 0.778 },
-            { transform: 'rotate(360deg) scale(1.08)', offset: 0.861 },
-            { transform: 'rotate(720deg) scale(1.08)', offset: 0.944 },
+            { transform: 'rotate(360deg) scale(1.08)', offset: 0.944 },
             { transform: 'rotate(0deg) scale(1)', offset: 1 },
           ],
           { duration: 9000, iterations: Infinity, delay: 300 + i * 300, easing: 'ease-in-out' }
@@ -131,8 +130,20 @@ export default function App() {
       } catch (e) {}
     })
 
+    // An icon noi khi cuon den cuoi trang (khong che chu footer), hien lai khi cuon len
+    const chatEl = document.querySelector('.float-chat')
+    const footerEl = document.querySelector('.site-footer')
+    let chatObs = null
+    if (chatEl && footerEl && 'IntersectionObserver' in window) {
+      chatObs = new IntersectionObserver((entries) => {
+        chatEl.classList.toggle('hide', entries[0].isIntersecting)
+      }, { threshold: 0.05 })
+      chatObs.observe(footerEl)
+    }
+
     return () => {
       anims.forEach((a) => { try { a.cancel() } catch (e) {} })
+      if (chatObs) chatObs.disconnect()
     }
   }, [])
 

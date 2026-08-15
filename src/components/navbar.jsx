@@ -6,7 +6,7 @@ export default function NavBar({ scrolled }) {
       <div className="wrap nav-inner">
         <a className="logo" href="#top" onClick={(e) => e.preventDefault()}>
           <img src={logo} alt="ICU" className="logo-img" />
-          <span className="logo-text">Sản Phẩm Độc Quyền<br /><span className="logo-sub">DANG HAN TAP CO., LTD</span></span>
+          <span className="logo-text">Sản Phẩm Độc Quyền<br /><span className="logo-sub">DANG HAN TAP CO., LTD</span><br /><span className="logo-sub est">EST. 2024</span></span>
         </a>
         <nav aria-label="Điều hướng chính">
           <a href="#san-pham" className="nav-item nav-blue">Sản Phẩm</a>
