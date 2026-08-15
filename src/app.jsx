@@ -5,6 +5,7 @@ import Products from './components/products.jsx'
 import Formula from './components/formula.jsx'
 import Contact from './components/contact.jsx'
 import SiteFooter from './components/sitefooter.jsx'
+import FloatingChat from './components/floatingchat.jsx'
 
 function BubbleTrail() {
   useEffect(() => {
@@ -78,6 +79,7 @@ export default function App() {
         <Contact />
       </main>
       <SiteFooter />
+      <FloatingChat />
     </div>
   )
 }

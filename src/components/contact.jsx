@@ -42,7 +42,7 @@ export default function Contact() {
           <h2>
             Nhận tư vấn <em>&amp; báo giá</em>
           </h2>
-          <p className="lede">Đại lý phân phối, garage, xưởng dịch vụ hay hộ gia đình — để lại thông tin, đội ngũ ICU sẽ liên hệ lại với bạn trong giờ làm việc.</p>
+          <p className="lede">Hộ gia đình, gara, nhà bán lẻ hay đối tác phân phối — để lại thông tin, đội ngũ ICU sẽ liên hệ lại với bạn trong giờ làm việc.</p>
           <ul className="contact-info">
             <li>
               <span>Điện thoại</span>
@@ -57,10 +57,24 @@ export default function Contact() {
               <a href="https://www.icu.pro.vn">www.icu.pro.vn</a>
             </li>
             <li>
-              <span>Địa chỉ</span>
+              <span>Văn Phòng Cty</span>
               <p>97A Nguyễn Thị Thơi, P. Tân Thới Hiệp, TP. HCM</p>
             </li>
+            <li>
+              <span>Xưởng Sản Xuất</span>
+              <p>Liên hệ: 0788 53 56 59</p>
+            </li>
           </ul>
+
+          <div className="contact-map">
+            <iframe
+              title="Bản đồ văn phòng ICU"
+              src="https://maps.google.com/maps?q=97A%20Nguy%E1%BB%85n%20Th%E1%BB%8B%20Th%E1%BB%9Bi%2C%20T%C3%A2n%20Th%E1%BB%9Bi%20Hi%E1%BB%87p%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
 
         <div className="form-card">
@@ -142,9 +156,9 @@ export default function Contact() {
                 <label htmlFor="f-need">Bạn là</label>
                 <select id="f-need" name="need" value={values.need} onChange={set('need')}>
                   <option value="family">Sử dụng gia đình</option>
-                  <option value="garage">Garage – xưởng dịch vụ</option>
-                  <option value="distributor">Đại lý phân phối</option>
-                  <option value="business">Doanh nghiệp sản xuất</option>
+                  <option value="garage">Gara - Vệ Sinh Công Nghiệp - Nhà Bán Lẻ</option>
+                  <option value="distributor">Đối Tác & Nhà Phân Phối</option>
+                  <option value="business">Affiliate (tiếp thị liên kết) KOL & KOC</option>
                 </select>
               </div>
 

@@ -70,6 +70,7 @@ const families = [
   {
     code: 'DUNG DỊCH TẨY RỬA CÔNG NGHIỆP · GARA',
     accent: 'blue',
+    id: 'tay-rua-cong-nghiep',
     items: [
       {
         img: t889, alt: 'ICU T889 tẩy carbon động cơ', code: 'T889', name: 'Tẩy carbon động cơ',
@@ -121,6 +122,7 @@ const families = [
   {
     code: 'DUNG DỊCH TẨY BẨN CHUYÊN DỤNG CHO VÀNG · BẠC · ĐÁ QUÝ',
     accent: 'gold',
+    id: 'vang-bac-da-quy',
     items: [
       {
         img: a889, alt: 'ICU A889 tẩy rửa trang sức vàng bạc đá quý', code: 'A889', name: 'Tẩy rửa trang sức',
