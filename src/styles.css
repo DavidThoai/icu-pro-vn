@@ -365,16 +365,6 @@ section {
   flex-wrap: wrap;
 }
 
-.family-logo {
-  height: 52px;
-  width: auto;
-  object-fit: contain;
-  flex: 0 0 auto;
-}
-
-.family-head:has(.family-code.mint) .family-logo {
-  height: 44px;
-}
 
 .family-code {
   margin: 0;
@@ -632,6 +622,11 @@ section {
   line-height: 1;
   letter-spacing: -0.02em;
   color: var(--brand);
+}
+
+.product .code.code-long {
+  font-size: 1.35rem;
+  letter-spacing: 0.04em;
 }
 
 .product h4 {
