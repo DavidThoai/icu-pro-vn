@@ -65,6 +65,7 @@ import ab_6 from '../images/ab-6.jpg'
 import ab_7 from '../images/ab-7.jpg'
 import ab_8 from '../images/ab-8.jpg'
 import abVideo from '../images/ab-video.mp4'
+import c819Video from '../images/c819-video.mp4'
 import pet_1 from '../images/pet-1.jpg'
 import pet_2 from '../images/pet-2.jpg'
 import pet_3 from '../images/pet-3.jpg'
@@ -77,7 +78,7 @@ import fs03_2 from '../images/fs03-2.jpg'
 import fs03_3 from '../images/fs03-3.jpg'
 import fs03_4 from '../images/fs03-4.jpg'
 import fs03Video from '../images/fs03-video.mp4'
-import stamp15 from '../images/stamp-15.png'
+import stamp20 from '../images/stamp-20.png'
 
 const families = [
   {
@@ -167,6 +168,7 @@ const families = [
       {
         img: silver, alt: 'ICU C819 vệ sinh trang sức bạc nano xanh', code: 'C819', name: 'Vệ sinh bạc – Nano xanh',
         gallery: [silver_1, silver_2, silver_3, silver_4],
+        video: c819Video,
         seo: 'ICU C819 dung dịch vệ sinh trang sức bạc Nano xanh chuyên dụng. Phục hồi độ sáng bạc, tẩy oxy hóa và ố đen. Phù hợp bạc 925 và sterling. Chai nhỏ gọn, dùng trực tiếp.',
         claims: ['Phục hồi độ sáng bạc', 'Tẩy oxy hóa, ố đen', 'Bạc 925 · sterling'],
         use: 'Nhúng trang sức bạc vào dung dịch. Để vài giây đến khi bạc sáng lại. Rửa nước sạch, lau khô.',
@@ -250,7 +252,7 @@ function ProductCard({ p }) {
   const currentImg = activeImg >= 0 ? allThumbs[activeImg] : null
   return (
     <article className="product" key={p.name}>
-      <img src={stamp15} alt="Giảm giá 15%" className="stamp-discount" />
+      <img src={stamp20} alt="Giảm giá 20%" className="stamp-discount" />
       <div className="product-img">
         {showVideo ? (
           <video src={p.video} controls autoPlay loop muted playsInline />
