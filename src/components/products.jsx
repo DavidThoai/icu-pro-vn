@@ -65,6 +65,7 @@ import pet_3 from '../images/pet-3.jpg'
 import pet_4 from '../images/pet-4.jpg'
 import pet_5 from '../images/pet-5.jpg'
 import petVideo from '../images/pet-video.mp4'
+import stamp15 from '../images/stamp-15.png'
 
 const families = [
   {
@@ -235,6 +236,7 @@ function ProductCard({ p }) {
   const currentImg = activeImg >= 0 ? allThumbs[activeImg] : null
   return (
     <article className="product" key={p.code}>
+      <img src={stamp15} alt="Giảm giá 15%" className="stamp-discount" />
       <div className="product-img">
         {showVideo ? (
           <video src={p.video} controls autoPlay loop muted playsInline />

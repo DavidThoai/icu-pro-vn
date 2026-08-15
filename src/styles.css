@@ -308,6 +308,43 @@ section {
   to { transform: translateX(-50%); }
 }
 
+
+/* ---------- Tem giam gia 15% ---------- */
+
+.product {
+  position: relative;
+}
+
+.stamp-discount {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: clamp(64px, 7vw, 96px);
+  height: auto;
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 3px 8px oklch(0.35 0.06 25 / 0.35));
+  transform: rotate(-12deg);
+  transition: transform 200ms ease;
+}
+
+.product:hover .stamp-discount {
+  transform: rotate(-6deg) scale(1.08);
+}
+
+.product.wide .stamp-discount {
+  top: -8px;
+  left: -8px;
+}
+
+@media (max-width: 620px) {
+  .stamp-discount {
+    top: -6px;
+    left: -6px;
+    width: 58px;
+  }
+}
+
 /* ---------- Products ---------- */
 
 .products {
@@ -1226,13 +1263,13 @@ section {
   z-index: 1000;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 18px;
 }
 
 .float-btn {
   position: relative;
-  width: 60px;
-  height: 60px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1288,7 +1325,7 @@ section {
   transform: translateY(-50%) translateX(6px);
   background: oklch(0.24 0.03 255 / 0.92);
   color: #fff;
-  font-size: 14.5px;
+  font-size: 16px;
   font-weight: 700;
   white-space: nowrap;
   padding: 7px 14px;
@@ -1356,13 +1393,13 @@ section {
 
 @media (max-width: 620px) {
   .float-btn {
-    width: 52px;
-    height: 52px;
+    width: 78px;
+    height: 78px;
   }
   .float-chat {
     right: 13px;
     bottom: 14px;
-    gap: 11px;
+    gap: 14px;
   }
 }
 
