@@ -1,10 +1,10 @@
-import { useEffect, useState } from 'react'
-import NavBar from './components/NavBar.jsx'
-import Hero from './components/Hero.jsx'
-import Products from './components/Products.jsx'
-import Formula from './components/Formula.jsx'
-import Contact from './components/Contact.jsx'
-import SiteFooter from './components/SiteFooter.jsx'
+﻿import { useEffect, useState } from 'react'
+import NavBar from './components/navbar.jsx'
+import Hero from './components/hero.jsx'
+import Products from './components/products.jsx'
+import Formula from './components/formula.jsx'
+import Contact from './components/contact.jsx'
+import SiteFooter from './components/sitefooter.jsx'
 
 function BubbleTrail() {
   useEffect(() => {
