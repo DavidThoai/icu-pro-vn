@@ -162,8 +162,8 @@ export default function Contact() {
                 </select>
               </div>
 
-              <button type="submit" className="btn btn-accent btn-block">
-                Gửi yêu cầu
+              <button type="submit" className="btn btn-accent btn-block btn-send">
+                GỬI YÊU CẦU
               </button>
               <p className="form-note">LIÊN HỆ NGAY ĐỂ NHẬN CHÍNH SÁCH ƯU ĐÃI HÔM NAY.</p>
             </form>

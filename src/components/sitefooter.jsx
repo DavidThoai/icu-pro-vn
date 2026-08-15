@@ -27,8 +27,13 @@ export default function SiteFooter() {
           <p className="f-note">© 2026 ICU · DANG HAN TAP CO., LTD</p>
         </div>
       </div>
-      <div className="footer-colors" aria-hidden="true">
-        <span className="fc-blue" /><span className="fc-cyan" /><span className="fc-gold" /><span className="fc-mint" /><span className="fc-violet" /><span className="fc-red" />
+      <div className="footer-colors">
+        <span className="fc-blue" data-label="Sản Phẩm" />
+        <span className="fc-cyan" data-label="Tẩy Rửa CN" />
+        <span className="fc-gold" data-label="Vàng · Bạc · Đá Quý" />
+        <span className="fc-mint" data-label="Furryshine Pet" />
+        <span className="fc-violet" data-label="Công Thức & Sử Dụng" />
+        <span className="fc-red" data-label="Nhận Báo Giá" />
       </div>
     </footer>
   )
