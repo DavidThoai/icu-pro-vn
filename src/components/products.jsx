@@ -78,7 +78,7 @@ import fs03_2 from '../images/fs03-2.jpg'
 import fs03_3 from '../images/fs03-3.jpg'
 import fs03_4 from '../images/fs03-4.jpg'
 import fs03Video from '../images/fs03-video.mp4'
-import stamp20 from '../images/stamp-20.png'
+import stampBanner from '../images/stamp-banner.png'
 
 const families = [
   {
@@ -252,7 +252,7 @@ function ProductCard({ p }) {
   const currentImg = activeImg >= 0 ? allThumbs[activeImg] : null
   return (
     <article className="product" key={p.name}>
-      <img src={stamp20} alt="Giảm giá 20%" className="stamp-discount" />
+      <img src={stampBanner} alt="Giảm giá 15% - Ưu đãi có hạn" className="stamp-discount" />
       <div className="product-img">
         {showVideo ? (
           <video src={p.video} controls autoPlay loop muted playsInline />
