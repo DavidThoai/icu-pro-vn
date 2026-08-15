@@ -90,10 +90,10 @@ export default function App() {
           el.appendChild(sp)
           anims.push(sp.animate(
             [
-              { textShadow: '0 0 2px rgba(' + cLo + ',.3), 0 1px 1px rgba(20,30,60,.4)' },
-              { textShadow: '0 0 5px rgba(' + cHi + ',.95), 0 0 12px rgba(' + cHi + ',.6), 0 1px 1px rgba(20,30,60,.4)' },
-              { textShadow: '0 0 5px rgba(' + cHi + ',.95), 0 0 12px rgba(' + cHi + ',.6), 0 1px 1px rgba(20,30,60,.4)' },
-              { textShadow: '0 0 2px rgba(' + cLo + ',.3), 0 1px 1px rgba(20,30,60,.4)' },
+              { textShadow: '0 0 1px rgba(' + cLo + ',.25), 0 1px 1px rgba(20,30,60,.35)' },
+              { textShadow: '0 0 4px rgba(' + cHi + ',.8), 0 0 8px rgba(' + cHi + ',.5), 0 1px 1px rgba(20,30,60,.35)' },
+              { textShadow: '0 0 4px rgba(' + cHi + ',.8), 0 0 8px rgba(' + cHi + ',.5), 0 1px 1px rgba(20,30,60,.35)' },
+              { textShadow: '0 0 1px rgba(' + cLo + ',.25), 0 1px 1px rgba(20,30,60,.35)' },
             ],
             { duration: 3900, iterations: Infinity, delay: i * 156, easing: 'linear' }
           ))

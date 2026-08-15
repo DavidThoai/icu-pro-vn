@@ -27,6 +27,9 @@ export default function SiteFooter() {
           <p className="f-note">© 2026 ICU · DANG HAN TAP CO., LTD</p>
         </div>
       </div>
+      <div className="footer-colors" aria-hidden="true">
+        <span className="fc-blue" /><span className="fc-cyan" /><span className="fc-gold" /><span className="fc-mint" /><span className="fc-violet" /><span className="fc-red" />
+      </div>
     </footer>
   )
 }

@@ -213,7 +213,7 @@ section {
   border-radius: 16px;
   padding: 6px;
   display: block;
-  box-shadow: 0 3px 14px oklch(0.35 0.02 260 / 0.22);
+  box-shadow: 0 2px 5px oklch(0.3 0.02 260 / 0.14), 0 10px 26px oklch(0.25 0.02 260 / 0.22);
 }
 
 .logo-text {
@@ -411,7 +411,7 @@ section {
   color: transparent;
   -webkit-text-fill-color: transparent;
   animation: sheen-sweep 1.3s ease-in-out infinite;
-  filter: drop-shadow(0 1px 0 oklch(0.95 0.01 250)) drop-shadow(0 2px 3px oklch(0.25 0.06 250 / 0.2));
+  filter: drop-shadow(0 1px 0 oklch(0.95 0.01 250)) drop-shadow(0 2px 2px oklch(0.25 0.06 250 / 0.14));
 }
 
 .family-code.gold {
@@ -426,7 +426,7 @@ section {
   color: transparent;
   -webkit-text-fill-color: transparent;
   animation: sheen-sweep 1.3s ease-in-out infinite;
-  filter: drop-shadow(0 1px 0 oklch(0.98 0.02 95)) drop-shadow(0 2px 3px oklch(0.4 0.08 80 / 0.22));
+  filter: drop-shadow(0 1px 0 oklch(0.98 0.02 95)) drop-shadow(0 2px 2px oklch(0.4 0.08 80 / 0.15));
 }
 
 
@@ -442,7 +442,7 @@ section {
   color: transparent;
   -webkit-text-fill-color: transparent;
   animation: sheen-sweep 1.3s ease-in-out infinite;
-  filter: drop-shadow(0 1px 0 oklch(0.96 0.02 200)) drop-shadow(0 2px 3px oklch(0.3 0.08 200 / 0.2));
+  filter: drop-shadow(0 1px 0 oklch(0.96 0.02 200)) drop-shadow(0 2px 2px oklch(0.3 0.08 200 / 0.14));
 }
 
 .family-code.mint {
@@ -458,7 +458,7 @@ section {
   color: transparent;
   -webkit-text-fill-color: transparent;
   animation: sheen-sweep 1.3s ease-in-out infinite;
-  filter: drop-shadow(0 1px 0 oklch(0.97 0.02 165)) drop-shadow(0 2px 3px oklch(0.3 0.07 165 / 0.2));
+  filter: drop-shadow(0 1px 0 oklch(0.97 0.02 165)) drop-shadow(0 2px 2px oklch(0.3 0.07 165 / 0.14));
 }
 
 /* Anh sang luot qua chu: chuyen dong 0.5s (25% cua 2s), nghi 1.5s roi lap lai */
@@ -527,7 +527,7 @@ section {
   background: oklch(0.97 0.005 250);
   border-bottom: 1px solid var(--border);
   aspect-ratio: 1 / 1;
-  box-shadow: inset 0 0 0 1px oklch(0.88 0.01 250 / 0.6);
+  box-shadow: inset 0 0 0 1px oklch(0.88 0.01 250 / 0.6), 0 6px 18px oklch(0.3 0.02 260 / 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -813,7 +813,17 @@ section {
   border-bottom: 3px solid transparent;
   color: var(--on-dark-muted);
   cursor: pointer;
-  transition: color 120ms ease, border-color 120ms ease;
+  position: relative;
+  z-index: 1;
+  transform-origin: center bottom;
+  transition: color 120ms ease, border-color 120ms ease, transform 200ms ease, background 200ms ease, border-radius 200ms ease;
+}
+
+.ftab:hover {
+  transform: scale(1.3);
+  z-index: 3;
+  background: oklch(0.97 0.01 250);
+  border-radius: 10px 10px 0 0;
 }
 
 .ftab.active {
@@ -1139,8 +1149,36 @@ section {
   padding: 6px;
   display: block;
   margin: 0;
-  box-shadow: 0 3px 14px oklch(0.35 0.02 260 / 0.22);
+  box-shadow: 0 2px 5px oklch(0.3 0.02 260 / 0.14), 0 10px 26px oklch(0.25 0.02 260 / 0.22);
+  transition: transform 200ms ease, box-shadow 200ms ease;
 }
+
+.f-logo:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px oklch(0.3 0.02 260 / 0.18), 0 16px 34px oklch(0.25 0.02 260 / 0.28);
+}
+
+
+.footer-colors {
+  display: flex;
+  width: 100%;
+  height: 10px;
+  overflow: hidden;
+  margin-top: 18px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px oklch(0.3 0.02 260 / 0.25);
+}
+
+.footer-colors span {
+  flex: 1;
+}
+
+.footer-colors .fc-blue { background: linear-gradient(180deg, #3b82f6, #1d4ed8); }
+.footer-colors .fc-cyan { background: linear-gradient(180deg, #22d3ee, #0e7490); }
+.footer-colors .fc-gold { background: linear-gradient(180deg, #f59e0b, #b45309); }
+.footer-colors .fc-mint { background: linear-gradient(180deg, #14b8a6, #0f766e); }
+.footer-colors .fc-violet { background: linear-gradient(180deg, #a78bfa, #7c3aed); }
+.footer-colors .fc-red { background: linear-gradient(180deg, #ef4444, #dc2626); }
 
 .f-tagline {
   margin: 0;
@@ -1426,7 +1464,7 @@ section {
 .float-chat {
   position: fixed;
   right: 20px;
-  bottom: 52px;
+  bottom: 96px;
   z-index: 1000;
   display: flex;
   flex-direction: column;
@@ -1606,7 +1644,7 @@ section {
   }
   .float-chat {
     right: 13px;
-    bottom: 38px;
+    bottom: 84px;
     gap: 14px;
   }
 }
