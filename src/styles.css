@@ -110,7 +110,7 @@ h2 em {
 }
 
 section {
-  padding: clamp(32px, 4.5vw, 52px) 0;
+  padding: clamp(20px, 2.8vw, 30px) 0;
 }
 
 .section-header {
@@ -195,7 +195,7 @@ section {
   justify-content: space-between;
   gap: 16px;
   flex-wrap: wrap;
-  padding-block: 10px;
+  padding-block: 14px;
 }
 
 .logo {
@@ -206,12 +206,12 @@ section {
 }
 
 .logo-img {
-  height: 66px;
-  width: 66px;
+  height: 112px;
+  width: 112px;
   object-fit: cover;
-  border-radius: 14px;
+  border-radius: 18px;
   display: block;
-  box-shadow: 0 2px 10px oklch(0.35 0.02 260 / 0.18);
+  box-shadow: 0 3px 14px oklch(0.35 0.02 260 / 0.22);
 }
 
 .logo-text {
@@ -350,6 +350,7 @@ section {
 
 .products {
   background: transparent;
+  padding-top: clamp(12px, 1.6vw, 20px);
 }
 
 .family + .family {
@@ -385,7 +386,8 @@ section {
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  animation: metal-shine 4.5s linear infinite;
+  -webkit-animation: metal-shine 3s linear infinite;
+  animation: metal-shine 3s linear infinite;
   filter: drop-shadow(0 1px 0 oklch(0.95 0.01 250)) drop-shadow(0 2px 6px oklch(0.3 0.05 250 / 0.35));
 }
 
@@ -401,12 +403,13 @@ section {
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  animation: metal-shine 4.5s linear infinite;
+  -webkit-animation: metal-shine 3s linear infinite;
+  animation: metal-shine 3s linear infinite;
   filter: drop-shadow(0 1px 0 oklch(0.98 0.02 95)) drop-shadow(0 2px 6px oklch(0.45 0.08 80 / 0.4));
 }
 
 .family-code.mint {
-  font-size: clamp(0.67rem, 1.26vw, 1.0rem);
+  font-size: clamp(0.96rem, 1.8vw, 1.44rem);
   background: linear-gradient(100deg,
     oklch(0.38 0.1 168) 0%,
     oklch(0.58 0.12 165) 25%,
@@ -418,8 +421,18 @@ section {
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  animation: metal-shine 4.5s linear infinite;
+  -webkit-animation: metal-shine 3s linear infinite;
+  animation: metal-shine 3s linear infinite;
   filter: drop-shadow(0 1px 0 oklch(0.97 0.02 165)) drop-shadow(0 2px 5px oklch(0.35 0.07 165 / 0.35));
+}
+
+@-webkit-keyframes metal-shine {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: -220% center;
+  }
 }
 
 @keyframes metal-shine {
@@ -1069,13 +1082,13 @@ section {
 }
 
 .f-logo {
-  height: 60px;
-  width: 60px;
+  height: 112px;
+  width: 112px;
   object-fit: cover;
-  border-radius: 14px;
+  border-radius: 18px;
   display: block;
-  margin: 0 0 10px;
-  box-shadow: 0 2px 10px oklch(0.35 0.02 260 / 0.18);
+  margin: 0 0 12px;
+  box-shadow: 0 3px 14px oklch(0.35 0.02 260 / 0.22);
 }
 
 .f-tagline {
@@ -1473,24 +1486,8 @@ section {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .float-btn,
-  .float-btn::before {
+  .float-btn {
     transition: none;
-    animation: none;
-  }
-  .family-code,
-  .family-code.gold,
-  .family-code.mint {
-    animation: none;
-    color: var(--brand);
-    -webkit-text-fill-color: currentColor;
-    background: none;
-  }
-  .family-code.gold {
-    color: var(--gold);
-  }
-  .family-code.mint {
-    color: oklch(0.42 0.12 165);
   }
 }
 
