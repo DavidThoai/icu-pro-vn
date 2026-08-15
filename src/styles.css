@@ -1100,59 +1100,260 @@ section {
   border: 0;
 }
 
+
+/* ---------- Nav items co mau rieng ---------- */
+
+.topnav nav a.nav-item {
+  font-weight: 700;
+  padding: 7px 13px;
+  border-radius: 999px;
+  border: 1.5px solid transparent;
+  transition: color 130ms ease, background 130ms ease, border-color 130ms ease, box-shadow 130ms ease;
+}
+
+.topnav nav a.nav-item:hover {
+  transform: translateY(-1px);
+}
+
+/* San Pham - xanh thuong hieu */
+.topnav nav a.nav-blue {
+  color: oklch(0.42 0.15 250);
+  border-color: oklch(0.42 0.15 250 / 0.35);
+  background: oklch(0.42 0.15 250 / 0.08);
+}
+.topnav nav a.nav-blue:hover {
+  color: #fff;
+  background: oklch(0.42 0.15 250);
+  border-color: oklch(0.42 0.15 250);
+  box-shadow: 0 4px 12px oklch(0.42 0.15 250 / 0.35);
+}
+
+/* Tay rua cong nghiep - xanh duong nhat */
+.topnav nav a.nav-cyan {
+  color: oklch(0.45 0.12 235);
+  border-color: oklch(0.45 0.12 235 / 0.35);
+  background: oklch(0.45 0.12 235 / 0.08);
+}
+.topnav nav a.nav-cyan:hover {
+  color: #fff;
+  background: oklch(0.45 0.12 235);
+  border-color: oklch(0.45 0.12 235);
+  box-shadow: 0 4px 12px oklch(0.45 0.12 235 / 0.35);
+}
+
+/* Vang bac da quy - vang kim */
+.topnav nav a.nav-gold {
+  color: oklch(0.5 0.12 80);
+  border-color: oklch(0.5 0.12 80 / 0.4);
+  background: oklch(0.5 0.12 80 / 0.1);
+}
+.topnav nav a.nav-gold:hover {
+  color: oklch(0.2 0.04 75);
+  background: linear-gradient(135deg, oklch(0.85 0.13 90), oklch(0.75 0.12 75));
+  border-color: oklch(0.6 0.12 80);
+  box-shadow: 0 4px 12px oklch(0.55 0.12 80 / 0.4);
+}
+
+/* Furryshine Pet - xanh bac ha */
+.topnav nav a.nav-mint {
+  color: oklch(0.45 0.12 165);
+  border-color: oklch(0.45 0.12 165 / 0.35);
+  background: oklch(0.45 0.12 165 / 0.08);
+}
+.topnav nav a.nav-mint:hover {
+  color: #fff;
+  background: oklch(0.45 0.12 165);
+  border-color: oklch(0.45 0.12 165);
+  box-shadow: 0 4px 12px oklch(0.45 0.12 165 / 0.35);
+}
+
+/* Cong thuc - tim */
+.topnav nav a.nav-violet {
+  color: oklch(0.44 0.13 300);
+  border-color: oklch(0.44 0.13 300 / 0.35);
+  background: oklch(0.44 0.13 300 / 0.08);
+}
+.topnav nav a.nav-violet:hover {
+  color: #fff;
+  background: oklch(0.44 0.13 300);
+  border-color: oklch(0.44 0.13 300);
+  box-shadow: 0 4px 12px oklch(0.44 0.13 300 / 0.35);
+}
+
+/* Nut Nhan Bao Gia - do ICU */
+.topnav nav a.nav-cta {
+  border-radius: 999px;
+  padding: 9px 20px;
+  box-shadow: 0 3px 10px oklch(0.48 0.19 25 / 0.3);
+}
+.topnav nav a.nav-cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px oklch(0.48 0.19 25 / 0.45);
+}
+
+@media (max-width: 700px) {
+  .topnav nav a.nav-item {
+    padding: 6px 10px;
+    font-size: 16px;
+  }
+}
+
 /* ---------- Floating chat buttons (Zalo + Messenger) ---------- */
 
 .float-chat {
   position: fixed;
-  right: 18px;
-  bottom: 18px;
+  right: 20px;
+  bottom: 22px;
   z-index: 1000;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
 }
 
 .float-btn {
-  width: 56px;
-  height: 56px;
+  position: relative;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
   text-decoration: none;
-  box-shadow: 0 4px 14px oklch(0.3 0.03 260 / 0.35);
-  transition: transform 150ms ease, box-shadow 150ms ease;
+  transition: transform 160ms ease, box-shadow 160ms ease;
 }
 
-.float-btn:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 8px 20px oklch(0.3 0.03 260 / 0.4);
+.float-btn svg {
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 1px 2px oklch(0.2 0.02 260 / 0.35));
+}
+
+/* Vong pulse phia sau nut */
+.float-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  animation: float-pulse 2.2s ease-out infinite;
+  z-index: 0;
 }
 
 .float-zalo {
-  background: #0068ff;
+  background: linear-gradient(145deg, #2a8bff, #0068ff 55%, #0052cc);
+  box-shadow:
+    0 6px 18px oklch(0.5 0.16 250 / 0.5),
+    inset 0 1px 0 oklch(1 0 0 / 0.35);
+}
+
+.float-zalo::before {
+  background: radial-gradient(circle, oklch(0.6 0.16 250 / 0.55) 0%, transparent 70%);
 }
 
 .float-messenger {
-  background: #0084ff;
+  background: linear-gradient(145deg, #00c6ff, #0084ff 55%, #0066e6);
+  box-shadow:
+    0 6px 18px oklch(0.55 0.15 240 / 0.5),
+    inset 0 1px 0 oklch(1 0 0 / 0.35);
+}
+
+.float-messenger::before {
+  background: radial-gradient(circle, oklch(0.6 0.15 235 / 0.55) 0%, transparent 70%);
+}
+
+/* Nhan chu hien khi hover */
+.float-btn .float-label {
+  position: absolute;
+  right: calc(100% + 14px);
+  top: 50%;
+  transform: translateY(-50%) translateX(6px);
+  background: oklch(0.24 0.03 255 / 0.92);
+  color: #fff;
+  font-size: 14.5px;
+  font-weight: 700;
+  white-space: nowrap;
+  padding: 7px 14px;
+  border-radius: 999px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 150ms ease, transform 150ms ease;
+  box-shadow: 0 4px 12px oklch(0.2 0.02 260 / 0.3);
+}
+
+.float-btn:hover .float-label {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+.float-btn:hover {
+  transform: translateY(-4px) scale(1.08);
+}
+
+.float-zalo:hover {
+  box-shadow:
+    0 10px 26px oklch(0.5 0.16 250 / 0.6),
+    inset 0 1px 0 oklch(1 0 0 / 0.35);
+}
+
+.float-messenger:hover {
+  box-shadow:
+    0 10px 26px oklch(0.55 0.15 240 / 0.6),
+    inset 0 1px 0 oklch(1 0 0 / 0.35);
+}
+
+@keyframes float-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.55;
+  }
+  70% {
+    transform: scale(1.55);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.55);
+    opacity: 0;
+  }
+}
+
+/* Nhay nhe khi vua tai trang (1 lan) */
+.float-chat .float-zalo {
+  animation: float-in 0.5s ease-out both;
+}
+.float-chat .float-messenger {
+  animation: float-in 0.5s ease-out 0.12s both;
+}
+
+@keyframes float-in {
+  0% {
+    transform: scale(0) rotate(-30deg);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.15) rotate(6deg);
+  }
+  100% {
+    transform: scale(1) rotate(0);
+  }
 }
 
 @media (max-width: 620px) {
   .float-btn {
-    width: 50px;
-    height: 50px;
+    width: 52px;
+    height: 52px;
   }
   .float-chat {
-    right: 12px;
-    bottom: 12px;
-    gap: 10px;
+    right: 13px;
+    bottom: 14px;
+    gap: 11px;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .float-btn {
+  .float-btn,
+  .float-btn::before {
     transition: none;
+    animation: none;
   }
 }
 

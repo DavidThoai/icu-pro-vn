@@ -69,7 +69,7 @@ export default function Contact() {
           <div className="contact-map">
             <iframe
               title="Bản đồ văn phòng ICU"
-              src="https://maps.google.com/maps?q=97A%20Nguy%E1%BB%85n%20Th%E1%BB%8B%20Th%E1%BB%9Bi%2C%20T%C3%A2n%20Th%E1%BB%9Bi%20Hi%E1%BB%87p%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              src="https://maps.google.com/maps?q=10.8743401,106.6405616&z=17&hl=vi&output=embed"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               allowFullScreen
