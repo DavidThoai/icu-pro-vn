@@ -263,22 +263,26 @@ function ProductCard({ p }) {
       </div>
       <div className="product-thumbs">
         {allThumbs.map((img, i) => (
-          <span
+          <button
+            type="button"
             key={i}
             className={`thumb${activeImg === i ? ' active' : ''}`}
             onClick={() => setActiveImg(i)}
+            aria-label={`Xem ảnh ${i + 1}`}
           >
             <img src={img} alt="" />
-          </span>
+          </button>
         ))}
         {p.video && (
-          <span
+          <button
+            type="button"
+            aria-label="Xem video sản phẩm"
             className={`thumb video-thumb${activeImg === -1 ? ' active' : ''}`}
             onClick={() => setActiveImg(-1)}
             title="Video sản phẩm"
           >
-            <span className="video-icon">▶</span>
-          </span>
+              <span className="video-icon">▶</span>
+          </button>
         )}
       </div>
       <div className="product-body">
