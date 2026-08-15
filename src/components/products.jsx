@@ -172,7 +172,7 @@ const families = [
     accent: 'mint',
     items: [
       {
-        img: pet_1, alt: 'Furryshine Pet sữa tắm thảo dược yến mạch', code: 'FS-01', name: 'Sữa tắm thảo dược Yến mạch',
+        img: pet_1, alt: 'Furryshine Pet sữa tắm thảo dược yến mạch', code: 'FURRYSHINE', name: 'Sữa tắm thảo dược Yến mạch',
         gallery: [pet_2, pet_3, pet_4, pet_5],
         video: petVideo,
         seo: 'Furryshine Pet sữa tắm thảo dược chiết xuất yến mạch, làm dịu da và giảm ngứa cho da nhạy cảm của chó mèo. pH 7.2 cân bằng chuẩn da thú cưng, không kích ứng mắt, 100% organic.',
@@ -181,7 +181,7 @@ const families = [
         formula: 'Chiết xuất yến mạch, Aloe Vera, Glycerin thực vật, pH 7.2. Không chứa SLS, paraben, cồn công nghiệp.',
       },
       {
-        img: pet_2, alt: 'Furryshine Pet sữa tắm tràm trà kháng khuẩn', code: 'FS-02', name: 'Sữa tắm Tràm trà',
+        img: pet_2, alt: 'Furryshine Pet sữa tắm tràm trà kháng khuẩn', code: 'FURRYSHINE', name: 'Sữa tắm Tràm trà',
         gallery: [pet_1, pet_3, pet_4, pet_5],
         video: petVideo,
         seo: 'Furryshine Pet sữa tắm tinh dầu tràm trà, kháng khuẩn tự nhiên, diệt nấm và khử mùi hôi hiệu quả. An toàn cho da nhạy cảm, không gây kích ứng. Phù hợp chó mèo năng động.',
@@ -190,7 +190,7 @@ const families = [
         formula: 'Tinh dầu tràm trà (tea tree oil), chiết xuất cúc la mã, Glycerin thực vật. Không paraben, không SLS.',
       },
       {
-        img: fs03_main, alt: 'Furryshine Enzyme khử mùi nước tiểu thú cưng', code: 'FS-03', name: 'Enzyme Khử Mùi Nước Tiểu (Pet)',
+        img: fs03_main, alt: 'Furryshine Enzyme khử mùi nước tiểu thú cưng', code: 'FURRYSHINE', name: 'Enzyme Khử Mùi Nước Tiểu (Pet)',
         gallery: [fs03_1, fs03_2, fs03_3, fs03_4],
         video: fs03Video,
         seo: 'Furryshine Enzyme khử mùi nước tiểu, phân chó mèo tận gốc bằng enzyme tự nhiên. Diệt khuẩn 99,9%, an toàn tuyệt đối cho thú cưng và gia đình. Dùng cho nền nhà, chuồng nuôi, khay vệ sinh, nệm thú cưng. Hương bạc hà tự nhiên, thân thiện môi trường.',
@@ -199,7 +199,7 @@ const families = [
         formula: 'Enzyme sinh học tự nhiên, vi sinh có lợi, hương bạc hà. Không chứa hóa chất độc hại, phân hủy sinh học an toàn.',
       },
       {
-        img: pet_4, alt: 'Furryshine Pet xịt khử mùi lông', code: 'FS-04', name: 'Xịt khử mùi lông',
+        img: pet_4, alt: 'Furryshine Pet xịt khử mùi lông', code: 'FURRYSHINE', name: 'Xịt khử mùi lông',
         gallery: [pet_1, pet_2, pet_3, pet_5],
         video: petVideo,
         seo: 'Furryshine Pet xịt khử mùi lông giữa các lần tắm. Hương hoa nhẹ nhàng, không kích ứng da, an toàn cho chó mèo con. Giúp lông thơm mát và mềm mượt mỗi ngày.',
@@ -208,7 +208,7 @@ const families = [
         formula: 'Chiết xuất hoa, yến mạch, nước tinh khiết. Không cồn, không kích ứng da.',
       },
       {
-        img: pet_5, alt: 'Furryshine Pet dung dịch vệ sinh tai', code: 'FS-05', name: 'Dung dịch vệ sinh tai',
+        img: pet_5, alt: 'Furryshine Pet dung dịch vệ sinh tai', code: 'FURRYSHINE', name: 'Dung dịch vệ sinh tai',
         gallery: [pet_1, pet_2, pet_3, pet_4],
         video: petVideo,
         seo: 'Furryshine Pet dung dịch vệ sinh tai chuyên dụng, làm sạch ráy tai và ngừa viêm. Dịu nhẹ, không cay, an toàn cho chó mèo. Dùng định kỳ 1–2 lần mỗi tuần.',
@@ -217,7 +217,7 @@ const families = [
         formula: 'Nước muối sinh lý, chiết xuất tràm trà, lô hội. Không cồn, không kháng sinh.',
       },
       {
-        img: pet_3, alt: 'Furryshine Pet nước xả lông mềm mượt', code: 'FS-06', name: 'Nước xả lông mềm mượt',
+        img: pet_3, alt: 'Furryshine Pet nước xả lông mềm mượt', code: 'FURRYSHINE', name: 'Nước xả lông mềm mượt',
         gallery: [pet_1, pet_2, pet_4, pet_5],
         video: petVideo,
         seo: 'Furryshine Pet nước xả lông chống rối, giúp lông bóng mượt và giảm rụng. Dưỡng chất thực vật nuôi dưỡng từ chân lông, hương thơm tự nhiên lưu hương nhẹ.',
@@ -241,7 +241,7 @@ function ProductCard({ p }) {
   const showVideo = p.video && activeImg === -1
   const currentImg = activeImg >= 0 ? allThumbs[activeImg] : null
   return (
-    <article className="product" key={p.code}>
+    <article className="product" key={p.name}>
       <img src={stamp15} alt="Giảm giá 15%" className="stamp-discount" />
       <div className="product-img">
         {showVideo ? (

@@ -90,48 +90,48 @@ const tabs = [
     label: 'Furryshine Pet',
     specs: [
       {
-        name: 'FS-01 — Sữa tắm thảo dược Yến mạch',
-        who: 'FS-01',
+        name: 'FURRYSHINE - Sữa tắm thảo dược Yến mạch',
+        who: 'FURRYSHINE',
         desc: 'Công thức organic chiết xuất yến mạch (oat extract) làm dịu da, giảm ngứa cho da nhạy cảm của chó mèo. Aloe Vera phục hồi da tổn thương, glycerin thực vật cấp ẩm sâu giữ lông mềm mượt. pH 7.2 cân bằng chuẩn da thú cưng, không kích ứng mắt.',
         ph: 'pH 7.2 (chuẩn da chó mèo)',
         temp: 'Pha 10 ml / 1 lít nước ấm',
         ingredients: 'Chiết xuất yến mạch, Aloe Vera, glycerin thực vật, chất tạo bọt tự nhiên (cocamidopropyl betaine), nước tinh khiết. Không SLS, không paraben, không cồn công nghiệp.',
       },
       {
-        name: 'FS-02 — Sữa tắm Tràm trà',
-        who: 'FS-02',
+        name: 'FURRYSHINE - Sữa tắm Tràm trà',
+        who: 'FURRYSHINE',
         desc: 'Tinh dầu tràm trà (tea tree oil) kháng khuẩn tự nhiên, diệt nấm, khử mùi hôi hiệu quả. Chiết xuất cúc la mã kháng viêm, làm dịu da nhạy cảm. An toàn cho chó mèo con, không gây kích ứng.',
         ph: 'pH 7.0–7.5',
         temp: 'Pha 10 ml / 1 lít nước ấm',
         ingredients: 'Tinh dầu tràm trà, chiết xuất cúc la mã, glycerin thực vật, chất tạo bọt tự nhiên, nước tinh khiết.',
       },
       {
-        name: 'FS-03 — Enzyme Khử Mùi Nước Tiểu (Pet)',
-        who: 'FS-03',
+        name: 'FURRYSHINE - Enzyme Khử Mùi Nước Tiểu (Pet)',
+        who: 'FURRYSHINE',
         desc: 'Diệt khuẩn 99% bằng hợp chất amoni bậc 4 (QAC) nồng độ an toàn, không để lại hóa chất độc hại khi thú cưng liếm. Dùng cho sàn nhà, chuồng nuôi, khu vực ăn uống. Hương tràm trà dịu nhẹ.',
         ph: 'pH 7.5–8.5',
         temp: 'Pha 10 ml / 1 lít nước, không cần xả lại',
         ingredients: 'QAC (chất diệt khuẩn), tinh dầu tràm trà, chất hoạt động bề mặt thực vật, nước tinh khiết.',
       },
       {
-        name: 'FS-04 — Xịt khử mùi lông',
-        who: 'FS-04',
+        name: 'FURRYSHINE - Xịt khử mùi lông',
+        who: 'FURRYSHINE',
         desc: 'Khử mùi hôi giữa các lần tắm bằng chiết xuất hoa và yến mạch. Không cồn, không kích ứng da, an toàn cho thú cưng con. Hương hoa nhẹ nhàng, giúp lông thơm mát, mềm mượt mỗi ngày.',
         ph: 'pH 6.5–7.0',
         temp: 'Xịt trực tiếp từ 20 cm, không cần xả lại',
         ingredients: 'Chiết xuất hoa, chiết xuất yến mạch, nước tinh khiết, chất dưỡng ẩm thực vật. Không cồn.',
       },
       {
-        name: 'FS-05 — Dung dịch vệ sinh tai',
-        who: 'FS-05',
+        name: 'FURRYSHINE - Dung dịch vệ sinh tai',
+        who: 'FURRYSHINE',
         desc: 'Làm sạch ráy tai, ngừa viêm bằng nước muối sinh lý kết hợp tràm trà và lô hội. Dịu nhẹ, không cay, không cồn. Dùng định kỳ 1–2 lần/tuần giúp tai chó mèo luôn sạch và khỏe.',
         ph: 'pH 7.0–7.5',
         temp: 'Nhỏ 3–5 giọt, massage 30 giây, lau sạch',
         ingredients: 'Nước muối sinh lý, chiết xuất tràm trà, lô hội, chất làm dịu. Không cồn, không kháng sinh.',
       },
       {
-        name: 'FS-06 — Nước xả lông mềm mượt',
-        who: 'FS-06',
+        name: 'FURRYSHINE - Nước xả lông mềm mượt',
+        who: 'FURRYSHINE',
         desc: 'Chống rối, giảm rụng lông nhờ glycerin thực vật, vitamin E và chiết xuất cúc la mã nuôi dưỡng từ chân lông. Không silicone, không paraben. Hương thơm tự nhiên lưu hương nhẹ.',
         ph: 'pH 6.8–7.2',
         temp: 'Sau khi tắm, massage 2–3 phút rồi xả sạch',
@@ -162,7 +162,7 @@ export default function Formula() {
         </div>
         <div className="formula-grid">
           {current.specs.map((s) => (
-            <div className="formula-card" key={s.who}>
+            <div className="formula-card" key={s.name}>
               <div className="formula-card-head">
                 <span className="formula-code">{s.who}</span>
                 <h3>{s.name}</h3>
