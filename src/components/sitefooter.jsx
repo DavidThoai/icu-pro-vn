@@ -8,11 +8,11 @@ export default function SiteFooter() {
       <div className="wrap footer-grid">
         <div>
           <div className="f-logos">
-          <img src={logoDanghan} alt="DANGHAN" data-title="DANG HAN TAP CO., LTD" className="f-logo" />
-          <img src={logoIcu} alt="ICU" data-title="ICU.PRO.VN" className="f-logo" />
-          <img src={logoFurry} alt="FurryShine" data-title="FURRYSHINE PET" className="f-logo" />
-          <a href="//www.dmca.com/Protection/Status.aspx?ID=42b6b10d-2dcf-4aad-9ba6-2e92856c864d" title="DMCA.com Protection Status" className="dmca-badge">
-            <img src="https://images.dmca.com/Badges/dmca_protected_sml_120g.png?ID=42b6b10d-2dcf-4aad-9ba6-2e92856c864d" alt="DMCA.com Protection Status" className="f-logo" />
+          <span className="f-logo-item" data-title="DANG HAN TAP CO., LTD"><img src={logoDanghan} alt="DANGHAN" className="f-logo" /></span>
+          <span className="f-logo-item" data-title="ICU.PRO.VN"><img src={logoIcu} alt="ICU" className="f-logo" /></span>
+          <span className="f-logo-item" data-title="FURRYSHINE PET"><img src={logoFurry} alt="FurryShine" className="f-logo" /></span>
+          <a href="//www.dmca.com/Protection/Status.aspx?ID=42b6b10d-2dcf-4aad-9ba6-2e92856c864d" title="DMCA.com Protection Status" className="dmca-badge f-logo-item">
+            <img src="https://images.dmca.com/Badges/dmca_protected_sml_120g.png?ID=42b6b10d-2dcf-4aad-9ba6-2e92856c864d" alt="DMCA.com Protection Status" className="f-logo f-logo-dmca" />
           </a>
           <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js" />
         </div>

@@ -2517,12 +2517,13 @@ html {
   padding-block: 6px;
 }
 
-/* Tooltip ten logo thuong hieu */
-.f-logos .f-logo[data-title] {
+/* Tooltip ten logo thuong hieu (tren wrapper, khong dung img::after) */
+.f-logos .f-logo-item {
   position: relative;
-  cursor: help;
+  display: inline-block;
+  line-height: 0;
 }
-.f-logos .f-logo[data-title]::after {
+.f-logos .f-logo-item[data-title]::after {
   content: attr(data-title);
   position: absolute;
   bottom: calc(100% + 10px);
@@ -2542,7 +2543,13 @@ html {
   transition: opacity 160ms ease, transform 160ms ease;
   z-index: 30;
 }
-.f-logos .f-logo[data-title]:hover::after {
+.f-logos .f-logo-item[data-title]:hover::after {
   opacity: 1;
   transform: translateX(-50%) scale(1);
+}
+
+/* Logo DMCA chung thuc: dai gap doi (176px), ro rang nhat */
+.f-logos .f-logo.f-logo-dmca {
+  width: 176px;
+  height: 88px;
 }
