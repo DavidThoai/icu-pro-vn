@@ -107,6 +107,9 @@ h2 em {
   font-size: 21px;
   line-height: 1.55;
   color: var(--ink-soft);
+  text-wrap: pretty;
+  orphans: 2;
+  widows: 2;
 }
 
 section {
@@ -128,6 +131,9 @@ section {
   line-height: 1.55;
   color: var(--on-dark-muted);
   max-width: 56ch;
+  text-wrap: pretty;
+  orphans: 2;
+  widows: 2;
 }
 
 /* ---------- Buttons ---------- */
@@ -426,6 +432,8 @@ section {
   font-weight: 800;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  line-height: 1.25;
+  text-wrap: balance;
   color: #2563eb;
   background: linear-gradient(115deg,
     #1d4ed8 30%,
@@ -690,7 +698,7 @@ section {
 .product-head {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
 }
 
 /* Tabs */
@@ -735,6 +743,10 @@ section {
   font-size: 16.5px;
   line-height: 1.55;
   color: var(--on-dark-muted);
+  text-wrap: pretty;
+  orphans: 2;
+  widows: 2;
+  overflow-wrap: break-word;
 }
 
 .product-use,
@@ -743,6 +755,10 @@ section {
   font-size: 16.5px;
   line-height: 1.55;
   color: var(--on-dark-muted);
+  text-wrap: pretty;
+  orphans: 2;
+  widows: 2;
+  overflow-wrap: break-word;
 }
 
 .product:hover .product-body {
@@ -763,12 +779,15 @@ section {
   letter-spacing: 0.04em;
 }
 
-.product h4 {
+ .product h4 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: 700;
-  line-height: 1.3;
+  line-height: 1.35;
   color: var(--on-dark);
+  text-wrap: balance;
+  orphans: 2;
+  widows: 2;
 }
 
 .product .eng {
@@ -791,9 +810,10 @@ section {
 .product .claims li {
   position: relative;
   padding-left: 14px;
-  font-size: 17.5px;
+  font-size: 15.5px;
   line-height: 1.5;
   color: var(--on-dark-muted);
+  text-wrap: pretty;
 }
 
 .product .claims li::before {
@@ -1274,7 +1294,9 @@ section {
   margin: 0;
   font-size: 22px;
   font-weight: 800;
+  line-height: 1.3;
   color: var(--on-dark);
+  text-wrap: balance;
   text-shadow:
     0 1px 0 oklch(0.95 0.01 250),
     0 2px 3px oklch(0.3 0.02 260 / 0.35),
@@ -1492,9 +1514,10 @@ section {
   }
   .product h4 {
     font-size: 1.15rem;
+    line-height: 1.35;
   }
   .product .claims li {
-    font-size: 15px;
+    font-size: 14px;
   }
   .product-seo,
   .product-use,

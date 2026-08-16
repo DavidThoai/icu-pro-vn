@@ -114,7 +114,7 @@ const families = [
         formula: 'Công thức 1 thành phần, phản ứng nhanh với oxide sắt, không gây ăn mòn thép.',
       },
       {
-        img: c368, alt: 'ICU C368 vệ sinh đa năng dàn lạnh máy giặt', code: 'C368', name: 'Vệ sinh đa năng Máy Lạnh - Dàn Nóng - Lồng Máy Giặt',
+        img: c368, alt: 'ICU C368 vệ sinh đa năng dàn lạnh máy giặt', code: 'C368', name: 'Vệ sinh đa năng Máy Lạnh - Dàn Nóng - Lồng Máy Giặt',
         gallery: [c368_1, c368_2, c368_3, c368_4],
         video: c368Video,
         seo: 'ICU C368 dung dịch vệ sinh đa năng cho dàn lạnh, dàn nóng điều hòa và lồng máy giặt. Diệt khuẩn 99%, không acid, không ăn mòn. Đánh bay cặn canxi, khử mùi nấm mốc.',
