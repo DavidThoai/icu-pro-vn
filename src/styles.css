@@ -2604,22 +2604,24 @@ html {
   top: 4px;
   left: 4px;
   z-index: 3;
-  width: 56px;
+  width: 76px;
   height: auto;
   pointer-events: none;
+  transform-origin: top left;
+  transform: rotate(-30deg);
   filter: drop-shadow(0 2px 4px oklch(0.3 0.06 25 / 0.22));
   transition: transform 160ms ease;
 }
 .product:hover .product-img .badge-img {
-  transform: scale(1.06);
+  transform: rotate(-30deg) scale(1.06);
 }
 @media (max-width: 620px) {
   .product-img .badge-img {
     top: 3px;
     left: 3px;
-    width: 48px;
+    width: 65px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
-  .product:hover .product-img .badge-img { transform: none; }
+  .product:hover .product-img .badge-img { transform: rotate(-30deg); }
 }
