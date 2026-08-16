@@ -78,8 +78,6 @@ import fs03_2 from '../images/fs03-2.jpg'
 import fs03_3 from '../images/fs03-3.jpg'
 import fs03_4 from '../images/fs03-4.jpg'
 import fs03Video from '../images/fs03-video.mp4'
-import stamp15 from '../images/stamp-15.png'
-
 const families = [
   {
     code: 'DUNG DỊCH TẨY RỬA CÔNG NGHIỆP · GARA',
@@ -87,7 +85,7 @@ const families = [
     id: 'tay-rua-cong-nghiep',
     items: [
       {
-        img: t889, alt: 'ICU T889 tẩy carbon động cơ', code: 'T889', name: 'Tẩy carbon động cơ',
+        img: t889, alt: 'ICU T889 tẩy carbon động cơ', code: 'T889', name: 'Tẩy carbon động cơ', badge: 'bestseller',
         gallery: [t889_5, t889_6, t889_7, t889_8],
         video: t889Video,
         seo: 'Dung dịch tẩy carbon động cơ ICU T889 chuyên dụng cho hệ thống xả ô tô. Đánh bay cặn carbon tích tụ trên DPF, SCR, EGR, giúp tăng lực máy và giảm hao nhiên liệu. Tương thích chuẩn khí thải Euro 4, 5, 6.',
@@ -96,7 +94,7 @@ const families = [
         formula: 'Dung dịch kiềm tính chuyên dụng, an toàn cho hệ thống xúc tác DPF · SCR · EGR. Không chứa acid, không ăn mòn kim loại.',
       },
       {
-        img: c268, alt: 'ICU C268 tẩy rửa sàn đa năng công nghiệp', code: 'C268', name: 'Tẩy rửa sàn đa năng',
+        img: c268, alt: 'ICU C268 tẩy rửa sàn đa năng công nghiệp', code: 'C268', name: 'Tẩy rửa sàn đa năng', badge: 'pro',
         gallery: [c268_1, c268_2, c268_3, c268_4],
         video: c268Video,
         seo: 'ICU C268 dung dịch tẩy rửa sàn đa năng công nghiệp, gốc kiềm mạnh, loại bỏ dầu mỡ và ố vàng trên đá cẩm thạch, hoa cương, gạch men. Phù hợp nhà xưởng, xí nghiệp, gia dụng.',
@@ -105,7 +103,7 @@ const families = [
         formula: 'Thành phần: MEG, trinatri phosphat, metasilicat natri, KOH, LAS. Không trộn với hóa chất khác.',
       },
       {
-        img: c369, alt: 'ICU C369 tẩy rỉ sét chuyên dụng', code: 'C369', name: 'Tẩy rỉ sét chuyên dụng',
+        img: c369, alt: 'ICU C369 tẩy rỉ sét chuyên dụng', code: 'C369', name: 'Tẩy rỉ sét chuyên dụng', badge: 'pro',
         gallery: [c369_1, c369_2, c369_3, c369_4],
         video: c369Video,
         seo: 'ICU C369 dung dịch tẩy rỉ sét chuyên dụng cho sắt thép. Công thức 1 thành phần, không ăn mòn thép, không ảnh hưởng bê tông cốt thép. Tiết kiệm thời gian và chi phí nhân công.',
@@ -114,7 +112,7 @@ const families = [
         formula: 'Công thức 1 thành phần, phản ứng nhanh với oxide sắt, không gây ăn mòn thép.',
       },
       {
-        img: c368, alt: 'ICU C368 vệ sinh đa năng dàn lạnh máy giặt', code: 'C368', name: 'Vệ sinh Máy Lạnh - Dàn Nóng - Lồng Máy Giặt',
+        img: c368, alt: 'ICU C368 vệ sinh đa năng dàn lạnh máy giặt', code: 'C368', badge: 'new', name: 'Vệ sinh Máy Lạnh - Dàn Nóng - Lồng Máy Giặt',
         gallery: [c368_1, c368_2, c368_3, c368_4],
         video: c368Video,
         seo: 'ICU C368 dung dịch vệ sinh đa năng cho dàn lạnh, dàn nóng điều hòa và lồng máy giặt. Diệt khuẩn 99%, không acid, không ăn mòn. Đánh bay cặn canxi, khử mùi nấm mốc.',
@@ -123,7 +121,7 @@ const families = [
         formula: 'Dung dịch gốc kiềm cao, không acid, an toàn cho nhôm và đồng. Diệt khuẩn 99%.',
       },
       {
-        img: c686, alt: 'ICU C686 trợ hàn thiếc nhôm inox', code: 'C686', name: 'Trợ hàn - Kim Loại',
+        img: c686, alt: 'ICU C686 trợ hàn thiếc nhôm inox', code: 'C686', badge: 'new', name: 'Trợ hàn - Kim Loại',
         gallery: [c686_1, c686_2, c686_3, c686_4],
         video: c686Video,
         seo: 'ICU C686 dung dịch trợ hàn chuyên dụng cho thiếc, nhôm và inox. Tăng độ bám dính mối hàn, vệ sinh mối hàn điện tử. Dùng trực tiếp, không cần pha loãng.',
@@ -139,7 +137,7 @@ const families = [
     id: 'vang-bac-da-quy',
     items: [
       {
-        img: a889, alt: 'ICU A889 tẩy rửa trang sức vàng bạc đá quý', code: 'A889', name: 'Tẩy rửa trang sức',
+        img: a889, alt: 'ICU A889 tẩy rửa trang sức vàng bạc đá quý', code: 'A889', badge: 'bestseller', name: 'Tẩy rửa trang sức',
         gallery: [ab_1, ab_2, ab_3, ab_4],
         video: abVideo,
         seo: 'ICU A889 dung dịch tẩy rửa trang sức chuyên dụng cho vàng, bạc, đá quý và kim cương. Sạch sáng tức thì, không hao mòn bề mặt. Hệ thống 2 dịch A + B, dung tích 250 ml.',
@@ -148,7 +146,7 @@ const families = [
         formula: 'Hệ thống 2 dịch A + B. Công thức dịu, không mài mòn, an toàn cho da tay.',
       },
       {
-        img: b889, alt: 'ICU B889 tẩy rửa trang sức vết bẩn lâu ngày', code: 'B889', name: 'Tẩy rửa trang sức',
+        img: b889, alt: 'ICU B889 tẩy rửa trang sức vết bẩn lâu ngày', code: 'B889', badge: 'pro', name: 'Tẩy rửa trang sức',
         gallery: [ab_1, ab_2, ab_3, ab_4],
         video: abVideo,
         seo: 'ICU B889 dung dịch tẩy rửa trang sức xử lý vết bẩn lâu ngày. Hệ thống 2 dịch A + B cho vàng, bạc, đá quý, kim cương. Sạch sáng, không hao mòn. Dung tích 200 ml.',
@@ -157,7 +155,7 @@ const families = [
         formula: 'Dịch B đậm đặc, kết hợp dịch A tạo phản ứng làm sạch sâu. Không hao mòn kim loại và đá quý.',
       },
       {
-        img: sieuam_1, alt: 'ICU Dung dịch siêu âm rửa trang sức vàng bạc đá quý', code: 'SIÊU ÂM', name: 'Rửa siêu âm',
+        img: sieuam_1, alt: 'ICU Dung dịch siêu âm rửa trang sức vàng bạc đá quý', code: 'SIÊU ÂM', name: 'Rửa siêu âm', badge: 'new',
         gallery: [sieuam_2, sieuam_3, sieuam_4, sieuam_5],
         video: sieuamVideo,
         seo: 'ICU Dung dịch siêu âm 200ml chuyên dụng cho máy rửa siêu âm. Làm sạch sâu và sáng bóng vàng, bạc, đá quý, kim cương, đồng hồ, kính mắt trong 15-60 giây. Công thức an toàn, không hao mòn, bảo vệ trang sức.',
@@ -182,7 +180,7 @@ const families = [
     accent: 'mint',
     items: [
       {
-        img: pet_1, alt: 'Furryshine Pet sữa tắm thảo dược yến mạch', code: 'FURRYSHINE', name: 'Sữa tắm thảo dược Yến mạch',
+        img: pet_1, alt: 'Furryshine Pet sữa tắm thảo dược yến mạch', code: 'FURRYSHINE', name: 'Sữa tắm thảo dược Yến mạch', badge: 'bestseller',
         gallery: [pet_2, pet_3, pet_4, pet_5],
         video: petVideo,
         seo: 'Furryshine Pet sữa tắm thảo dược chiết xuất yến mạch, làm dịu da và giảm ngứa cho da nhạy cảm của chó mèo. pH 7.2 cân bằng chuẩn da thú cưng, không kích ứng mắt, 100% organic.',
@@ -191,7 +189,7 @@ const families = [
         formula: 'Chiết xuất yến mạch, Aloe Vera, Glycerin thực vật, pH 7.2. Không chứa SLS, paraben, cồn công nghiệp.',
       },
       {
-        img: pet_2, alt: 'Furryshine Pet sữa tắm tràm trà kháng khuẩn', code: 'FURRYSHINE', name: 'Sữa tắm Tràm trà',
+        img: pet_2, alt: 'Furryshine Pet sữa tắm tràm trà kháng khuẩn', code: 'FURRYSHINE', name: 'Sữa tắm Tràm trà', badge: 'bestseller',
         gallery: [pet_1, pet_3, pet_4, pet_5],
         video: petVideo,
         seo: 'Furryshine Pet sữa tắm tinh dầu tràm trà, kháng khuẩn tự nhiên, diệt nấm và khử mùi hôi hiệu quả. An toàn cho da nhạy cảm, không gây kích ứng. Phù hợp chó mèo năng động.',
@@ -200,7 +198,7 @@ const families = [
         formula: 'Tinh dầu tràm trà (tea tree oil), chiết xuất cúc la mã, Glycerin thực vật. Không paraben, không SLS.',
       },
       {
-        img: fs03_main, alt: 'Furryshine Enzyme khử mùi nước tiểu thú cưng', code: 'FURRYSHINE', name: 'Enzyme Khử Mùi Nước Tiểu (Pet)',
+        img: fs03_main, alt: 'Furryshine Enzyme khử mùi nước tiểu thú cưng', code: 'FURRYSHINE', name: 'Enzyme Khử Mùi Nước Tiểu (Pet)', badge: 'bestseller',
         gallery: [fs03_1, fs03_2, fs03_3, fs03_4],
         video: fs03Video,
         seo: 'Furryshine Enzyme khử mùi nước tiểu, phân chó mèo tận gốc bằng enzyme tự nhiên. Diệt khuẩn 99,9%, an toàn tuyệt đối cho thú cưng và gia đình. Dùng cho nền nhà, chuồng nuôi, khay vệ sinh, nệm thú cưng. Hương bạc hà tự nhiên, thân thiện môi trường.',
@@ -218,7 +216,7 @@ const families = [
         formula: 'Chiết xuất hoa, yến mạch, nước tinh khiết. Không cồn, không kích ứng da.',
       },
       {
-        img: pet_5, alt: 'Furryshine Pet dung dịch vệ sinh tai', code: 'FURRYSHINE', name: 'Dung dịch vệ sinh tai',
+        img: pet_5, alt: 'Furryshine Pet dung dịch vệ sinh tai', code: 'FURRYSHINE', name: 'Dung dịch vệ sinh tai', badge: 'new',
         gallery: [pet_1, pet_2, pet_3, pet_4],
         video: petVideo,
         seo: 'Furryshine Pet dung dịch vệ sinh tai chuyên dụng, làm sạch ráy tai và ngừa viêm. Dịu nhẹ, không cay, an toàn cho chó mèo. Dùng định kỳ 1–2 lần mỗi tuần.',
@@ -252,7 +250,16 @@ function ProductCard({ p }) {
   const currentImg = activeImg >= 0 ? allThumbs[activeImg] : null
   return (
     <article className="product" key={p.name}>
-      <img src={stamp15} alt="Giảm giá 15%" className="stamp-discount" />
+      {p.badge && (
+              <span className={`badge badge-${p.badge}`} role="status">
+                <svg className="badge-icon" aria-hidden="true" viewBox="0 0 12 12">
+                  {p.badge === 'bestseller' && <path d="M6 1l1.4 3.2 3.5.3-2.7 2.3.8 3.4L6 8.6 3 10.2l.8-3.4L1.1 4.5l3.5-.3z" fill="currentColor" />}
+                  {p.badge === 'new' && <path d="M6 1.5L9.5 6 6 10.5 2.5 6z" fill="currentColor" opacity=".9" />}
+                  {p.badge === 'pro' && <path d="M2 6.2L4.8 9 10 3.6 8.9 2.5 4.8 6.8 3.1 5.1z" fill="currentColor" />}
+                </svg>
+                {p.badge === 'bestseller' ? 'Bestseller' : p.badge === 'new' ? 'New Formula' : 'Pro Choice'}
+              </span>
+            )}
       <div className="product-img">
         {showVideo ? (
           <video src={p.video} controls autoPlay loop muted playsInline />

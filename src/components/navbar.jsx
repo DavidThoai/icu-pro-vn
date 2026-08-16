@@ -15,7 +15,7 @@ export default function NavBar({ scrolled }) {
           <a href="#furryshine" className="nav-item nav-mint">Furryshine Pet</a>
           <a href="#cong-thuc" className="nav-item nav-violet">Công Thức &amp; Sử Dụng</a>
           <a href="#lien-he" className="btn btn-accent btn-sm nav-cta">
-            Tư Vấn Sản Phẩm
+            Cần Tư Vấn Sản Phẩm ICU & Furryshine
           </a>
         </nav>
       </div>
