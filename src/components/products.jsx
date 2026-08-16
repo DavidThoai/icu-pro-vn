@@ -251,8 +251,8 @@ function ProductCard({ p }) {
   const currentImg = activeImg >= 0 ? allThumbs[activeImg] : null
   return (
     <article className="product" key={p.name}>
+      <img src={badgeCongThucMoi} alt="Công thức mới cải tiến" className="badge-img" loading="lazy" />
       <div className="product-img">
-        <img src={badgeCongThucMoi} alt="Công thức mới cải tiến" className="badge-img" loading="lazy" />
         {showVideo ? (
           <video src={p.video} controls autoPlay loop muted playsInline />
         ) : (

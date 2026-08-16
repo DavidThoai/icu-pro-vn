@@ -149,7 +149,7 @@ export default function Contact() {
               </div>
 
               <div className="field">
-                <label htmlFor="f-need">Bạn là</label>
+                <label htmlFor="f-need">Sử dụng gia đình</label>
                 <select id="f-need" name="need" value={values.need} onChange={set('need')}>
                   <option value="family">Sử dụng gia đình</option>
                   <option value="garage">Gara - Vệ Sinh Công Nghiệp - Nhà Bán Lẻ</option>

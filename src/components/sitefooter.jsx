@@ -23,7 +23,7 @@ export default function SiteFooter() {
           <a href="#vang-bac-da-quy" className="nav-item nav-gold">Vàng · Bạc · Đá Quý</a>
           <a href="#furryshine" className="nav-item nav-mint">Furryshine Pet</a>
           <a href="#cong-thuc" className="nav-item nav-violet">Công Thức &amp; Sử Dụng</a>
-          <a href="#lien-he" className="nav-item nav-red">Cần Tư Vấn Sản Phẩm ICU & Furryshine</a>
+          <a href="#lien-he" className="nav-item nav-red">Tư Vấn Sản Phẩm</a>
         </nav>
         </div>
         <div className="f-meta">
@@ -40,7 +40,7 @@ export default function SiteFooter() {
         <span className="fc-gold" data-label="Vàng · Bạc · Đá Quý" />
         <span className="fc-mint" data-label="Furryshine Pet" />
         <span className="fc-violet" data-label="Công Thức & Sử Dụng" />
-        <span className="fc-red" data-label="Cần Tư Vấn Sản Phẩm ICU & Furryshine" />
+        <span className="fc-red" data-label="Tư Vấn Sản Phẩm" />
       </div>
     </footer>
   )
