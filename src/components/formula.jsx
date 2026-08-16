@@ -14,7 +14,7 @@ const tabs = [
         ingredients: 'Chất hoạt động bề mặt phi ion, polymer phân tán, kiềm hữu cơ, dung môi glycol ether, nước tinh khiết.',
       },
       {
-        name: 'C268 — Tẩy rửa sàn đá công nghiệp',
+        name: 'C268 — Tẩy rửa sàn đa năng công nghiệp',
         who: 'C268',
         desc: 'Công thức gốc kiềm mạnh (KOH + metasilicat natri) kết hợp LAS (alkylbenzene sulfonate) để đánh tan dầu mỡ, ố vàng trên đá cẩm thạch, hoa cương, gạch men. MEG (monoethylene glycol) giúp dung dịch thấm sâu vào vi mạch bề mặt đá. Không dùng cho nhôm.',
         ph: 'pH 12.5–13.5',
@@ -30,7 +30,7 @@ const tabs = [
         ingredients: 'Acid phosphoric, chất ức chế ăn mòn hữu cơ, chất thấm ướt, nước tinh khiết.',
       },
       {
-        name: 'C368 — Vệ sinh đa năng',
+        name: 'C368 — Vệ sinh đa năng Máy Lạnh - Dàn Nóng - Lồng Máy Giặt',
         who: 'C368',
         desc: 'Dung dịch gốc kiềm cao, không acid, an toàn cho nhôm và đồng. Kết hợp chất diệt khuẩn (quaternary ammonium compound) diệt 99% vi khuẩn, nấm mốc. Đánh bay cặn canxi (limescale) trên dàn lạnh, dàn nóng. Khử mùi nấm mốc bằng enzym phân giải.',
         ph: 'pH 10.5–11.5',
@@ -38,7 +38,7 @@ const tabs = [
         ingredients: 'Kiềm hữu cơ, QAC (chất diệt khuẩn), enzym phân giải, chất bám dính, nước tinh khiết.',
       },
       {
-        name: 'C686 — Trợ hàn',
+        name: 'C686 — Trợ hàn - Kim Loại',
         who: 'C686',
         desc: 'Dung dịch trợ hàn (flux) chuyên dụng cho thiếc, nhôm, inox. Chứa hoạt chất tăng tính ướt (wetting agent) và chất làm sạch bề mặt mối hàn. Loại bỏ oxide lớp mỏng trên bề mặt kim loại trước khi hàn, giúp mối hàn bám dính chắc. Dạng lỏng, dùng trực tiếp, có mũi kim chính xác.',
         ph: 'pH 2.0–3.0',

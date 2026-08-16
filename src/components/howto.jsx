@@ -8,7 +8,7 @@ const uses = [
   },
   {
     code: 'C268',
-    what: 'Tẩy rửa sàn đá công nghiệp',
+    what: 'Tẩy rửa sàn đa năng công nghiệp',
     how: 'Pha loãng theo độ bẩn: bẩn ít 1/30 · trung bình 1/20 · rất bẩn 1/10',
     time: 'Thấm 5–10 phút',
     note: 'Đeo găng tay & kính bảo hộ; không trộn với hóa chất khác',

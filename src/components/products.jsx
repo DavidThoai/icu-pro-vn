@@ -96,16 +96,16 @@ const families = [
         formula: 'Dung dịch kiềm tính chuyên dụng, an toàn cho hệ thống xúc tác DPF · SCR · EGR. Không chứa acid, không ăn mòn kim loại.',
       },
       {
-        img: c268, alt: 'ICU C268 tẩy rửa sàn đá công nghiệp', code: 'C268', name: 'Tẩy rửa sàn đá',
+        img: c268, alt: 'ICU C268 tẩy rửa sàn đa năng công nghiệp', code: 'C268', name: 'Tẩy rửa sàn đa năng',
         gallery: [c268_1, c268_2, c268_3, c268_4],
         video: c268Video,
-        seo: 'ICU C268 dung dịch tẩy rửa sàn đá công nghiệp, gốc kiềm mạnh, loại bỏ dầu mỡ và ố vàng trên đá cẩm thạch, hoa cương, gạch men. Phù hợp nhà xưởng, xí nghiệp, gia dụng.',
+        seo: 'ICU C268 dung dịch tẩy rửa sàn đa năng công nghiệp, gốc kiềm mạnh, loại bỏ dầu mỡ và ố vàng trên đá cẩm thạch, hoa cương, gạch men. Phù hợp nhà xưởng, xí nghiệp, gia dụng.',
         claims: ['Gốc kiềm mạnh – dầu mỡ, ố vàng', 'Đá cẩm thạch · hoa cương · gạch men'],
         use: 'Pha loãng theo độ bẩn: bẩn ít 1/30, trung bình 1/20, rất bẩn 1/10. Thấm 5–10 phút rồi lau sạch. Đeo găng tay và kính bảo hộ.',
         formula: 'Thành phần: MEG, trinatri phosphat, metasilicat natri, KOH, LAS. Không trộn với hóa chất khác.',
       },
       {
-        img: c369, alt: 'ICU C369 tẩy rỉ sét chuyên dụng', code: 'C369', name: 'Tẩy rỉ sét',
+        img: c369, alt: 'ICU C369 tẩy rỉ sét chuyên dụng', code: 'C369', name: 'Tẩy rỉ sét chuyên dụng',
         gallery: [c369_1, c369_2, c369_3, c369_4],
         video: c369Video,
         seo: 'ICU C369 dung dịch tẩy rỉ sét chuyên dụng cho sắt thép. Công thức 1 thành phần, không ăn mòn thép, không ảnh hưởng bê tông cốt thép. Tiết kiệm thời gian và chi phí nhân công.',
@@ -114,7 +114,7 @@ const families = [
         formula: 'Công thức 1 thành phần, phản ứng nhanh với oxide sắt, không gây ăn mòn thép.',
       },
       {
-        img: c368, alt: 'ICU C368 vệ sinh đa năng dàn lạnh máy giặt', code: 'C368', name: 'Vệ sinh đa năng',
+        img: c368, alt: 'ICU C368 vệ sinh đa năng dàn lạnh máy giặt', code: 'C368', name: 'Vệ sinh đa năng Máy Lạnh - Dàn Nóng - Lồng Máy Giặt',
         gallery: [c368_1, c368_2, c368_3, c368_4],
         video: c368Video,
         seo: 'ICU C368 dung dịch vệ sinh đa năng cho dàn lạnh, dàn nóng điều hòa và lồng máy giặt. Diệt khuẩn 99%, không acid, không ăn mòn. Đánh bay cặn canxi, khử mùi nấm mốc.',
@@ -123,7 +123,7 @@ const families = [
         formula: 'Dung dịch gốc kiềm cao, không acid, an toàn cho nhôm và đồng. Diệt khuẩn 99%.',
       },
       {
-        img: c686, alt: 'ICU C686 trợ hàn thiếc nhôm inox', code: 'C686', name: 'Trợ hàn',
+        img: c686, alt: 'ICU C686 trợ hàn thiếc nhôm inox', code: 'C686', name: 'Trợ hàn - Kim Loại',
         gallery: [c686_1, c686_2, c686_3, c686_4],
         video: c686Video,
         seo: 'ICU C686 dung dịch trợ hàn chuyên dụng cho thiếc, nhôm và inox. Tăng độ bám dính mối hàn, vệ sinh mối hàn điện tử. Dùng trực tiếp, không cần pha loãng.',
