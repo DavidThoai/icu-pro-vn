@@ -2573,9 +2573,13 @@ html {
 
 /* Logo DMCA chung thuc: dai gap doi (176px), ro rang nhat */
 .f-logos .f-logo.f-logo-dmca {
-  width: 176px;
-  height: 88px;
+  width: 250px;
+  height: 50px;
   display: block;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
 }
 
 /* Thu nho khoi Lien He (eyebrow + h2 + lede) */
