@@ -42,7 +42,7 @@ export default function Contact() {
           <h2>
             Tư Vấn Nhanh <em>24/7</em>
           </h2>
-          <p className="lede">Gửi yêu cầu hỗ trợ đến ICU để nhận thông tin giải pháp phù hợp với nhu cầu của bạn. Chúng tôi sẽ phản hồi sớm nhất.</p>
+          <p className="lede">Gửi yêu cầu hỗ trợ đến ICU để nhận thông tin giải pháp phù hợp với nhu cầu của bạn. Đội ngũ ICU chúng tôi sẽ phản hồi sớm nhất.</p>
           <ul className="contact-info">
             <li>
               <span>Điện thoại</span>
