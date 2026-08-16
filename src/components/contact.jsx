@@ -40,9 +40,9 @@ export default function Contact() {
         <div className="contact-intro">
           <p className="eyebrow">Liên hệ</p>
           <h2>
-            Nhận tư vấn <em>&amp; báo giá</em>
+            Tư Vấn Nhanh <em>24/7</em>
           </h2>
-          <p className="lede">Hộ gia đình, gara, nhà bán lẻ hay đối tác phân phối — để lại thông tin, đội ngũ ICU sẽ liên hệ lại với bạn trong giờ làm việc.</p>
+          <p className="lede">Gửi yêu cầu hỗ trợ đến ICU để nhận thông tin giải pháp phù hợp với nhu cầu của bạn. Chúng tôi sẽ phản hồi sớm nhất.</p>
           <ul className="contact-info">
             <li>
               <span>Điện thoại</span>
@@ -157,7 +157,7 @@ export default function Contact() {
               <button type="submit" className="btn btn-accent btn-block btn-send">
                 GỬI YÊU CẦU
               </button>
-              <p className="form-note">LIÊN HỆ NGAY ĐỂ NHẬN CHÍNH SÁCH ƯU ĐÃI HÔM NAY.</p>
+              <p className="form-note">Đăng ký tư vấn để không bỏ lỡ các giải pháp tối ưu từ ICU.</p>
             </form>
           )}
         </div>

@@ -69,7 +69,7 @@ export default function PetCare() {
         </div>
         <div className="petcare-buy">
           <h3>Furryshine Pet — Sữa tắm & Tẩy rửa an toàn</h3>
-          <p className="petcare-price">Liên hệ để nhận báo giá ưu đãi</p>
+          <p className="petcare-price">Liên hệ để được tư vấn sản phẩm ưu đãi</p>
           <div className="petcare-actions">
             <a href="#lien-he" className="btn btn-petcare">Mua ngay</a>
             <a href="#lien-he" className="btn btn-petcare-sub">Đăng ký giao định kỳ −10%</a>
