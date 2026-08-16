@@ -2553,3 +2553,18 @@ html {
   width: 176px;
   height: 88px;
 }
+
+/* Thu nho khoi Lien He (eyebrow + h2 + lede) */
+.contact-intro .eyebrow {
+  font-size: 13px;
+  margin-bottom: 0.5rem;
+}
+.contact-intro h2 {
+  font-size: clamp(1.45rem, 3vw, 2.1rem);
+  line-height: 1.12;
+}
+.contact-intro .lede {
+  font-size: 15.5px;
+  line-height: 1.5;
+  margin-top: 0.6rem;
+}
