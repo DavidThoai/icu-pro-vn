@@ -2602,27 +2602,27 @@ html {
 /* ---------- Huy hiệu ảnh 3D (Sản phẩm bán chạy / Công thức mới / Lựa chọn chuyên gia) ---------- */
 .product-img .badge-img {
   position: absolute;
-  top: 11px;
-  left: 11px;
+  top: 9px;
+  left: 9px;
   z-index: 3;
   width: 99px;
   height: auto;
   pointer-events: none;
   transform-origin: center;
-  transform: rotate(-15deg);
+  transform: rotate(12deg);
   filter: drop-shadow(0 2px 4px oklch(0.3 0.06 25 / 0.22));
   transition: transform 160ms ease;
 }
 .product:hover .product-img .badge-img {
-  transform: rotate(-15deg) scale(1.06);
+  transform: rotate(12deg) scale(1.06);
 }
 @media (max-width: 620px) {
   .product-img .badge-img {
-    top: 9px;
-    left: 9px;
+    top: 8px;
+    left: 8px;
     width: 84px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
-  .product:hover .product-img .badge-img { transform: rotate(-15deg); }
+  .product:hover .product-img .badge-img { transform: rotate(12deg); }
 }
