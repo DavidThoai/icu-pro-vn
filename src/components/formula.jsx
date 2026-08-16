@@ -6,7 +6,7 @@ const tabs = [
     label: 'Industrial · Garage',
     specs: [
       {
-        name: 'T889 — Tẩy carbon động cơ',
+        name: 'T889 — Tẩy carbon động cơ',
         who: 'T889',
         desc: 'Dung dịch kiềm tính chuyên dụng, thành phần hoạt động bề mặt phi ion + chất phân tán polymer. Phá vỡ cấu trúc carbon cứng đầu tích tụ trên DPF, SCR, EGR mà không làm hỏng lớp xúc tác gốm. Tương thích chuẩn khí thải Euro 4, 5, 6. Không chứa acid clohydric, không ăn mòn kim loại chịu nhiệt.',
         ph: 'pH 11.5–12.5',
@@ -14,7 +14,7 @@ const tabs = [
         ingredients: 'Chất hoạt động bề mặt phi ion, polymer phân tán, kiềm hữu cơ, dung môi glycol ether, nước tinh khiết.',
       },
       {
-        name: 'C268 — Tẩy rửa sàn đa năng công nghiệp',
+        name: 'C268 — Tẩy rửa sàn đa năng công nghiệp',
         who: 'C268',
         desc: 'Công thức gốc kiềm mạnh (KOH + metasilicat natri) kết hợp LAS (alkylbenzene sulfonate) để đánh tan dầu mỡ, ố vàng trên đá cẩm thạch, hoa cương, gạch men. MEG (monoethylene glycol) giúp dung dịch thấm sâu vào vi mạch bề mặt đá. Không dùng cho nhôm.',
         ph: 'pH 12.5–13.5',
@@ -22,7 +22,7 @@ const tabs = [
         ingredients: 'MEG, trinatri phosphat, metasilicat natri, KOH, LAS, nước tinh khiết.',
       },
       {
-        name: 'C369 — Tẩy rỉ sét chuyên dụng',
+        name: 'C369 — Tẩy rỉ sét chuyên dụng',
         who: 'C369',
         desc: 'Công thức 1 thành phần dựa trên axit hữu cơ (phosphoric acid) ở nồng độ tối ưu. Phản ứng chọn lọc với oxide sắt (Fe₂O₃, Fe₃O₄) mà không ăn mòn thép nền. Không ảnh hưởng độ bám dính của bê tông cốt thép. Có chất ức chế ăn mòn để bảo vệ bề mặt thép sạch.',
         ph: 'pH 1.5–2.5',
@@ -30,7 +30,7 @@ const tabs = [
         ingredients: 'Acid phosphoric, chất ức chế ăn mòn hữu cơ, chất thấm ướt, nước tinh khiết.',
       },
       {
-        name: 'C368 — Vệ sinh Máy Lạnh - Dàn Nóng - Lồng Máy Giặt',
+        name: 'C368 — Vệ sinh Máy Lạnh - Dàn Nóng - Lồng Máy Giặt',
         who: 'C368',
         desc: 'Dung dịch gốc kiềm cao, không acid, an toàn cho nhôm và đồng. Kết hợp chất diệt khuẩn (quaternary ammonium compound) diệt 99% vi khuẩn, nấm mốc. Đánh bay cặn canxi (limescale) trên dàn lạnh, dàn nóng. Khử mùi nấm mốc bằng enzym phân giải.',
         ph: 'pH 10.5–11.5',
@@ -38,7 +38,7 @@ const tabs = [
         ingredients: 'Kiềm hữu cơ, QAC (chất diệt khuẩn), enzym phân giải, chất bám dính, nước tinh khiết.',
       },
       {
-        name: 'C686 — Trợ hàn - Kim Loại',
+        name: 'C686 — Trợ hàn - Kim Loại',
         who: 'C686',
         desc: 'Dung dịch trợ hàn (flux) chuyên dụng cho thiếc, nhôm, inox. Chứa hoạt chất tăng tính ướt (wetting agent) và chất làm sạch bề mặt mối hàn. Loại bỏ oxide lớp mỏng trên bề mặt kim loại trước khi hàn, giúp mối hàn bám dính chắc. Dạng lỏng, dùng trực tiếp, có mũi kim chính xác.',
         ph: 'pH 2.0–3.0',
@@ -52,7 +52,7 @@ const tabs = [
     label: 'Vàng · Bạc · Đá Quý',
     specs: [
       {
-        name: 'A889 — Tẩy rửa trang sức (Hệ A+B)',
+        name: 'A889 — Tẩy rửa trang sức (Hệ A+B)',
         who: 'A889',
         desc: 'Hệ thống 2 dịch A + B. Dịch A là dung dịch làm sạch nhẹ, gốc nước, chứa chất hoạt động bề mặt không ion và chất tạo phức (chelating agent) để loại bỏ vết bẩn hữu cơ, mồ hôi, cặn xà phòng trên vàng, bạc, đá quý, kim cương. Dịch B là dung dịch phản ứng nhanh, chứa chất khử oxide nhẹ, kích hoạt khi kết hợp với dịch A tạo bọt phản ứng làm sạch sâu.',
         ph: 'pH 7.0–8.0 (dịch A), pH 8.5–9.5 (sau pha)',
@@ -60,7 +60,7 @@ const tabs = [
         ingredients: 'Dịch A: chất hoạt động bề mặt phi ion, EDTA (chất tạo phức), nước tinh khiết. Dịch B: chất khử oxide nhẹ, carbonat natri, nước tinh khiết.',
       },
       {
-        name: 'B889 — Tẩy rửa trang sức (Đậm đặc)',
+        name: 'B889 — Tẩy rửa trang sức (Đậm đặc)',
         who: 'B889',
         desc: 'Dịch B đậm đặc, kết hợp dịch A tạo phản ứng làm sạch sâu cho vết bẩn lâu ngày. Pha 1 nắp nước + 3 giọt dịch B. Công thức không mài mòn (non-abrasive), an toàn cho mọi loại đá quý kể cả đá mềm (ngọc trai, opal) khi pha loãng đúng tỷ lệ.',
         ph: 'pH 9.0–10.0 (sau pha loãng)',
@@ -68,7 +68,7 @@ const tabs = [
         ingredients: 'Chất khử oxide, carbonat natri, metasilicat natri (tối thiểu), chất tạo phim bảo vệ, nước tinh khiết.',
       },
       {
-        name: 'Siêu Âm — Dung dịch rửa siêu âm',
+        name: 'Siêu Âm — Dung dịch rửa siêu âm',
         who: 'SIÊU ÂM',
         desc: 'Dung dịch chuyên dụng cho máy rửa siêu âm. Công thức gốc nước, không dung môi, thiết kế hoạt động dưới tần số sóng siêu âm (40kHz). Chất hoạt động bề mặt giảm sức căng bề mặt giúp sóng siêu âm len lỏi vào khe hở nhỏ nhất trên trang sức. Cavitation bubble bung ra loại bỏ vết bẩn ở những nơi bàn chải không với tới.',
         ph: 'pH 7.5–8.5',
@@ -76,7 +76,7 @@ const tabs = [
         ingredients: 'Chất hoạt động bề mặt phi ion (giảm sức căng bề mặt), chất tạo phức nhẹ, nước tinh khiết. Không dung môi, không acid.',
       },
       {
-        name: 'C819 — Vệ sinh trang sức bạc (Nano xanh)',
+        name: 'C819 — Vệ sinh trang sức bạc (Nano xanh)',
         who: 'C819',
         desc: 'Dung dịch chuyên dụng cho bạc, loại bỏ sulfide bạc (Ag₂S) — nguyên nhân gây ố đen. Cơ chế phản ứng chọn lọc: chất thiourea derivative phản ứng với sulfide bạc, hòa tan lớp ố mà không mài mòn bề mặt bạc. Phục hồi độ sáng bạc 925, sterling. An toàn cho da tay.',
         ph: 'pH 8.0–9.0',
@@ -90,7 +90,7 @@ const tabs = [
     label: 'Furryshine Pet',
     specs: [
       {
-        name: 'FURRYSHINE - Sữa tắm thảo dược Yến mạch',
+        name: 'FURRYSHINE - Sữa tắm thảo dược Yến mạch',
         who: 'FURRYSHINE',
         desc: 'Công thức organic chiết xuất yến mạch (oat extract) làm dịu da, giảm ngứa cho da nhạy cảm của chó mèo. Aloe Vera phục hồi da tổn thương, glycerin thực vật cấp ẩm sâu giữ lông mềm mượt. pH 7.2 cân bằng chuẩn da thú cưng, không kích ứng mắt.',
         ph: 'pH 7.2 (chuẩn da chó mèo)',
@@ -98,7 +98,7 @@ const tabs = [
         ingredients: 'Chiết xuất yến mạch, Aloe Vera, glycerin thực vật, chất tạo bọt tự nhiên (cocamidopropyl betaine), nước tinh khiết. Không SLS, không paraben, không cồn công nghiệp.',
       },
       {
-        name: 'FURRYSHINE - Sữa tắm Tràm trà',
+        name: 'FURRYSHINE - Sữa tắm Tràm trà',
         who: 'FURRYSHINE',
         desc: 'Tinh dầu tràm trà (tea tree oil) kháng khuẩn tự nhiên, diệt nấm, khử mùi hôi hiệu quả. Chiết xuất cúc la mã kháng viêm, làm dịu da nhạy cảm. An toàn cho chó mèo con, không gây kích ứng.',
         ph: 'pH 7.0–7.5',
@@ -106,7 +106,7 @@ const tabs = [
         ingredients: 'Tinh dầu tràm trà, chiết xuất cúc la mã, glycerin thực vật, chất tạo bọt tự nhiên, nước tinh khiết.',
       },
       {
-        name: 'FURRYSHINE - Enzyme Khử Mùi Nước Tiểu (Pet)',
+        name: 'FURRYSHINE - Enzyme Khử Mùi Nước Tiểu (Pet)',
         who: 'FURRYSHINE',
         desc: 'Diệt khuẩn 99% bằng hợp chất amoni bậc 4 (QAC) nồng độ an toàn, không để lại hóa chất độc hại khi thú cưng liếm. Dùng cho sàn nhà, chuồng nuôi, khu vực ăn uống. Hương tràm trà dịu nhẹ.',
         ph: 'pH 7.5–8.5',
@@ -114,7 +114,7 @@ const tabs = [
         ingredients: 'QAC (chất diệt khuẩn), tinh dầu tràm trà, chất hoạt động bề mặt thực vật, nước tinh khiết.',
       },
       {
-        name: 'FURRYSHINE - Xịt khử mùi lông',
+        name: 'FURRYSHINE - Xịt khử mùi lông',
         who: 'FURRYSHINE',
         desc: 'Khử mùi hôi giữa các lần tắm bằng chiết xuất hoa và yến mạch. Không cồn, không kích ứng da, an toàn cho thú cưng con. Hương hoa nhẹ nhàng, giúp lông thơm mát, mềm mượt mỗi ngày.',
         ph: 'pH 6.5–7.0',
@@ -122,7 +122,7 @@ const tabs = [
         ingredients: 'Chiết xuất hoa, chiết xuất yến mạch, nước tinh khiết, chất dưỡng ẩm thực vật. Không cồn.',
       },
       {
-        name: 'FURRYSHINE - Dung dịch vệ sinh tai',
+        name: 'FURRYSHINE - Dung dịch vệ sinh tai',
         who: 'FURRYSHINE',
         desc: 'Làm sạch ráy tai, ngừa viêm bằng nước muối sinh lý kết hợp tràm trà và lô hội. Dịu nhẹ, không cay, không cồn. Dùng định kỳ 1–2 lần/tuần giúp tai chó mèo luôn sạch và khỏe.',
         ph: 'pH 7.0–7.5',
@@ -130,7 +130,7 @@ const tabs = [
         ingredients: 'Nước muối sinh lý, chiết xuất tràm trà, lô hội, chất làm dịu. Không cồn, không kháng sinh.',
       },
       {
-        name: 'FURRYSHINE - Nước xả lông mềm mượt',
+        name: 'FURRYSHINE - Nước xả lông mềm mượt',
         who: 'FURRYSHINE',
         desc: 'Chống rối, giảm rụng lông nhờ glycerin thực vật, vitamin E và chiết xuất cúc la mã nuôi dưỡng từ chân lông. Không silicone, không paraben. Hương thơm tự nhiên lưu hương nhẹ.',
         ph: 'pH 6.8–7.2',

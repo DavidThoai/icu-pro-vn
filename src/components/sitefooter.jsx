@@ -12,7 +12,11 @@ export default function SiteFooter() {
           <span className="f-logo-item" data-title="ICU.PRO.VN"><img src={logoIcu} alt="ICU" className="f-logo" /></span>
           <span className="f-logo-item" data-title="FURRYSHINE PET"><img src={logoFurry} alt="FurryShine" className="f-logo" /></span>
           <a href="//www.dmca.com/Protection/Status.aspx?ID=42b6b10d-2dcf-4aad-9ba6-2e92856c864d" data-title="DMCA.com Protection Status" className="dmca-badge f-logo-item">
-            <img src="https://images.dmca.com/Badges/dmca_protected_sml_120g.png?ID=42b6b10d-2dcf-4aad-9ba6-2e92856c864d" alt="DMCA.com Protection Status" className="f-logo f-logo-dmca" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="176" height="88" viewBox="0 0 176 88" role="img" aria-label="DMCA.com Protection Status" className="f-logo f-logo-dmca">
+              <rect x="1.5" y="1.5" width="173" height="85" rx="7" fill="#8DC642" stroke="#232323" strokeWidth="3" />
+              <text x="60" y="46" textAnchor="middle" dominantBaseline="central" fill="#FFFFFF" fontFamily="Arial, Helvetica, sans-serif" fontWeight="800" fontSize="21" letterSpacing="1">PROTECTED</text>
+              <text x="140" y="46" textAnchor="middle" dominantBaseline="central" fill="#FFFFFF" fontFamily="Arial, Helvetica, sans-serif" fontWeight="800" fontSize="21" letterSpacing="1">DMCA</text>
+            </svg>
           </a>
           <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js" />
         </div>

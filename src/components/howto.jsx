@@ -22,7 +22,7 @@ const uses = [
   },
   {
     code: 'C368',
-    what: 'Vệ sinh dàn lạnh – dàn nóng & lồng máy giặt',
+    what: 'Vệ sinh dàn lạnh – dàn nóng & lồng máy giặt',
     how: 'Dàn lạnh/nóng: pha 1:1–1:6 · lồng máy giặt: đổ thẳng 100–200 ml mỗi chu trình',
     time: '5–10 phút',
     note: 'Không acid – không ăn mòn',

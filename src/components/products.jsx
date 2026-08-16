@@ -82,7 +82,7 @@ import stamp15 from '../images/stamp-15.png'
 
 const families = [
   {
-    code: 'DUNG DỊCH TẨY RỬA CÔNG NGHIỆP · GARA',
+    code: 'DUNG DỊCH TẨY RỬA CÔNG NGHIỆP · GARA',
     accent: 'cyan',
     id: 'tay-rua-cong-nghiep',
     items: [
@@ -123,7 +123,7 @@ const families = [
         formula: 'Dung dịch gốc kiềm cao, không acid, an toàn cho nhôm và đồng. Diệt khuẩn 99%.',
       },
       {
-        img: c686, alt: 'ICU C686 trợ hàn thiếc nhôm inox', code: 'C686', name: 'Trợ hàn - Kim Loại',
+        img: c686, alt: 'ICU C686 trợ hàn thiếc nhôm inox', code: 'C686', name: 'Trợ hàn - Kim Loại',
         gallery: [c686_1, c686_2, c686_3, c686_4],
         video: c686Video,
         seo: 'ICU C686 dung dịch trợ hàn chuyên dụng cho thiếc, nhôm và inox. Tăng độ bám dính mối hàn, vệ sinh mối hàn điện tử. Dùng trực tiếp, không cần pha loãng.',
@@ -134,7 +134,7 @@ const families = [
     ],
   },
   {
-    code: 'DUNG DỊCH TẨY BẨN CHUYÊN DỤNG CHO VÀNG · BẠC · ĐÁ QUÝ',
+    code: 'DUNG DỊCH TẨY BẨN CHUYÊN DỤNG CHO VÀNG · BẠC · ĐÁ QUÝ',
     accent: 'gold',
     id: 'vang-bac-da-quy',
     items: [
@@ -166,7 +166,7 @@ const families = [
         formula: 'Dung dịch gốc nước, không dung môi, an toàn cho mọi loại trang sức và đá quý. Không gây hại da tay.',
       },
       {
-        img: silver, alt: 'ICU C819 vệ sinh trang sức bạc nano xanh', code: 'C819', name: 'Vệ sinh bạc – Nano xanh',
+        img: silver, alt: 'ICU C819 vệ sinh trang sức bạc nano xanh', code: 'C819', name: 'Vệ sinh bạc – Nano xanh',
         gallery: [silver_1, silver_2, silver_3, silver_4],
         video: c819Video,
         seo: 'ICU C819 dung dịch vệ sinh trang sức bạc Nano xanh chuyên dụng. Phục hồi độ sáng bạc, tẩy oxy hóa và ố đen. Phù hợp bạc 925 và sterling. Chai nhỏ gọn, dùng trực tiếp.',
@@ -177,7 +177,7 @@ const families = [
     ],
   },
   {
-    code: 'FURRYSHINE PET · CLEAN BEAUTY & SCIENCE',
+    code: 'FURRYSHINE PET · CLEAN BEAUTY & SCIENCE',
     id: 'furryshine',
     accent: 'mint',
     items: [

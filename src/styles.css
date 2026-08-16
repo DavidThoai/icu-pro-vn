@@ -2575,6 +2575,7 @@ html {
 .f-logos .f-logo.f-logo-dmca {
   width: 176px;
   height: 88px;
+  display: block;
 }
 
 /* Thu nho khoi Lien He (eyebrow + h2 + lede) */
