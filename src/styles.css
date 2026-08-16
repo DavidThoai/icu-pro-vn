@@ -2516,3 +2516,17 @@ html {
   display: inline-block;
   padding-block: 6px;
 }
+
+/* DMCA badge */
+.dmca-wrap {
+  text-align: center;
+  padding: 14px 0 20px;
+}
+.dmca-wrap .dmca-badge {
+  display: inline-block;
+  line-height: 0;
+}
+.dmca-wrap img {
+  max-width: 120px;
+  height: auto;
+}

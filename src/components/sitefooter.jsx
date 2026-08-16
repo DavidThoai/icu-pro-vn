@@ -29,6 +29,12 @@ export default function SiteFooter() {
           <p className="mst-line">MST: 0318386193 · Nơi cấp: Sở Kế hoạch và Đầu tư TP.HCM · Ngày cấp: 03/04/2024</p>
         </div>
       </div>
+        <div className="dmca-wrap">
+          <a href="//www.dmca.com/Protection/Status.aspx?ID=42b6b10d-2dcf-4aad-9ba6-2e92856c864d" title="DMCA.com Protection Status" className="dmca-badge">
+            <img src="https://images.dmca.com/Badges/dmca_protected_sml_120g.png?ID=42b6b10d-2dcf-4aad-9ba6-2e92856c864d" alt="DMCA.com Protection Status" />
+          </a>
+          <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js" />
+        </div>
       <div className="footer-colors">
         <span className="fc-blue" data-label="Sản Phẩm" />
         <span className="fc-cyan" data-label="Tẩy Rửa CN" />
