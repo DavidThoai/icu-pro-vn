@@ -2602,13 +2602,13 @@ html {
 /* ---------- Huy hiệu ảnh 3D (Sản phẩm bán chạy / Công thức mới / Lựa chọn chuyên gia) ---------- */
 .product-img .badge-img {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 18px;
+  left: 18px;
   z-index: 3;
   width: 99px;
   height: auto;
   pointer-events: none;
-  transform-origin: top left;
+  transform-origin: center;
   transform: rotate(-30deg);
   filter: drop-shadow(0 2px 4px oklch(0.3 0.06 25 / 0.22));
   transition: transform 160ms ease;
@@ -2618,8 +2618,8 @@ html {
 }
 @media (max-width: 620px) {
   .product-img .badge-img {
-    top: 0;
-    left: 0;
+    top: 15px;
+    left: 15px;
     width: 84px;
   }
 }
