@@ -2600,11 +2600,11 @@ html {
   }
 }
 /* ---------- Huy hiệu ảnh 3D (Sản phẩm bán chạy / Công thức mới / Lựa chọn chuyên gia) ---------- */
-.product > .badge-img {
+.product-img .badge-img {
   position: absolute;
-  top: -5px;
-  left: -5px;
-  z-index: 5;
+  top: 0;
+  left: 0;
+  z-index: 3;
   width: 99px;
   height: auto;
   pointer-events: none;
@@ -2613,16 +2613,16 @@ html {
   filter: drop-shadow(0 2px 4px oklch(0.3 0.06 25 / 0.22));
   transition: transform 160ms ease;
 }
-.product:hover > .badge-img {
+.product:hover .product-img .badge-img {
   transform: rotate(-30deg) scale(1.06);
 }
 @media (max-width: 620px) {
-  .product > .badge-img {
-    top: -4px;
-    left: -4px;
+  .product-img .badge-img {
+    top: 0;
+    left: 0;
     width: 84px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
-  .product:hover > .badge-img { transform: rotate(-30deg); }
+  .product:hover .product-img .badge-img { transform: rotate(-30deg); }
 }

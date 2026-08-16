@@ -149,9 +149,9 @@ export default function Contact() {
               </div>
 
               <div className="field">
-                <label htmlFor="f-need">Sử dụng gia đình</label>
+                <label htmlFor="f-need">Tôi Cần</label>
                 <select id="f-need" name="need" value={values.need} onChange={set('need')}>
-                  <option value="family">Sử dụng gia đình</option>
+                  <option value="family">Cần Tư Vấn Sản Phẩm ICU & Furryshine</option>
                   <option value="garage">Gara - Vệ Sinh Công Nghiệp - Nhà Bán Lẻ</option>
                   <option value="distributor">Đối Tác & Nhà Phân Phối</option>
                   <option value="business">Affiliate (tiếp thị liên kết) KOL & KOC</option>
