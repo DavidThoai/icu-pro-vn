@@ -529,7 +529,7 @@ section {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
   gap: clamp(10px, 1vw, 14px);
 }
 
@@ -781,7 +781,7 @@ section {
 
  .product h4 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.05rem;
   font-weight: 700;
   line-height: 1.35;
   color: var(--on-dark);
@@ -1513,7 +1513,7 @@ section {
     font-size: 1rem;
   }
   .product h4 {
-    font-size: 1.15rem;
+    font-size: 0.9rem;
     line-height: 1.35;
   }
   .product .claims li {

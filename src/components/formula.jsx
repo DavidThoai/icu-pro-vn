@@ -30,7 +30,7 @@ const tabs = [
         ingredients: 'Acid phosphoric, chất ức chế ăn mòn hữu cơ, chất thấm ướt, nước tinh khiết.',
       },
       {
-        name: 'C368 — Vệ sinh đa năng Máy Lạnh - Dàn Nóng - Lồng Máy Giặt',
+        name: 'C368 — Vệ sinh Máy Lạnh - Dàn Nóng - Lồng Máy Giặt',
         who: 'C368',
         desc: 'Dung dịch gốc kiềm cao, không acid, an toàn cho nhôm và đồng. Kết hợp chất diệt khuẩn (quaternary ammonium compound) diệt 99% vi khuẩn, nấm mốc. Đánh bay cặn canxi (limescale) trên dàn lạnh, dàn nóng. Khử mùi nấm mốc bằng enzym phân giải.',
         ph: 'pH 10.5–11.5',
