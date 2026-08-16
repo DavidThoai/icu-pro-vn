@@ -24,6 +24,7 @@ export default function SiteFooter() {
         <div className="f-meta">
           <p className="f-tagline">Sạch Sáng Tức Thì – Không Hao Mòn.</p>
           <p>Công ty TNHH SX &amp; TM Đặng Hân · <a href="https://www.icu.pro.vn">www.icu.pro.vn</a></p>
+          <p>MST: 0318386193 · Email: <a href="mailto:danghanco.ltd.hcm@gmail.com">danghanco.ltd.hcm@gmail.com</a></p>
           <p className="f-note">© 2026 ICU · DANG HAN TAP CO., LTD</p>
         </div>
       </div>

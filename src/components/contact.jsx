@@ -64,6 +64,14 @@ export default function Contact() {
               <span>Xưởng Sản Xuất</span>
               <p>Liên hệ: 0788 53 56 59</p>
             </li>
+            <li>
+              <span>Email</span>
+              <a href="mailto:danghanco.ltd.hcm@gmail.com">danghanco.ltd.hcm@gmail.com</a>
+            </li>
+            <li>
+              <span>Mã Số Doanh Nghiệp</span>
+              <p>0318386193 · do Sở KH&amp;ĐT TP.HCM cấp ngày 03/04/2024</p>
+            </li>
           </ul>
 
           
@@ -155,7 +163,7 @@ export default function Contact() {
               </div>
 
               <button type="submit" className="btn btn-accent btn-block btn-send">
-                GỬI YÊU CẦU
+                KẾT NỐI VỚI ICU
               </button>
               <p className="form-note">Đăng ký tư vấn để không bỏ lỡ các giải pháp tối ưu từ ICU.</p>
             </form>
