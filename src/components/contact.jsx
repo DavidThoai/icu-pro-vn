@@ -70,7 +70,7 @@ export default function Contact() {
             </li>
             <li>
               <span>Mã Số Doanh Nghiệp</span>
-              <p>0318386193 · do Sở KH&amp;ĐT TP.HCM cấp ngày 03/04/2024</p>
+              <p>0318386193 · Nơi cấp: Sở KH&amp;ĐT TP.HCM · Ngày cấp: 03/04/2024</p>
             </li>
           </ul>
 

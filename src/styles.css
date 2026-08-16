@@ -1357,6 +1357,13 @@ section {
   opacity: 0.92;
 }
 
+@media (max-width: 620px) {
+  .mst-line {
+    white-space: normal;
+    font-size: 11px;
+  }
+}
+
 /* ---------- Responsive ---------- */
 
 @media (max-width: 1280px) {
