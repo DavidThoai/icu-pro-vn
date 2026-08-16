@@ -1,7 +1,7 @@
 /* ============================================================
    css-tong-hop.css - TONG HOP CAC SUA DOI CHINH (dong bo PC/Mobile)
    Website: icu.pro.vn  |  Sinh tu: css-tong-hop.py (chay lai de cap nhat)
-   Ngay tao: 2026-08-16 19:18
+   Ngay tao: 2026-08-16 19:23
    ============================================================ */
 .section-header {
   max-width: 680px;
@@ -280,6 +280,15 @@
 
   .footer-colors {
     margin-bottom: 40px;
+  }
+}
+@media (max-width: 620px) {
+  .nav-colors span::after {
+    font-size: 8.5px;
+    top: -18px;
+    line-height: 1.15;
+    white-space: normal;
+    padding: 0 1px;
   }
 }
 @media (max-width: 620px) {

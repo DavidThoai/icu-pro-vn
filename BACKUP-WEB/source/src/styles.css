@@ -1278,6 +1278,44 @@ section {
   }
 }
 
+.nav-colors {
+  display: flex;
+  width: 100%;
+  height: 10px;
+  overflow: hidden;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 2px 8px oklch(0.3 0.02 260 / 0.25);
+}
+.nav-colors span { flex: 1; position: relative; }
+.nav-colors span::after {
+  content: attr(data-label);
+  position: absolute;
+  top: -22px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--on-dark-muted);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+@media (max-width: 620px) {
+  .nav-colors span::after {
+    font-size: 8.5px;
+    top: -18px;
+    line-height: 1.15;
+    white-space: normal;
+    padding: 0 1px;
+  }
+}
+.nav-colors .fc-blue { background: linear-gradient(180deg, #3b82f6, #1d4ed8); }
+.nav-colors .fc-cyan { background: linear-gradient(180deg, #22d3ee, #0e7490); }
+.nav-colors .fc-gold { background: linear-gradient(180deg, #f59e0b, #b45309); }
+.nav-colors .fc-mint { background: linear-gradient(180deg, #14b8a6, #0f766e); }
+.nav-colors .fc-violet { background: linear-gradient(180deg, #a78bfa, #7c3aed); }
+.nav-colors .fc-red { background: linear-gradient(180deg, #ef4444, #dc2626); }
+
 .footer-colors .fc-blue { background: linear-gradient(180deg, #3b82f6, #1d4ed8); }
 .footer-colors .fc-cyan { background: linear-gradient(180deg, #22d3ee, #0e7490); }
 .footer-colors .fc-gold { background: linear-gradient(180deg, #f59e0b, #b45309); }
