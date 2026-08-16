@@ -1347,6 +1347,16 @@ section {
   color: var(--on-dark) !important;
 }
 
+.mst-line {
+  white-space: nowrap;
+  width: 100%;
+  font-size: clamp(10.5px, 2.9vw, 14px);
+  font-weight: 600;
+  color: var(--on-dark);
+  text-align: center;
+  opacity: 0.92;
+}
+
 /* ---------- Responsive ---------- */
 
 @media (max-width: 1280px) {
