@@ -81,7 +81,7 @@ import fs03Video from '../images/fs03-video.mp4'
 import badgeCongThucMoi from '../images/badge-cong-thuc-moi.png'
 const families = [
   {
-    code: 'DUNG DỊCH TẨY RỬA CÔNG NGHIỆP · GARA',
+    code: 'DUNG DỊCH TẨY RỬA CÔNG NGHIỆP · GARAGE',
     accent: 'cyan',
     id: 'tay-rua-cong-nghiep',
     items: [
