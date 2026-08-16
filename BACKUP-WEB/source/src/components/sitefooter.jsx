@@ -36,7 +36,7 @@ export default function SiteFooter() {
       </div>
       <div className="footer-colors">
         <span className="fc-blue" data-label="Sản Phẩm" />
-        <span className="fc-cyan" data-label="Tẩy Rửa CN" />
+        <span className="fc-cyan" data-label="Tẩy Rửa Công Nghiệp" />
         <span className="fc-gold" data-label="Vàng · Bạc · Đá Quý" />
         <span className="fc-mint" data-label="Furryshine Pet" />
         <span className="fc-violet" data-label="Công Thức & Sử Dụng" />
