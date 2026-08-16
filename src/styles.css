@@ -113,12 +113,12 @@ h2 em {
 }
 
 section {
-  padding: clamp(14px, 1.8vw, 22px) 0;
+  padding: clamp(9px, 1.2vw, 14px) 0;
 }
 
 .section-header {
   max-width: 680px;
-  margin-bottom: clamp(20px, 3vw, 32px);
+  margin-bottom: clamp(12px, 1.8vw, 22px);
 }
 
 .section-header h2 {
@@ -302,6 +302,14 @@ section {
   height: auto;
 }
 
+@media (min-width: 1630px) {
+  .hero-bg {
+    max-height: 600px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
 /* ---------- Brand marquee ---------- */
 
 .brand-strip {
@@ -309,7 +317,7 @@ section {
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   background: var(--bg-2);
-  padding: 6px 0;
+  padding: 4px 0;
 }
 
 .brand-strip .track {
@@ -392,7 +400,7 @@ section {
 }
 
 .family + .family {
-  margin-top: clamp(22px, 2.6vw, 32px);
+  margin-top: clamp(14px, 1.8vw, 24px);
 }
 
 .family-head {
