@@ -1213,7 +1213,8 @@ section {
 .f-logos {
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  gap: 12px;
   flex-wrap: wrap;
 }
 
@@ -2595,4 +2596,14 @@ html {
   font-size: 15.5px;
   line-height: 1.5;
   margin-top: 0.6rem;
+}
+
+@media (min-width: 701px) {
+  .topnav nav {
+    flex-wrap: nowrap;
+  }
+  .topnav nav a:not(.btn) {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
 }
