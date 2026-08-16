@@ -78,6 +78,9 @@ import fs03_2 from '../images/fs03-2.jpg'
 import fs03_3 from '../images/fs03-3.jpg'
 import fs03_4 from '../images/fs03-4.jpg'
 import fs03Video from '../images/fs03-video.mp4'
+import badgeBanChay from '../images/badge-ban-chay.png'
+import badgeCongThucMoi from '../images/badge-cong-thuc-moi.png'
+import badgeLuaChon from '../images/badge-lua-chon-chuyen-gia.png'
 const families = [
   {
     code: 'DUNG DỊCH TẨY RỬA CÔNG NGHIỆP · GARA',
@@ -251,14 +254,12 @@ function ProductCard({ p }) {
   return (
     <article className="product" key={p.name}>
       {p.badge && (
-              <span className={`badge badge-${p.badge}`} role="status">
-                <svg className="badge-icon" aria-hidden="true" viewBox="0 0 12 12">
-                  {p.badge === 'bestseller' && <path d="M6 1l1.4 3.2 3.5.3-2.7 2.3.8 3.4L6 8.6 3 10.2l.8-3.4L1.1 4.5l3.5-.3z" fill="currentColor" />}
-                  {p.badge === 'new' && <path d="M6 1.5L9.5 6 6 10.5 2.5 6z" fill="currentColor" opacity=".9" />}
-                  {p.badge === 'pro' && <path d="M2 6.2L4.8 9 10 3.6 8.9 2.5 4.8 6.8 3.1 5.1z" fill="currentColor" />}
-                </svg>
-                {p.badge === 'bestseller' ? 'Bestseller' : p.badge === 'new' ? 'New Formula' : 'Pro Choice'}
-              </span>
+              <img
+                src={p.badge === 'bestseller' ? badgeBanChay : p.badge === 'new' ? badgeCongThucMoi : badgeLuaChon}
+                alt={p.badge === 'bestseller' ? 'Sản phẩm bán chạy' : p.badge === 'new' ? 'Công thức mới cải tiến' : 'Lựa chọn chuyên gia'}
+                className="badge-img"
+                loading="lazy"
+              />
             )}
       <div className="product-img">
         {showVideo ? (
