@@ -2516,3 +2516,33 @@ html {
   display: inline-block;
   padding-block: 6px;
 }
+
+/* Tooltip ten logo thuong hieu */
+.f-logos .f-logo[data-title] {
+  position: relative;
+  cursor: help;
+}
+.f-logos .f-logo[data-title]::after {
+  content: attr(data-title);
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) scale(0.92);
+  background: #111827;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  padding: 6px 11px;
+  border-radius: 8px;
+  white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 160ms ease, transform 160ms ease;
+  z-index: 30;
+}
+.f-logos .f-logo[data-title]:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
