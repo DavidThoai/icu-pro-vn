@@ -68,10 +68,6 @@ export default function Contact() {
               <span>Email</span>
               <a href="mailto:danghanco.ltd.hcm@gmail.com">danghanco.ltd.hcm@gmail.com</a>
             </li>
-            <li>
-              <span>Mã Số Doanh Nghiệp</span>
-              <p>0318386193 · Nơi cấp: Sở KH&amp;ĐT TP.HCM · Ngày cấp: 03/04/2024</p>
-            </li>
           </ul>
 
           
