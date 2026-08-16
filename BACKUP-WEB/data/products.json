@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Tẩy carbon động cơ",
+    "alt": "ICU T889 tẩy carbon động cơ",
+    "code": "T889",
+    "badge": "bestseller",
+    "img_var": "t889",
+    "video_var": "t889Video",
+    "family": "DUNG DỊCH TẨY RỬA CÔNG NGHIỆP · GARA"
+  },
+  {
+    "name": "Tẩy rửa sàn đa năng",
+    "alt": "ICU C268 tẩy rửa sàn đa năng công nghiệp",
+    "code": "C268",
+    "badge": "pro",
+    "img_var": "c268",
+    "video_var": "c268Video",
+    "family": "DUNG DỊCH TẨY RỬA CÔNG NGHIỆP · GARA"
+  },
+  {
+    "name": "Tẩy rỉ sét chuyên dụng",
+    "alt": "ICU C369 tẩy rỉ sét chuyên dụng",
+    "code": "C369",
+    "badge": "pro",
+    "img_var": "c369",
+    "video_var": "c369Video",
+    "family": "DUNG DỊCH TẨY RỬA CÔNG NGHIỆP · GARA"
+  },
+  {
+    "name": "Vệ sinh Máy Lạnh - Dàn Nóng - Lồng Máy Giặt",
+    "alt": "ICU C368 vệ sinh đa năng dàn lạnh máy giặt",
+    "code": "C368",
+    "badge": "new",
+    "img_var": "c368",
+    "video_var": "c368Video",
+    "family": "DUNG DỊCH TẨY RỬA CÔNG NGHIỆP · GARA"
+  },
+  {
+    "name": "Trợ hàn - Kim Loại",
+    "alt": "ICU C686 trợ hàn thiếc nhôm inox",
+    "code": "C686",
+    "badge": "new",
+    "img_var": "c686",
+    "video_var": "c686Video",
+    "family": "DUNG DỊCH TẨY RỬA CÔNG NGHIỆP · GARA"
+  },
+  {
+    "name": "Tẩy rửa trang sức",
+    "alt": "ICU A889 tẩy rửa trang sức vàng bạc đá quý",
+    "code": "A889",
+    "badge": "bestseller",
+    "img_var": "a889",
+    "video_var": "abVideo",
+    "family": "DUNG DỊCH TẨY BẨN CHUYÊN DỤNG CHO VÀNG · BẠC · ĐÁ QUÝ"
+  },
+  {
+    "name": "Tẩy rửa trang sức",
+    "alt": "ICU B889 tẩy rửa trang sức vết bẩn lâu ngày",
+    "code": "B889",
+    "badge": "pro",
+    "img_var": "b889",
+    "video_var": "abVideo",
+    "family": "DUNG DỊCH TẨY BẨN CHUYÊN DỤNG CHO VÀNG · BẠC · ĐÁ QUÝ"
+  },
+  {
+    "name": "Rửa siêu âm",
+    "alt": "ICU Dung dịch siêu âm rửa trang sức vàng bạc đá quý",
+    "code": "SIÊU ÂM",
+    "badge": "new",
+    "img_var": "sieuam_1",
+    "video_var": "sieuamVideo",
+    "family": "DUNG DỊCH TẨY BẨN CHUYÊN DỤNG CHO VÀNG · BẠC · ĐÁ QUÝ"
+  },
+  {
+    "name": "Vệ sinh bạc – Nano xanh",
+    "alt": "ICU C819 vệ sinh trang sức bạc nano xanh",
+    "code": "C819",
+    "badge": null,
+    "img_var": "silver",
+    "video_var": "c819Video",
+    "family": "DUNG DỊCH TẨY BẨN CHUYÊN DỤNG CHO VÀNG · BẠC · ĐÁ QUÝ"
+  },
+  {
+    "name": "Sữa tắm thảo dược Yến mạch",
+    "alt": "Furryshine Pet sữa tắm thảo dược yến mạch",
+    "code": "FURRYSHINE",
+    "badge": "bestseller",
+    "img_var": "pet_1",
+    "video_var": "petVideo",
+    "family": "FURRYSHINE PET · CLEAN BEAUTY & SCIENCE"
+  },
+  {
+    "name": "Sữa tắm Tràm trà",
+    "alt": "Furryshine Pet sữa tắm tràm trà kháng khuẩn",
+    "code": "FURRYSHINE",
+    "badge": "bestseller",
+    "img_var": "pet_2",
+    "video_var": "petVideo",
+    "family": "FURRYSHINE PET · CLEAN BEAUTY & SCIENCE"
+  },
+  {
+    "name": "Enzyme Khử Mùi Nước Tiểu (Pet)",
+    "alt": "Furryshine Enzyme khử mùi nước tiểu thú cưng",
+    "code": "FURRYSHINE",
+    "badge": "bestseller",
+    "img_var": "fs03_main",
+    "video_var": "fs03Video",
+    "family": "FURRYSHINE PET · CLEAN BEAUTY & SCIENCE"
+  },
+  {
+    "name": "Xịt khử mùi lông",
+    "alt": "Furryshine Pet xịt khử mùi lông",
+    "code": "FURRYSHINE",
+    "badge": null,
+    "img_var": "pet_4",
+    "video_var": "petVideo",
+    "family": "FURRYSHINE PET · CLEAN BEAUTY & SCIENCE"
+  },
+  {
+    "name": "Dung dịch vệ sinh tai",
+    "alt": "Furryshine Pet dung dịch vệ sinh tai",
+    "code": "FURRYSHINE",
+    "badge": "new",
+    "img_var": "pet_5",
+    "video_var": "petVideo",
+    "family": "FURRYSHINE PET · CLEAN BEAUTY & SCIENCE"
+  },
+  {
+    "name": "Nước xả lông mềm mượt",
+    "alt": "Furryshine Pet nước xả lông mềm mượt",
+    "code": "FURRYSHINE",
+    "badge": null,
+    "img_var": "pet_3",
+    "video_var": "petVideo",
+    "family": "FURRYSHINE PET · CLEAN BEAUTY & SCIENCE"
+  }
+]
