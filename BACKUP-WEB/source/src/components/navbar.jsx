@@ -19,14 +19,6 @@ export default function NavBar({ scrolled }) {
           </a>
         </nav>
       </div>
-      <div className="nav-colors">
-        <span className="fc-blue" data-label="Sản Phẩm" />
-        <span className="fc-cyan" data-label="Tẩy Rửa Công Nghiệp" />
-        <span className="fc-gold" data-label="Vàng · Bạc · Đá Quý" />
-        <span className="fc-mint" data-label="Furryshine Pet" />
-        <span className="fc-violet" data-label="Công Thức &amp; Sử Dụng" />
-        <span className="fc-red" data-label="Tư Vấn Sản Phẩm" />
-      </div>
     </header>
   )
 }
