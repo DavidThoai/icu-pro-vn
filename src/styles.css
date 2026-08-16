@@ -1218,6 +1218,23 @@ section {
   flex-wrap: wrap;
 }
 
+.f-nav-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-inline: auto;
+}
+
+.site-footer nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
 .f-logo {
   height: 88px;
   width: 88px;
