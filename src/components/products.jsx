@@ -78,9 +78,7 @@ import fs03_2 from '../images/fs03-2.jpg'
 import fs03_3 from '../images/fs03-3.jpg'
 import fs03_4 from '../images/fs03-4.jpg'
 import fs03Video from '../images/fs03-video.mp4'
-import badgeBanChay from '../images/badge-ban-chay.png'
 import badgeCongThucMoi from '../images/badge-cong-thuc-moi.png'
-import badgeLuaChon from '../images/badge-lua-chon-chuyen-gia.png'
 const families = [
   {
     code: 'DUNG DỊCH TẨY RỬA CÔNG NGHIỆP · GARA',
@@ -253,15 +251,8 @@ function ProductCard({ p }) {
   const currentImg = activeImg >= 0 ? allThumbs[activeImg] : null
   return (
     <article className="product" key={p.name}>
-      {p.badge && (
-              <img
-                src={p.badge === 'bestseller' ? badgeBanChay : p.badge === 'new' ? badgeCongThucMoi : badgeLuaChon}
-                alt={p.badge === 'bestseller' ? 'Sản phẩm bán chạy' : p.badge === 'new' ? 'Công thức mới cải tiến' : 'Lựa chọn chuyên gia'}
-                className="badge-img"
-                loading="lazy"
-              />
-            )}
       <div className="product-img">
+        <img src={badgeCongThucMoi} alt="Công thức mới cải tiến" className="badge-img" loading="lazy" />
         {showVideo ? (
           <video src={p.video} controls autoPlay loop muted playsInline />
         ) : (
