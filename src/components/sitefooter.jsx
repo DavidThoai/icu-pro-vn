@@ -15,7 +15,6 @@ export default function SiteFooter() {
                         <img src="https://images.dmca.com/Badges/dmca-badge-w250-5x1-01.png?ID=42b6b10d-2dcf-4aad-9ba6-2e92856c864d" alt="DMCA.com Protection Status" className="f-logo f-logo-dmca" width="250" height="50" />
 
           </a>
-          <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js" />
         </div>
           <nav aria-label="Liên kết chân trang">
           <a href="#san-pham" className="nav-item nav-blue">Sản Phẩm</a>

@@ -2634,3 +2634,10 @@ html {
 @media (prefers-reduced-motion: reduce) {
   .product:hover > .badge-img { transform: rotate(5deg); }
 }
+
+/* contact form: real send channels */
+.form-success .btn { margin-top: 10px; }
+.btn-zalo { background: #0068ff; }
+.btn-zalo:hover { background: #0056d6; }
+.btn-phone { background: #0b2a4a; }
+.btn-phone:hover { background: #123a63; }

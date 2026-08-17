@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://icu.pro.vn/sitemap.xml

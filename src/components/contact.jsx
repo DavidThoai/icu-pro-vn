@@ -2,6 +2,13 @@ import { useEffect, useRef, useState } from 'react'
 
 const PHONE_RE = /^(0|\+84)\d{9}$/
 
+const NEED_LABELS = {
+  family: 'Cần Tư Vấn Sản Phẩm ICU & Furryshine',
+  garage: 'Gara - Vệ Sinh Công Nghiệp - Nhà Bán Lẻ',
+  distributor: 'Đối Tác & Nhà Phân Phối',
+  business: 'Affiliate (tiếp thị liên kết) KOL & KOC',
+}
+
 export default function Contact() {
   const [values, setValues] = useState({ name: '', phone: '', need: 'family' })
   const [touched, setTouched] = useState({ name: false, phone: false })
@@ -76,10 +83,28 @@ export default function Contact() {
         <div className="form-card">
           {sent ? (
             <div className="form-success" role="status">
-              <p className="ok-title">Đã nhận yêu cầu của bạn.</p>
+              <p className="ok-title">Hoàn tất — gửi thông tin qua kênh phù hợp</p>
               <p>
-                Cảm ơn {values.name.trim()}! ICU sẽ liên hệ lại trong giờ làm việc.
+                Cảm ơn {values.name.trim()}! Để ICU phản hồi nhanh nhất, vui lòng gửi
+                thông tin qua một trong các kênh bên dưới:
               </p>
+              <a
+                className="btn btn-accent btn-block"
+                href={`mailto:danghanco.ltd.hcm@gmail.com?subject=${encodeURIComponent('Tư vấn sản phẩm ICU — ' + values.name.trim())}&body=${encodeURIComponent('Họ tên: ' + values.name.trim() + '\nSố điện thoại: ' + values.phone.trim() + '\nMục cần tư vấn: ' + NEED_LABELS[values.need] + '\n\n(Gửi từ trang web icu.pro.vn)')}`}
+              >
+                Gửi qua Email (soạn sẵn nội dung)
+              </a>
+              <a
+                className="btn btn-block btn-zalo"
+                href="https://zalo.me/0918051655"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Nhắn Zalo: 0918 051 655
+              </a>
+              <a className="btn btn-block btn-phone" href="tel:0788535659">
+                Gọi ngay: 0788 53 56 59
+              </a>
             </div>
           ) : (
             <form onSubmit={onSubmit} noValidate>
@@ -159,9 +184,9 @@ export default function Contact() {
               </div>
 
               <button type="submit" className="btn btn-accent btn-block btn-send">
-                KẾT NỐI VỚI ICU
+                TIẾP TỤC — CHỌN KÊNH LIÊN HỆ
               </button>
-              <p className="form-note">Đăng ký tư vấn để không bỏ lỡ các giải pháp tối ưu từ ICU.</p>
+              <p className="form-note">Nhập thông tin, sau đó gửi qua Email / Zalo / điện thoại để ICU tư vấn trực tiếp.</p>
             </form>
           )}
         </div>
