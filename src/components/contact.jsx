@@ -14,6 +14,7 @@ export default function Contact() {
   const [touched, setTouched] = useState({ name: false, phone: false })
   const [submitTried, setSubmitTried] = useState(false)
   const [sent, setSent] = useState(false)
+  const [delivery, setDelivery] = useState('mail') // 'mail' | 'telegram'
   const summaryRef = useRef(null)
 
   const nameError = values.name.trim().length < 2 ? 'Vui lòng nhập họ tên — tối thiểu 2 ký tự.' : ''
@@ -36,11 +37,39 @@ export default function Contact() {
     }
   }, [submitTried, hasErrors])
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault()
     setSubmitTried(true)
-    if (!hasErrors) {
-      setSent(true)
+    if (hasErrors) return
+
+    let telegramOk = false
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: values.name.trim(),
+          phone: values.phone.trim(),
+          need: values.need,
+          needLabel: NEED_LABELS[values.need],
+        }),
+      })
+      const ct = res.headers.get('content-type') || ''
+      if (ct.includes('application/json')) {
+        const data = await res.json()
+        telegramOk = Boolean(data && data.ok === true)
+      }
+    } catch (err) {
+      telegramOk = false
+    }
+
+    if (telegramOk) {
+      setDelivery('telegram')
+    } else {
+      setDelivery('mail')
+    }
+    setSent(true)
+    if (!telegramOk) {
       setTimeout(() => { window.location.href = mailtoUrl }, 300)
     }
   }
@@ -87,15 +116,30 @@ export default function Contact() {
         <div className="form-card">
           {sent ? (
             <div className="form-success" role="status">
-              <p className="ok-title">Hoàn tất — thông tin đã được soạn sẵn</p>
-              <p>
-                Cảm ơn {values.name.trim()}! Ứng dụng email của bạn đã được mở với nội
-                dung soạn sẵn — chỉ cần bấm Gửi là ICU nhận được ngay. Bạn cũng có thể
-                liên hệ nhanh qua Zalo hoặc điện thoại bên dưới:
-              </p>
-              <a className="btn btn-accent btn-block" href={mailtoUrl}>
-                Gửi lại qua Email (soạn sẵn nội dung)
-              </a>
+              {delivery === 'telegram' ? (
+                <>
+                  <p className="ok-title">Đã gửi thành công!</p>
+                  <p>
+                    Cảm ơn {values.name.trim()}! Thông tin của bạn đã được gửi tới ICU.
+                    Đội ngũ ICU sẽ liên hệ lại với bạn trong thời gian sớm nhất. Bạn cũng
+                    có thể liên hệ nhanh qua Zalo hoặc điện thoại bên dưới:
+                  </p>
+                </>
+              ) : (
+                <>
+                  <p className="ok-title">Hoàn tất — thông tin đã được soạn sẵn</p>
+                  <p>
+                    Cảm ơn {values.name.trim()}! Ứng dụng email của bạn đã được mở với nội
+                    dung soạn sẵn — chỉ cần bấm Gửi là ICU nhận được ngay. Bạn cũng có thể
+                    liên hệ nhanh qua Zalo hoặc điện thoại bên dưới:
+                  </p>
+                </>
+              )}
+              {delivery !== 'telegram' && (
+                <a className="btn btn-accent btn-block" href={mailtoUrl}>
+                  Gửi lại qua Email (soạn sẵn nội dung)
+                </a>
+              )}
               <a
                 className="btn btn-block btn-zalo"
                 href="https://zalo.me/0918051655"
