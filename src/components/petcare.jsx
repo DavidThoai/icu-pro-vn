@@ -23,7 +23,7 @@ const steps = [
 
 const reviews = [
   { name: 'Minh Anh', pet: 'Poodle · 3 tuổi', text: 'Boss hết hôi sau 2 lần tắm. Lông mềm không bị xơ, mùi tràm trà dễ chịu.', before: 'Lông rối, có mùi', after: 'Lông mềm, sạch khuẩn' },
-  { name: 'Trần Hoàng', pet: 'Mèo Anh lông ngắn · 2 tuổi', text: 'Sàn nhà sạch không để lại hóa chất, mèo liếm an toàn. Rất yên tâm.', before: 'Sàn có vết ố, mùi', after: 'Sàn sạch, khử mùi 99%' },
+  { name: 'Trần Hoàng', pet: 'Mèo Anh lông ngắn · 2 tuổi', text: 'Sàn nhà sạch không để lại hóa chất, mèo liếm an toàn. Rất yên tâm.', before: 'Sàn có vết ố, mùi', after: 'Sàn sạch, khử mùi' },
   { name: 'Lê Thy', pet: 'Corgi · 4 tuổi', text: 'Tắm xong da boss không đỏ, không ngứa. Sẽ mua định kỳ.', before: 'Da khô, ngứa', after: 'Da khỏe, lông bóng' },
 ]
 
@@ -139,7 +139,7 @@ export default function PetCare() {
           <span className="petcare-mech-arrow">→</span>
           <div className="petcare-mech-card after">
             <span className="petcare-mech-label">Sau</span>
-            <p>Sạch khuẩn 99%, màng bảo vệ tự nhiên. Lông mềm mượt, da khỏe mạnh.</p>
+            <p>Sạch khuẩn, màng bảo vệ tự nhiên. Lông mềm mượt, da khỏe mạnh.</p>
           </div>
         </div>
       </div>

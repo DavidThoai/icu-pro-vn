@@ -21,6 +21,7 @@ export default function Contact() {
     ? 'Số điện thoại chưa đúng — ví dụ: 0912 345 678 hoặc +84 912 345 678.'
     : ''
   const hasErrors = Boolean(nameError || phoneError)
+  const mailtoUrl = `mailto:danghanco.ltd.hcm@gmail.com?subject=${encodeURIComponent('Tư vấn sản phẩm ICU — ' + values.name.trim())}&body=${encodeURIComponent('Họ tên: ' + values.name.trim() + '\nSố điện thoại: ' + values.phone.trim() + '\nMục cần tư vấn: ' + NEED_LABELS[values.need] + '\n\n(Gửi từ trang web icu.pro.vn)')}`
 
   // Errors appear only after the field is blurred (or submit is attempted),
   // and clear immediately once the value becomes valid again.
@@ -38,7 +39,10 @@ export default function Contact() {
   const onSubmit = (e) => {
     e.preventDefault()
     setSubmitTried(true)
-    if (!hasErrors) setSent(true)
+    if (!hasErrors) {
+      setSent(true)
+      setTimeout(() => { window.location.href = mailtoUrl }, 300)
+    }
   }
 
   return (
@@ -83,16 +87,14 @@ export default function Contact() {
         <div className="form-card">
           {sent ? (
             <div className="form-success" role="status">
-              <p className="ok-title">Hoàn tất — gửi thông tin qua kênh phù hợp</p>
+              <p className="ok-title">Hoàn tất — thông tin đã được soạn sẵn</p>
               <p>
-                Cảm ơn {values.name.trim()}! Để ICU phản hồi nhanh nhất, vui lòng gửi
-                thông tin qua một trong các kênh bên dưới:
+                Cảm ơn {values.name.trim()}! Ứng dụng email của bạn đã được mở với nội
+                dung soạn sẵn — chỉ cần bấm Gửi là ICU nhận được ngay. Bạn cũng có thể
+                liên hệ nhanh qua Zalo hoặc điện thoại bên dưới:
               </p>
-              <a
-                className="btn btn-accent btn-block"
-                href={`mailto:danghanco.ltd.hcm@gmail.com?subject=${encodeURIComponent('Tư vấn sản phẩm ICU — ' + values.name.trim())}&body=${encodeURIComponent('Họ tên: ' + values.name.trim() + '\nSố điện thoại: ' + values.phone.trim() + '\nMục cần tư vấn: ' + NEED_LABELS[values.need] + '\n\n(Gửi từ trang web icu.pro.vn)')}`}
-              >
-                Gửi qua Email (soạn sẵn nội dung)
+              <a className="btn btn-accent btn-block" href={mailtoUrl}>
+                Gửi lại qua Email (soạn sẵn nội dung)
               </a>
               <a
                 className="btn btn-block btn-zalo"
@@ -184,9 +186,9 @@ export default function Contact() {
               </div>
 
               <button type="submit" className="btn btn-accent btn-block btn-send">
-                TIẾP TỤC — CHỌN KÊNH LIÊN HỆ
+                GỬI THÔNG TIN CHO ICU
               </button>
-              <p className="form-note">Nhập thông tin, sau đó gửi qua Email / Zalo / điện thoại để ICU tư vấn trực tiếp.</p>
+              <p className="form-note">Bấm gửi — thông tin sẽ được soạn sẵn vào email gửi tới ICU. Bạn cũng có thể nhắn Zalo hoặc gọi trực tiếp.</p>
             </form>
           )}
         </div>

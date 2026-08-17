@@ -32,7 +32,7 @@ const tabs = [
       {
         name: 'C368 — Vệ sinh Máy Lạnh - Dàn Nóng - Lồng Máy Giặt',
         who: 'C368',
-        desc: 'Dung dịch gốc kiềm cao, không acid, an toàn cho nhôm và đồng. Kết hợp chất diệt khuẩn (quaternary ammonium compound) diệt 99% vi khuẩn, nấm mốc. Đánh bay cặn canxi (limescale) trên dàn lạnh, dàn nóng. Khử mùi nấm mốc bằng enzym phân giải.',
+        desc: 'Dung dịch gốc kiềm cao, không acid, an toàn cho nhôm và đồng. Kết hợp chất diệt khuẩn (quaternary ammonium compound) diệt vi khuẩn, nấm mốc. Đánh bay cặn canxi (limescale) trên dàn lạnh, dàn nóng. Khử mùi nấm mốc bằng enzym phân giải.',
         ph: 'pH 10.5–11.5',
         temp: 'Pha 1:1 đến 1:6',
         ingredients: 'Kiềm hữu cơ, QAC (chất diệt khuẩn), enzym phân giải, chất bám dính, nước tinh khiết.',
@@ -108,7 +108,7 @@ const tabs = [
       {
         name: 'FURRYSHINE - Enzyme Khử Mùi Nước Tiểu (Pet)',
         who: 'FURRYSHINE',
-        desc: 'Diệt khuẩn 99% bằng hợp chất amoni bậc 4 (QAC) nồng độ an toàn, không để lại hóa chất độc hại khi thú cưng liếm. Dùng cho sàn nhà, chuồng nuôi, khu vực ăn uống. Hương tràm trà dịu nhẹ.',
+        desc: 'Diệt khuẩn bằng hợp chất amoni bậc 4 (QAC) nồng độ an toàn, không để lại hóa chất độc hại khi thú cưng liếm. Dùng cho sàn nhà, chuồng nuôi, khu vực ăn uống. Hương tràm trà dịu nhẹ.',
         ph: 'pH 7.5–8.5',
         temp: 'Pha 10 ml / 1 lít nước, không cần xả lại',
         ingredients: 'QAC (chất diệt khuẩn), tinh dầu tràm trà, chất hoạt động bề mặt thực vật, nước tinh khiết.',
