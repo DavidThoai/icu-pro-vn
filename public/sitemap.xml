@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://icu.pro.vn/</loc>
-    <lastmod>2026-08-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://icu.pro.vn/</loc><lastmod>2026-08-18</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://icu.pro.vn/san-pham/t889-tay-carbon-dong-co/</loc><lastmod>2026-08-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://icu.pro.vn/san-pham/c268-tay-rua-san-da-nang/</loc><lastmod>2026-08-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://icu.pro.vn/san-pham/c369-tay-ri-set-chuyen-dung/</loc><lastmod>2026-08-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://icu.pro.vn/san-pham/c368-ve-sinh-may-lanh/</loc><lastmod>2026-08-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://icu.pro.vn/san-pham/c686-tro-han-kim-loai/</loc><lastmod>2026-08-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://icu.pro.vn/san-pham/a889-tay-rua-trang-suc/</loc><lastmod>2026-08-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://icu.pro.vn/san-pham/b889-tay-rua-trang-suc-dam-dac/</loc><lastmod>2026-08-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://icu.pro.vn/san-pham/dung-dich-rua-sieu-am/</loc><lastmod>2026-08-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://icu.pro.vn/san-pham/c819-ve-sinh-bac-nano-xanh/</loc><lastmod>2026-08-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://icu.pro.vn/san-pham/furryshine-sua-tam-yen-mach/</loc><lastmod>2026-08-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://icu.pro.vn/san-pham/furryshine-sua-tam-tram-tra/</loc><lastmod>2026-08-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://icu.pro.vn/san-pham/furryshine-enzyme-khu-mui-nuoc-tieu/</loc><lastmod>2026-08-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://icu.pro.vn/san-pham/furryshine-xit-khu-mui-long/</loc><lastmod>2026-08-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://icu.pro.vn/san-pham/furryshine-dung-dich-ve-sinh-tai/</loc><lastmod>2026-08-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://icu.pro.vn/san-pham/furryshine-nuoc-xa-long-mem-muot/</loc><lastmod>2026-08-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 </urlset>
