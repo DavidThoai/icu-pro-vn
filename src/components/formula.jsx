@@ -32,10 +32,10 @@ const tabs = [
       {
         name: 'C368 — Vệ sinh Máy Lạnh - Dàn Nóng - Lồng Máy Giặt',
         who: 'C368',
-        desc: 'Dung dịch gốc kiềm cao, không acid, an toàn cho nhôm và đồng. Kết hợp chất diệt khuẩn (quaternary ammonium compound) diệt vi khuẩn, nấm mốc. Đánh bay cặn canxi (limescale) trên dàn lạnh, dàn nóng. Khử mùi nấm mốc bằng enzym phân giải.',
+        desc: 'Dung dịch gốc kiềm cao, không acid, an toàn cho nhôm và đồng. Kết hợp chất làm sạch (quaternary ammonium compound), hạn chế nấm mốc. Đánh bay cặn canxi (limescale) trên dàn lạnh, dàn nóng. Khử mùi nấm mốc bằng enzym phân giải.',
         ph: 'pH 10.5–11.5',
         temp: 'Pha 1:1 đến 1:6',
-        ingredients: 'Kiềm hữu cơ, QAC (chất diệt khuẩn), enzym phân giải, chất bám dính, nước tinh khiết.',
+        ingredients: 'Kiềm hữu cơ, QAC (chất làm sạch), enzym phân giải, chất bám dính, nước tinh khiết.',
       },
       {
         name: 'C686 — Trợ hàn - Kim Loại',
@@ -100,7 +100,7 @@ const tabs = [
       {
         name: 'FURRYSHINE - Sữa tắm Tràm trà',
         who: 'FURRYSHINE',
-        desc: 'Tinh dầu tràm trà (tea tree oil) kháng khuẩn tự nhiên, diệt nấm, khử mùi hôi hiệu quả. Chiết xuất cúc la mã kháng viêm, làm dịu da nhạy cảm. An toàn cho chó mèo con, không gây kích ứng.',
+        desc: 'Tinh dầu tràm trà (tea tree oil) tự nhiên khử mùi hôi hiệu quả. Chiết xuất cúc la mã làm dịu da nhạy cảm. An toàn cho chó mèo con, không gây kích ứng.',
         ph: 'pH 7.0–7.5',
         temp: 'Pha 10 ml / 1 lít nước ấm',
         ingredients: 'Tinh dầu tràm trà, chiết xuất cúc la mã, glycerin thực vật, chất tạo bọt tự nhiên, nước tinh khiết.',
@@ -108,10 +108,10 @@ const tabs = [
       {
         name: 'FURRYSHINE - Enzyme Khử Mùi Nước Tiểu (Pet)',
         who: 'FURRYSHINE',
-        desc: 'Diệt khuẩn bằng hợp chất amoni bậc 4 (QAC) nồng độ an toàn, không để lại hóa chất độc hại khi thú cưng liếm. Dùng cho sàn nhà, chuồng nuôi, khu vực ăn uống. Hương tràm trà dịu nhẹ.',
+        desc: 'Làm sạch bằng hợp chất amoni bậc 4 (QAC) nồng độ an toàn, không để lại hóa chất độc hại khi thú cưng liếm. Dùng cho sàn nhà, chuồng nuôi, khu vực ăn uống. Hương tràm trà dịu nhẹ.',
         ph: 'pH 7.5–8.5',
         temp: 'Pha 10 ml / 1 lít nước, không cần xả lại',
-        ingredients: 'QAC (chất diệt khuẩn), tinh dầu tràm trà, chất hoạt động bề mặt thực vật, nước tinh khiết.',
+        ingredients: 'QAC (chất làm sạch), tinh dầu tràm trà, chất hoạt động bề mặt thực vật, nước tinh khiết.',
       },
       {
         name: 'FURRYSHINE - Xịt khử mùi lông',
@@ -124,7 +124,7 @@ const tabs = [
       {
         name: 'FURRYSHINE - Dung dịch vệ sinh tai',
         who: 'FURRYSHINE',
-        desc: 'Làm sạch ráy tai, ngừa viêm bằng nước muối sinh lý kết hợp tràm trà và lô hội. Dịu nhẹ, không cay, không cồn. Dùng định kỳ 1–2 lần/tuần giúp tai chó mèo luôn sạch và khỏe.',
+        desc: 'Làm sạch ráy tai bằng nước muối sinh lý kết hợp tràm trà và lô hội. Dịu nhẹ, không cay, không cồn. Dùng định kỳ 1–2 lần/tuần giúp tai chó mèo luôn sạch và khỏe.',
         ph: 'pH 7.0–7.5',
         temp: 'Nhỏ 3–5 giọt, massage 30 giây, lau sạch',
         ingredients: 'Nước muối sinh lý, chiết xuất tràm trà, lô hội, chất làm dịu. Không cồn, không kháng sinh.',

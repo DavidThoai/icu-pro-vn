@@ -8,7 +8,7 @@ import petVideo from '../images/pet-video.mp4'
 
 const ingredients = [
   { name: 'Chiết xuất yến mạch', icon: '🌾', desc: 'Làm dịu da, giảm ngứa, dưỡng ẩm tự nhiên cho da nhạy cảm của chó mèo.' },
-  { name: 'Tinh dầu tràm trà', icon: '🌿', desc: 'Kháng khuẩn tự nhiên, diệt nấm, khử mùi hôi hiệu quả mà không gây kích ứng.' },
+  { name: 'Tinh dầu tràm trà', icon: '🌿', desc: 'Tự nhiên khử mùi hôi hiệu quả mà không gây kích ứng.' },
   { name: 'Aloe Vera', icon: '🩹', desc: 'Phục hồi da tổn thương, làm mát, chống viêm tự nhiên.' },
   { name: 'Glycerin thực vật', icon: '💧', desc: 'Cấp ẩm sâu, giữ lông mềm mượt không bị khô xơ.' },
   { name: 'Chiết xuất cúc la mã', icon: '🌼', desc: 'Kháng viêm, làm dịu da nhạy cảm, an toàn cho thú cưng con.' },
@@ -18,11 +18,11 @@ const ingredients = [
 const steps = [
   { num: '1', title: 'Làm ướt / Pha loãng', desc: 'Pha 10 ml sản phẩm với 1 lít nước ấm. Làm ướt lông thú cưng hoặc sàn nhà.' },
   { num: '2', title: 'Massage / Lau chùi', desc: 'Massage nhẹ nhàng theo chiều lông 3–5 phút. Lau sàn bằng khăn sạch.' },
-  { num: '3', title: 'Xả sạch', desc: 'Xả lại bằng nước sạch. Lông mềm mượt, sàn sạch khuẩn, mùi hương tự nhiên.' },
+  { num: '3', title: 'Xả sạch', desc: 'Xả lại bằng nước sạch. Lông mềm mượt, sàn sạch sẽ, mùi hương tự nhiên.' },
 ]
 
 const reviews = [
-  { name: 'Minh Anh', pet: 'Poodle · 3 tuổi', text: 'Boss hết hôi sau 2 lần tắm. Lông mềm không bị xơ, mùi tràm trà dễ chịu.', before: 'Lông rối, có mùi', after: 'Lông mềm, sạch khuẩn' },
+  { name: 'Minh Anh', pet: 'Poodle · 3 tuổi', text: 'Boss hết hôi sau 2 lần tắm. Lông mềm không bị xơ, mùi tràm trà dễ chịu.', before: 'Lông rối, có mùi', after: 'Lông mềm, sạch sẽ' },
   { name: 'Trần Hoàng', pet: 'Mèo Anh lông ngắn · 2 tuổi', text: 'Sàn nhà sạch không để lại hóa chất, mèo liếm an toàn. Rất yên tâm.', before: 'Sàn có vết ố, mùi', after: 'Sàn sạch, khử mùi' },
   { name: 'Lê Thy', pet: 'Corgi · 4 tuổi', text: 'Tắm xong da boss không đỏ, không ngứa. Sẽ mua định kỳ.', before: 'Da khô, ngứa', after: 'Da khỏe, lông bóng' },
 ]
@@ -134,12 +134,12 @@ export default function PetCare() {
         <div className="petcare-mechanism">
           <div className="petcare-mech-card before">
             <span className="petcare-mech-label">Trước</span>
-            <p>Da chứa vi khuẩn, nấm mốc, mùi hôi. Lông rối, khô xơ.</p>
+            <p>Da bẩn, có mùi hôi. Lông rối, khô xơ.</p>
           </div>
           <span className="petcare-mech-arrow">→</span>
           <div className="petcare-mech-card after">
             <span className="petcare-mech-label">Sau</span>
-            <p>Sạch khuẩn, màng bảo vệ tự nhiên. Lông mềm mượt, da khỏe mạnh.</p>
+            <p>Sạch sẽ, màng bảo vệ tự nhiên. Lông mềm mượt, da khỏe mạnh.</p>
           </div>
         </div>
       </div>
