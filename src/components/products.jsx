@@ -76,6 +76,7 @@ import pet_spray_2 from '../images/pet-spray-2.jpg'
 import pet_spray_3 from '../images/pet-spray-3.jpg'
 import pet_spray_4 from '../images/pet-spray-4.jpg'
 import pet_spray_5 from '../images/pet-spray-5.jpg'
+import petPerfumeVideo from '../images/pet-perfume-video.mp4'
 import petVideo from '../images/pet-video.mp4'
 import fs03_main from '../images/fs03-main.jpg'
 import fs03_1 from '../images/fs03-1.jpg'
@@ -215,6 +216,7 @@ const families = [
       {
         img: pet_spray, alt: 'Furryshine nước hoa thú cưng 2 in 1 cho chó mèo', code: 'FURRYSHINE', name: 'Nước hoa thú cưng 2 in 1', badge: 'new',
         gallery: [pet_spray_2, pet_spray_3, pet_spray_4, pet_spray_5],
+        video: petPerfumeVideo,
         seo: 'Furryshine nước hoa thú cưng 2 in 1 cho chó và mèo. Hương thơm dịu nhẹ lưu hương lâu dài, khử mùi hôi hiệu quả. Dưỡng lông mềm mượt, óng ả, giảm xơ rối. Thành phần lành tính, an toàn cho da nhạy cảm. Chai 150 ml.',
         claims: ['Hương thơm lưu lâu – khử mùi hôi', 'Mềm mượt, bóng lông', 'Lành tính, không kích ứng'],
         use: 'Làm sạch và lau khô lông thú cưng. Lắc đều chai, xịt trực tiếp lên lông cách 15–20 cm, massage nhẹ và chải lông để lông mềm mượt. Tránh xịt vào mắt, mũi, miệng.',
