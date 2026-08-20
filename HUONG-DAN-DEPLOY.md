@@ -87,6 +87,20 @@ D:\icu.pro.vn\
 > ffmpeg -i input.mp4 -vf scale=480:-2 -c:v libx264 -crf 30 -c:a aac -b:a 96k -ac 1 output.mp4
 > ```
 
+### 🎬 TỶ LỆ VIDEO CHUẨN (tránh bị cắt / che khuất)
+
+- **Nguyên tắc:** video phải hiển thị **trọn vẹn, đúng tỷ lệ gốc** — KHÔNG dùng `object-fit: cover` (sẽ cắt xén), KHÔNG phóng to (scale) khi rê chuột.
+- **Tỷ lệ chuẩn đang dùng:**
+  - Video **dọc 9:16** = 720×1280 (nước hoa thú cưng, fs03, sieuam, c819, pet)
+  - Video **ngang 16:9** = 480×270 (ab, c268, c368, c369, c686, t889)
+- **Đã cấu hình tự động:** code hiển thị video đúng tỷ lệ gốc từng video (khung `.product-img.has-video` + `height:auto` + `object-fit: contain` + nền đen). Khi thêm video mới chỉ cần đúng tỷ lệ gốc là hiển thị chuẩn, không cần sửa code.
+- **Nén video dọc (giữ tỷ lệ 9:16):**
+  ```bash
+  ffmpeg -i input.mp4 -vf scale=720:-2 -c:v libx264 -crf 30 -c:a aac -b:a 96k -ac 1 output.mp4
+  ```
+  (Lưu ý: `scale=480:-2` sẽ ra video ngang 16:9 — dùng `720:-2` cho video dọc.)
+- **Giới hạn tải lên Cloudflare:** file `dist/index.html` phải **< 25MB**. Video lớn nên đặt vào `public/` (file riêng, không nhúng) để tránh vượt giới hạn — ví dụ video nước hoa đang ở `public/pet-perfume-video.mp4`, code tham chiếu bằng đường dẫn `/pet-perfume-video.mp4`.
+
 ### Sau khi sửa xong → 3 lệnh git push (mục ⚡ ở trên)
 
 ---
