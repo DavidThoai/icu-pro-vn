@@ -7,7 +7,7 @@ export default function FloatingChat() {
     <div className="float-chat" aria-label="Liên hệ nhanh">
       <a
         className="float-btn float-zalo"
-        href="https://zalo.me/0918051655"
+        href="https://zalo.me/1549340923407067202"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat Zalo"

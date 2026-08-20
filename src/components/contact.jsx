@@ -90,7 +90,7 @@ export default function Contact() {
             </li>
             <li>
               <span>Zalo</span>
-              <a href="https://zalo.me/0918051655">0918 051 655</a>
+              <a href="https://zalo.me/1549340923407067202">Nhắn Zalo OA</a>
             </li>
             <li>
               <span>Website</span>
@@ -142,11 +142,11 @@ export default function Contact() {
               )}
               <a
                 className="btn btn-block btn-zalo"
-                href="https://zalo.me/0918051655"
+                href="https://zalo.me/1549340923407067202"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Nhắn Zalo: 0918 051 655
+                Nhắn Zalo OA
               </a>
               <a className="btn btn-block btn-phone" href="tel:0788535659">
                 Gọi ngay: 0788 53 56 59
