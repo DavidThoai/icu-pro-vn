@@ -90,7 +90,7 @@ export default function Contact() {
             </li>
             <li>
               <span>Zalo</span>
-              <a href="https://zalo.me/1549340923407067202">Nhắn Zalo OA</a>
+              <a href="https://zalo.me/1549340923407067202">Nhắn Zalo OA · 0918 051 655</a>
             </li>
             <li>
               <span>Website</span>
@@ -146,11 +146,15 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Nhắn Zalo OA
+                Nhắn Zalo OA · 0918 051 655
               </a>
               <a className="btn btn-block btn-phone" href="tel:0788535659">
                 Gọi ngay: 0788 53 56 59
               </a>
+              <a className="btn btn-block btn-phone" href="tel:0918051655">
+                Gọi: 0918 051 655
+              </a>
+              <p className="form-note">Tư Vấn 24/7</p>
             </div>
           ) : (
             <form onSubmit={onSubmit} noValidate>
