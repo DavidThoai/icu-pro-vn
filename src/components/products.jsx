@@ -71,6 +71,7 @@ import pet_2 from '../images/pet-2.jpg'
 import pet_3 from '../images/pet-3.jpg'
 import pet_4 from '../images/pet-4.jpg'
 import pet_5 from '../images/pet-5.jpg'
+import pet_spray from '../images/pet-spray.jpg'
 import petVideo from '../images/pet-video.mp4'
 import fs03_main from '../images/fs03-main.jpg'
 import fs03_1 from '../images/fs03-1.jpg'
@@ -208,13 +209,13 @@ const families = [
         formula: 'Enzyme sinh học tự nhiên, vi sinh có lợi, hương bạc hà. Không chứa hóa chất độc hại, phân hủy sinh học an toàn.',
       },
       {
-        img: pet_4, alt: 'Furryshine Pet xịt khử mùi lông', code: 'FURRYSHINE', name: 'Xịt khử mùi lông',
+        img: pet_spray, alt: 'Furryshine Pet xịt khử mùi enzyme lông 250 ml', code: 'FURRYSHINE', name: 'Xịt khử mùi lông', badge: 'new',
         gallery: [pet_1, pet_2, pet_3, pet_5],
         video: petVideo,
-        seo: 'Furryshine Pet xịt khử mùi lông giữa các lần tắm. Hương hoa nhẹ nhàng, không kích ứng da, an toàn cho chó mèo con. Giúp lông thơm mát và mềm mượt mỗi ngày.',
-        claims: ['Khử mùi giữa các lần tắm', 'Hương hoa nhẹ', 'An toàn cho thú cưng con'],
-        use: 'Xịt trực tiếp lên lông từ khoảng 20 cm, chải đều. Không cần xả lại.',
-        formula: 'Chiết xuất hoa, yến mạch, nước tinh khiết. Không cồn, không kích ứng da.',
+        seo: 'Furryshine Pet xịt khử mùi enzyme giữa các lần tắm. Enzyme sinh học khử mùi hôi tận gốc, xịt trực tiếp lên lông giúp lông mềm mượt và thơm mát. Chiết xuất bạc hà dịu nhẹ, an toàn cho chó mèo. Chai 250 ml.',
+        claims: ['Enzyme khử mùi tận gốc', 'Xịt lên lông – mềm mượt', 'Bạc hà dịu nhẹ, an toàn'],
+        use: 'Xịt trực tiếp lên lông từ khoảng 20 cm, chải đều. Không cần xả lại. Dùng giữa các lần tắm hoặc hằng ngày.',
+        formula: 'Enzyme sinh học, Glycerin, chiết xuất bạc hà, nước tinh khiết. Không cồn, không kích ứng da.',
       },
       {
         img: pet_5, alt: 'Furryshine Pet dung dịch vệ sinh tai', code: 'FURRYSHINE', name: 'Dung dịch vệ sinh tai', badge: 'new',
