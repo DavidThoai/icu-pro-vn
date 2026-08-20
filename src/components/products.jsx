@@ -257,7 +257,7 @@ function ProductCard({ p }) {
   return (
     <article className="product" key={p.name}>
       <img src={badgeCongThucMoi} alt="Công thức mới cải tiến" className="badge-img" loading="lazy" />
-      <div className="product-img">
+      <div className={`product-img${showVideo ? ' has-video' : ''}`}>
         {showVideo ? (
           <video src={p.video} controls autoPlay loop muted playsInline />
         ) : (
