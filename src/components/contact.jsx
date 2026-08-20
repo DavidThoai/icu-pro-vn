@@ -152,7 +152,7 @@ export default function Contact() {
                 Gọi ngay: 0788 53 56 59
               </a>
               <a className="btn btn-block btn-phone" href="tel:0918051655">
-                Gọi: 0918 051 655
+                Gọi: 0918 051 655 / Zalo Tư Vấn 24/7 0918 051 655
               </a>
               <p className="form-note">Tư Vấn 24/7</p>
             </div>
