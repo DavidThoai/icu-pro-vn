@@ -624,8 +624,8 @@ section {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  background: #000;
   display: block;
-  transition: transform 300ms ease;
 }
 
 .product-thumbs .thumb.placeholder {
@@ -652,9 +652,6 @@ section {
   transform: scale(1.32);
 }
 
-.product:hover .product-img video {
-  transform: scale(1.32);
-}
 
 .product.wide .product-img {
   flex: 0 0 clamp(220px, 28vw, 300px);
