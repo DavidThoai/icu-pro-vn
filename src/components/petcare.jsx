@@ -7,7 +7,7 @@ import pet_5 from '../images/pet-5.jpg'
 import petVideo from '../images/pet-video.mp4'
 
 const ingredients = [
-  { name: 'Chiết xuất yến mạch', icon: '🌾', desc: 'Làm dịu da, giảm ngứa, dưỡng ẩm tự nhiên cho da nhạy cảm của chó mèo.' },
+  { name: 'Chiết xuất dưa cantaloupe', icon: '🍈', desc: 'Hương thơm mát ngọt nhẹ, lưu hương lâu, làm sạch dịu nhẹ da và lông.' },
   { name: 'Tinh dầu tràm trà', icon: '🌿', desc: 'Tự nhiên khử mùi hôi hiệu quả mà không gây kích ứng.' },
   { name: 'Aloe Vera', icon: '🩹', desc: 'Phục hồi da tổn thương, làm mát, chống viêm tự nhiên.' },
   { name: 'Glycerin thực vật', icon: '💧', desc: 'Cấp ẩm sâu, giữ lông mềm mượt không bị khô xơ.' },

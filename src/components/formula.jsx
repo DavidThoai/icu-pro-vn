@@ -90,12 +90,12 @@ const tabs = [
     label: 'Furryshine Pet',
     specs: [
       {
-        name: 'FURRYSHINE - Sữa tắm thảo dược Yến mạch',
+        name: 'FURRYSHINE - Sữa tắm thú cưng Pet (Hương Cantaloup)',
         who: 'FURRYSHINE',
-        desc: 'Công thức organic chiết xuất yến mạch (oat extract) làm dịu da, giảm ngứa cho da nhạy cảm của chó mèo. Aloe Vera phục hồi da tổn thương, glycerin thực vật cấp ẩm sâu giữ lông mềm mượt. pH 7.2 cân bằng chuẩn da thú cưng, không kích ứng mắt.',
+        desc: 'Sữa tắm thú cưng hương cantaloup (dưa lưới) thơm mát, làm sạch dịu nhẹ da và lông chó mèo. Aloe Vera dưỡng ẩm, glycerin thực vật giữ lông mềm mượt, hương ngọt nhẹ lưu hương lâu.',
         ph: 'pH 7.2 (chuẩn da chó mèo)',
         temp: 'Pha 10 ml / 1 lít nước ấm',
-        ingredients: 'Chiết xuất yến mạch, Aloe Vera, glycerin thực vật, chất tạo bọt tự nhiên (cocamidopropyl betaine), nước tinh khiết. Không SLS, không paraben, không cồn công nghiệp.',
+        ingredients: 'Chiết xuất dưa cantaloupe, Aloe Vera, glycerin thực vật, chất tạo bọt tự nhiên (cocamidopropyl betaine), nước tinh khiết. Không SLS, không paraben, không cồn công nghiệp.',
       },
       {
         name: 'FURRYSHINE - Sữa tắm Tràm trà',
@@ -114,12 +114,12 @@ const tabs = [
         ingredients: 'QAC (chất làm sạch), tinh dầu tràm trà, chất hoạt động bề mặt thực vật, nước tinh khiết.',
       },
       {
-        name: 'FURRYSHINE - Xịt khử mùi lông',
+        name: 'FURRYSHINE - Nước hoa thú cưng 2 in 1',
         who: 'FURRYSHINE',
-        desc: 'Khử mùi hôi giữa các lần tắm bằng chiết xuất hoa và yến mạch. Không cồn, không kích ứng da, an toàn cho thú cưng con. Hương hoa nhẹ nhàng, giúp lông thơm mát, mềm mượt mỗi ngày.',
-        ph: 'pH 6.5–7.0',
-        temp: 'Xịt trực tiếp từ 20 cm, không cần xả lại',
-        ingredients: 'Chiết xuất hoa, chiết xuất yến mạch, nước tinh khiết, chất dưỡng ẩm thực vật. Không cồn.',
+        desc: 'Nước hoa thú cưng 2 in 1 cho chó và mèo. Hương thơm dịu nhẹ lưu hương lâu, khử mùi hôi hiệu quả, dưỡng lông mềm mượt óng ả. Thành phần lành tính, an toàn cho da nhạy cảm.',
+        ph: 'Không cồn – không paraben',
+        temp: 'Xịt lên lông cách 15–20 cm, chải đều',
+        ingredients: 'Chiết xuất hoa anh đào, chiết xuất lô hội, tinh dầu thiên nhiên. Không cồn, không paraben.',
       },
       {
         name: 'FURRYSHINE - Dung dịch vệ sinh tai',

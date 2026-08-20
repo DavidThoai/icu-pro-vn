@@ -186,13 +186,13 @@ const families = [
     accent: 'mint',
     items: [
       {
-        img: pet_1, alt: 'Furryshine Pet sữa tắm thảo dược yến mạch', code: 'FURRYSHINE', name: 'Sữa tắm thảo dược Yến mạch', badge: 'bestseller',
+        img: pet_1, alt: 'Furryshine Pet sữa tắm thú cưng hương cantaloup', code: 'FURRYSHINE', name: 'Sữa tắm thú cưng Pet (Hương Cantaloup)', badge: 'bestseller',
         gallery: [pet_2, pet_3, pet_4, pet_5],
         video: petVideo,
-        seo: 'Furryshine Pet sữa tắm thảo dược chiết xuất yến mạch, làm dịu da và giảm ngứa cho da nhạy cảm của chó mèo. pH 7.2 cân bằng chuẩn da thú cưng, không kích ứng mắt, 100% organic.',
-        claims: ['Chiết xuất yến mạch – dịu da', 'pH 7.2 chuẩn da thú cưng', 'Không kích ứng mắt'],
+        seo: 'Furryshine Pet sữa tắm thú cưng hương cantaloup (dưa lưới) thơm mát. Làm sạch dịu nhẹ da và lông chó mèo, giúp lông mềm mượt và lưu hương ngọt nhẹ. Thành phần lành tính, an toàn cho thú cưng.',
+        claims: ['Hương cantaloup thơm mát', 'Làm sạch dịu nhẹ da lông', 'Lành tính, an toàn'],
         use: 'Pha 10 ml sản phẩm với 1 lít nước ấm. Làm ướt lông, massage nhẹ 3–5 phút, xả sạch lại bằng nước.',
-        formula: 'Chiết xuất yến mạch, Aloe Vera, Glycerin thực vật, pH 7.2. Không chứa SLS, paraben, cồn công nghiệp.',
+        formula: 'Chiết xuất dưa cantaloupe, Aloe Vera, Glycerin thực vật. Không chứa SLS, paraben, cồn công nghiệp.',
       },
       {
         img: pet_2, alt: 'Furryshine Pet sữa tắm tràm trà', code: 'FURRYSHINE', name: 'Sữa tắm Tràm trà', badge: 'bestseller',
