@@ -177,6 +177,22 @@ const tabs = [
         temp: 'Thoa đều, massage 3–5 phút rồi xả sạch',
         ingredients: 'Chiết xuất lô hội, oải hương, hương thảo, Omega, vitamin và dưỡng chất. Không chứa chất độc hại.',
       },
+      {
+        name: 'FURRYSHINE - Sữa tắm cho chó lông nâu đỏ',
+        who: 'FURRYSHINE',
+        desc: 'Sữa tắm chuyên biệt cho chó lông nâu đỏ 530ml. Làm sạch dịu nhẹ da và lông, dưỡng lông bóng mượt, lưu hương thơm dễ chịu. Chiết xuất thiên nhiên kết hợp nano bạc và tinh dầu dưỡng, lành tính cho da nhạy cảm của chó.',
+        ph: 'pH 7.0–7.5 (chuẩn da chó)',
+        temp: 'Pha 10 ml / 1 lít nước ấm',
+        ingredients: 'Chiết xuất thiên nhiên, nano bạc, tinh dầu dưỡng lông. Không SLS, không paraben, không cồn công nghiệp.',
+      },
+      {
+        name: 'FURRYSHINE - Sữa tắm cho mèo',
+        who: 'FURRYSHINE',
+        desc: 'Sữa tắm chuyên biệt cho mèo 530ml. Làm sạch dịu nhẹ, dưỡng lông mềm mượt như nhung, lưu hương thơm nhẹ nhàng. Chiết xuất thiên nhiên, lành tính, an toàn cho da mèo nhạy cảm.',
+        ph: 'pH 7.0–7.5 (chuẩn da mèo)',
+        temp: 'Pha 10 ml / 1 lít nước ấm',
+        ingredients: 'Chiết xuất thiên nhiên, tinh dầu dịu nhẹ, dưỡng chất làm mềm lông. Không SLS, không paraben, không cồn công nghiệp.',
+      },
     ],
   },
 ]

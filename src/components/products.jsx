@@ -309,6 +309,22 @@ const families = [
         use: 'Làm ướt lông thú cưng, thoa đều sữa tắm, massage nhẹ 3–5 phút rồi xả sạch. Dùng được cho chó mèo từ 6 tuần tuổi.',
         formula: 'Chiết xuất tự nhiên (lô hội, oải hương, hương thảo), Omega, vitamin và dưỡng chất. Công thức 2 trong 1, không chứa chất độc hại.',
       },
+      {
+        img: '/img/dog-redbrown-main.jpg', alt: 'Furryshine sữa tắm cho chó lông nâu đỏ dưỡng lông 530ml', code: 'FURRYSHINE', name: 'Sữa tắm cho chó lông nâu đỏ', badge: 'new',
+        gallery: ['/img/dog-redbrown-2.jpg', '/img/dog-redbrown-3.jpg', '/img/dog-redbrown-4.jpg', '/img/dog-redbrown-5.jpg'],
+        seo: 'Furryshine sữa tắm cho chó lông nâu đỏ 530ml. Làm sạch dịu nhẹ da và lông, dưỡng lông bóng mượt, lưu hương thơm dễ chịu. Công thức chiết xuất thiên nhiên kết hợp nano bạc và tinh dầu dưỡng, lành tính cho da nhạy cảm của chó.',
+        claims: ['Dưỡng lông bóng mượt – lưu hương thơm', 'Làm sạch dịu nhẹ da và lông', 'Chiết xuất thiên nhiên, lành tính'],
+        use: 'Làm ướt lông chó bằng nước ấm, pha 10 ml sản phẩm với 1 lít nước, massage nhẹ 3–5 phút rồi xả sạch lại bằng nước sạch.',
+        formula: 'Chiết xuất thiên nhiên, nano bạc, tinh dầu dưỡng lông. Không SLS, không paraben, không cồn công nghiệp.',
+      },
+      {
+        img: '/img/cat-main.jpg', alt: 'Furryshine sữa tắm cho mèo dưỡng lông 530ml', code: 'FURRYSHINE', name: 'Sữa tắm cho mèo', badge: 'new',
+        gallery: ['/img/cat-2.jpg', '/img/cat-3.jpg', '/img/cat-4.jpg', '/img/cat-5.jpg'],
+        seo: 'Furryshine sữa tắm cho mèo 530ml. Làm sạch dịu nhẹ, dưỡng lông mềm mượt như nhung, lưu hương thơm nhẹ nhàng. Công thức chiết xuất thiên nhiên, lành tính, an toàn cho da mèo nhạy cảm.',
+        claims: ['Lông mềm mượt như nhung', 'Làm sạch dịu nhẹ – lưu hương thơm', 'Chiết xuất thiên nhiên, lành tính'],
+        use: 'Làm ướt lông mèo bằng nước ấm, pha 10 ml sản phẩm với 1 lít nước, massage nhẹ 3–5 phút rồi xả sạch lại bằng nước sạch.',
+        formula: 'Chiết xuất thiên nhiên, tinh dầu dịu nhẹ, dưỡng chất làm mềm lông. Không SLS, không paraben, không cồn công nghiệp.',
+      },
     ],
   },
 ]
