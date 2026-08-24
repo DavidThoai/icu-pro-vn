@@ -585,7 +585,7 @@ section {
   overflow: hidden;
   flex: none;
   border: 1px solid var(--border);
-  background: var(--surface-2);
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -603,7 +603,8 @@ section {
 .product-thumbs .thumb img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  background: #fff;
 }
 
 .product-thumbs .thumb.video-thumb {
