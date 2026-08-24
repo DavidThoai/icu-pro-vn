@@ -92,6 +92,8 @@ import ultrasonic_5l_main from '../images/ultrasonic-5l-main.jpg'
 import ultrasonic_5l_2 from '../images/ultrasonic-5l-2.jpg'
 import ultrasonic_5l_3 from '../images/ultrasonic-5l-3.jpg'
 import ultrasonic_5l_4 from '../images/ultrasonic-5l-4.jpg'
+import pet_recovery_5 from '../images/pet-recovery-5.jpg'
+import ultrasonic_5l_5 from '../images/ultrasonic-5l-5.jpg'
 const families = [
   {
     code: 'DUNG DỊCH TẨY RỬA CÔNG NGHIỆP · GARAGE',
@@ -188,7 +190,8 @@ const families = [
       },
       {
         img: ultrasonic_5l_main, alt: 'ICU dung dịch siêu âm rửa trang sức 5 lít vàng bạc đá quý kim cương', code: 'SIÊU ÂM 5L', name: 'Dung dịch siêu âm 5 lít', badge: 'pro',
-        gallery: [ultrasonic_5l_2, ultrasonic_5l_3, ultrasonic_5l_4],
+        gallery: [ultrasonic_5l_2, ultrasonic_5l_3, ultrasonic_5l_4, ultrasonic_5l_5],
+        video: '/ultrasonic-5l-video.mp4',
         seo: 'ICU dung dịch siêu âm chuyên dụng 5 lít cho máy rửa siêu âm trang sức. Làm sạch sâu vàng, bạc, đá quý, kim cương. Không gây hao mòn, an toàn cho da tay. Tiết kiệm chi phí, hiệu quả tối đa cho tiệm vàng.',
         claims: ['Không gây hao mòn – an toàn da tay', 'Vàng · bạc · đá quý · kim cương', 'Tiết kiệm chi phí – hiệu quả tối đa'],
         use: 'Đổ dung dịch vào máy siêu âm, phủ lấp bề mặt trang sức cần làm sáng. Chạy máy 15–30 giây rồi rửa lại bằng nước sạch, lau khô. Can 5 lít pha loãng, dùng nhiều lần.',
@@ -257,7 +260,8 @@ const families = [
       },
       {
         img: pet_recovery_main, alt: 'Furryshine sữa tắm thú cưng phục hồi da làm mềm mượt dưỡng lông', code: 'FURRYSHINE', name: 'Sữa tắm phục hồi da', badge: 'new',
-        gallery: [pet_recovery_2, pet_recovery_3, pet_recovery_4],
+        gallery: [pet_recovery_2, pet_recovery_3, pet_recovery_4, pet_recovery_5],
+        video: '/pet-recovery-video.mp4',
         seo: 'Furryshine sữa tắm thú cưng phục hồi da 530ml. Làm sạch sâu dịu nhẹ, khử mùi hiệu quả. Phục hồi hư tổn, bảo vệ da khỏi khô rát và kích ứng, dưỡng lông mềm mượt bóng khỏe. Công thức 2 trong 1, chiết xuất tự nhiên lành tính, an toàn cho da nhạy cảm.',
         claims: ['Phục hồi hư tổn – bảo vệ da', 'Làm sạch sâu – khử mùi hiệu quả', 'Lông mềm mượt – bóng khỏe', 'Lành tính, an toàn da nhạy cảm'],
         use: 'Làm ướt lông thú cưng, thoa đều sữa tắm, massage nhẹ 3–5 phút rồi xả sạch. Dùng được cho chó mèo từ 6 tuần tuổi.',
