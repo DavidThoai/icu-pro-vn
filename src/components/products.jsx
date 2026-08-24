@@ -84,6 +84,14 @@ import fs03_3 from '../images/fs03-3.jpg'
 import fs03_4 from '../images/fs03-4.jpg'
 import fs03Video from '../images/fs03-video.mp4'
 import badgeCongThucMoi from '../images/badge-cong-thuc-moi.png'
+import pet_recovery_main from '../images/pet-recovery-main.jpg'
+import pet_recovery_2 from '../images/pet-recovery-2.jpg'
+import pet_recovery_3 from '../images/pet-recovery-3.jpg'
+import pet_recovery_4 from '../images/pet-recovery-4.jpg'
+import ultrasonic_5l_main from '../images/ultrasonic-5l-main.jpg'
+import ultrasonic_5l_2 from '../images/ultrasonic-5l-2.jpg'
+import ultrasonic_5l_3 from '../images/ultrasonic-5l-3.jpg'
+import ultrasonic_5l_4 from '../images/ultrasonic-5l-4.jpg'
 const families = [
   {
     code: 'DUNG DỊCH TẨY RỬA CÔNG NGHIỆP · GARAGE',
@@ -178,6 +186,14 @@ const families = [
         use: 'Nhúng trang sức bạc vào dung dịch. Để vài giây đến khi bạc sáng lại. Rửa nước sạch, lau khô.',
         formula: 'Dung dịch chuyên dụng cho bạc, loại bỏ sulfide bạc (ố đen) mà không mài mòn bề mặt.',
       },
+      {
+        img: ultrasonic_5l_main, alt: 'ICU dung dịch siêu âm rửa trang sức 5 lít vàng bạc đá quý kim cương', code: 'SIÊU ÂM 5L', name: 'Dung dịch siêu âm 5 lít', badge: 'pro',
+        gallery: [ultrasonic_5l_2, ultrasonic_5l_3, ultrasonic_5l_4],
+        seo: 'ICU dung dịch siêu âm chuyên dụng 5 lít cho máy rửa siêu âm trang sức. Làm sạch sâu vàng, bạc, đá quý, kim cương. Không gây hao mòn, an toàn cho da tay. Tiết kiệm chi phí, hiệu quả tối đa cho tiệm vàng.',
+        claims: ['Không gây hao mòn – an toàn da tay', 'Vàng · bạc · đá quý · kim cương', 'Tiết kiệm chi phí – hiệu quả tối đa'],
+        use: 'Đổ dung dịch vào máy siêu âm, phủ lấp bề mặt trang sức cần làm sáng. Chạy máy 15–30 giây rồi rửa lại bằng nước sạch, lau khô. Can 5 lít pha loãng, dùng nhiều lần.',
+        formula: 'Dung dịch gốc nước chuyên dụng, không gây hao mòn, an toàn cho đá tự nhiên và da tay. Dung tích 5 lít.',
+      },
     ],
   },
   {
@@ -186,7 +202,7 @@ const families = [
     accent: 'mint',
     items: [
       {
-        img: pet_1, alt: 'Furryshine Pet sữa tắm thú cưng hương cantaloup', code: 'FURRYSHINE', name: 'Sữa tắm thú cưng Pet (Hương Cantaloup)', badge: 'bestseller',
+        img: pet_1, alt: 'Furryshine Pet sữa tắm thú cưng giúp mượt lông hương cantaloup', code: 'FURRYSHINE', name: 'Sữa tắm thú cưng - Giúp Mượt Lông (Hương Cantaloup)', badge: 'bestseller',
         gallery: [pet_2, pet_3, pet_4, pet_5],
         video: petVideo,
         seo: 'Furryshine Pet sữa tắm thú cưng hương cantaloup (dưa lưới) thơm mát. Làm sạch dịu nhẹ da và lông chó mèo, giúp lông mềm mượt và lưu hương ngọt nhẹ. Thành phần lành tính, an toàn cho thú cưng.',
@@ -238,6 +254,14 @@ const families = [
         claims: ['Chống rối – bóng mượt', 'Giảm rụng lông', 'Hương tự nhiên'],
         use: 'Sau khi tắm, thoa đều lên lông ướt, massage 2–3 phút, xả sạch.',
         formula: 'Glycerin thực vật, chiết xuất cúc la mã, vitamin E. Không silicone, không paraben.',
+      },
+      {
+        img: pet_recovery_main, alt: 'Furryshine sữa tắm thú cưng phục hồi da làm mềm mượt dưỡng lông', code: 'FURRYSHINE', name: 'Sữa tắm phục hồi da', badge: 'new',
+        gallery: [pet_recovery_2, pet_recovery_3, pet_recovery_4],
+        seo: 'Furryshine sữa tắm thú cưng phục hồi da 530ml. Làm sạch sâu dịu nhẹ, khử mùi hiệu quả. Phục hồi hư tổn, bảo vệ da khỏi khô rát và kích ứng, dưỡng lông mềm mượt bóng khỏe. Công thức 2 trong 1, chiết xuất tự nhiên lành tính, an toàn cho da nhạy cảm.',
+        claims: ['Phục hồi hư tổn – bảo vệ da', 'Làm sạch sâu – khử mùi hiệu quả', 'Lông mềm mượt – bóng khỏe', 'Lành tính, an toàn da nhạy cảm'],
+        use: 'Làm ướt lông thú cưng, thoa đều sữa tắm, massage nhẹ 3–5 phút rồi xả sạch. Dùng được cho chó mèo từ 6 tuần tuổi.',
+        formula: 'Chiết xuất tự nhiên (lô hội, oải hương, hương thảo), Omega, vitamin và dưỡng chất. Công thức 2 trong 1, không chứa chất độc hại.',
       },
     ],
   },

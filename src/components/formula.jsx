@@ -83,6 +83,14 @@ const tabs = [
         temp: 'Nhúng 5–10 giây, nhiệt độ phòng',
         ingredients: 'Thiourea derivative, acid citric (tối thiểu), chất hoạt động bề mặt, nước tinh khiết.',
       },
+      {
+        name: 'SIÊU ÂM 5L — Dung dịch siêu âm 5 lít',
+        who: 'SIÊU ÂM 5L',
+        desc: 'Dung dịch siêu âm chuyên dụng can 5 lít cho máy rửa siêu âm trang sức. Làm sạch sâu vàng, bạc, đá quý, kim cương. Không gây hao mòn, an toàn cho da tay và đá tự nhiên. Tiết kiệm chi phí, hiệu quả tối đa cho tiệm vàng.',
+        ph: 'pH 7.5–8.5',
+        temp: 'Chạy máy 15–30 giây mỗi mẻ, rửa lại nước sạch',
+        ingredients: 'Chất hoạt động bề mặt phi ion, chất tạo phức nhẹ, nước tinh khiết. Gốc nước, không dung môi, không acid.',
+      },
     ],
   },
   {
@@ -90,7 +98,7 @@ const tabs = [
     label: 'Furryshine Pet',
     specs: [
       {
-        name: 'FURRYSHINE - Sữa tắm thú cưng Pet (Hương Cantaloup)',
+        name: 'FURRYSHINE - Sữa tắm thú cưng - Giúp Mượt Lông (Hương Cantaloup)',
         who: 'FURRYSHINE',
         desc: 'Sữa tắm thú cưng hương cantaloup (dưa lưới) thơm mát, làm sạch dịu nhẹ da và lông chó mèo. Aloe Vera dưỡng ẩm, glycerin thực vật giữ lông mềm mượt, hương ngọt nhẹ lưu hương lâu.',
         ph: 'pH 7.2 (chuẩn da chó mèo)',
@@ -136,6 +144,14 @@ const tabs = [
         ph: 'pH 6.8–7.2',
         temp: 'Sau khi tắm, massage 2–3 phút rồi xả sạch',
         ingredients: 'Glycerin thực vật, chiết xuất cúc la mã, vitamin E, chất dưỡng lông thực vật, nước tinh khiết.',
+      },
+      {
+        name: 'FURRYSHINE - Sữa tắm phục hồi da',
+        who: 'FURRYSHINE',
+        desc: 'Sữa tắm thú cưng phục hồi da 530ml. Làm sạch sâu dịu nhẹ, khử mùi hiệu quả, phục hồi hư tổn và bảo vệ da khỏi khô rát, kích ứng. Công thức 2 trong 1, chiết xuất tự nhiên lành tính, an toàn cho da nhạy cảm.',
+        ph: 'pH 7.0–7.5 (chuẩn da chó mèo)',
+        temp: 'Thoa đều, massage 3–5 phút rồi xả sạch',
+        ingredients: 'Chiết xuất lô hội, oải hương, hương thảo, Omega, vitamin và dưỡng chất. Không chứa chất độc hại.',
       },
     ],
   },
