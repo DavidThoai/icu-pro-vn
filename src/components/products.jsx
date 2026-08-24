@@ -94,6 +94,15 @@ import ultrasonic_5l_3 from '../images/ultrasonic-5l-3.jpg'
 import ultrasonic_5l_4 from '../images/ultrasonic-5l-4.jpg'
 import pet_recovery_5 from '../images/pet-recovery-5.jpg'
 import ultrasonic_5l_5 from '../images/ultrasonic-5l-5.jpg'
+import ultrasonic_1l_main from '../images/ultrasonic-1l-main.jpg'
+import ultrasonic_1l_2 from '../images/ultrasonic-1l-2.jpg'
+import ultrasonic_1l_3 from '../images/ultrasonic-1l-3.jpg'
+import silver_1l_main from '../images/silver-1l-main.jpg'
+import silver_1l_2 from '../images/silver-1l-2.jpg'
+import silver_1l_3 from '../images/silver-1l-3.jpg'
+import silver_5l_main from '../images/silver-5l-main.jpg'
+import silver_5l_2 from '../images/silver-5l-2.jpg'
+import silver_5l_3 from '../images/silver-5l-3.jpg'
 const families = [
   {
     code: 'DUNG DỊCH TẨY RỬA CÔNG NGHIỆP · GARAGE',
@@ -196,6 +205,33 @@ const families = [
         claims: ['Không gây hao mòn – an toàn da tay', 'Vàng · bạc · đá quý · kim cương', 'Tiết kiệm chi phí – hiệu quả tối đa'],
         use: 'Đổ dung dịch vào máy siêu âm, phủ lấp bề mặt trang sức cần làm sáng. Chạy máy 15–30 giây rồi rửa lại bằng nước sạch, lau khô. Can 5 lít pha loãng, dùng nhiều lần.',
         formula: 'Dung dịch gốc nước chuyên dụng, không gây hao mòn, an toàn cho đá tự nhiên và da tay. Dung tích 5 lít.',
+      },
+      {
+        img: ultrasonic_1l_main, alt: 'ICU dung dịch siêu âm rửa trang sức 1 lít vàng bạc đá quý kim cương', code: 'SIÊU ÂM 1L', name: 'Dung dịch siêu âm (1 lít)', badge: 'pro',
+        gallery: [ultrasonic_1l_2, ultrasonic_1l_3],
+        video: '/ultrasonic-1l-video.mp4',
+        seo: 'ICU dung dịch siêu âm chuyên dụng 1 lít cho máy rửa siêu âm trang sức. Làm sạch sâu vàng, bạc, đá quý, kim cương. Không gây hao mòn, an toàn cho da tay. Tiết kiệm chi phí, hiệu quả tối đa.',
+        claims: ['Không gây hao mòn – an toàn da tay', 'Vàng · bạc · đá quý · kim cương', 'Tiết kiệm chi phí – hiệu quả tối đa'],
+        use: 'Đổ dung dịch vào máy siêu âm, phủ lấp bề mặt trang sức cần làm sáng. Chạy máy 15–90 giây rồi rửa lại bằng nước sạch, lau khô.',
+        formula: 'Dung dịch gốc nước chuyên dụng, không gây hao mòn, an toàn cho đá tự nhiên và da tay. Dung tích 1 lít.',
+      },
+      {
+        img: silver_1l_main, alt: 'ICU C819 vệ sinh bạc ố đen 1 lít phục hồi độ sáng trang sức', code: 'C819 1L', name: 'Vệ sinh bạc ố đen (1 Lít)', badge: 'pro',
+        gallery: [silver_1l_2, silver_1l_3],
+        video: '/silver-1l-video.mp4',
+        seo: 'ICU C819 dung dịch vệ sinh trang sức bạc ố đen 1 lít. Ngâm 15–20 giây, bạc sáng lại tức thì, dùng được nhiều lần. Phục hồi độ sáng bạc 925, sterling. Dung tích 1 lít.',
+        claims: ['Sạch bạc ố đen – hiệu quả tức thì', 'Dùng được nhiều lần', 'Bạc 925 · sterling'],
+        use: 'Ngâm trang sức bạc bị xỉn màu 15–20 giây, rửa qua nước sạch rồi dùng khăn mềm lau khô. Dung tích 1 lít.',
+        formula: 'Chất làm sạch anion, chất hoạt động bề mặt, hương liệu. Loại bỏ lớp ố đen trên bạc, không mài mòn bề mặt.',
+      },
+      {
+        img: silver_5l_main, alt: 'ICU C819 vệ sinh bạc ố đen 5 lít phục hồi độ sáng trang sức', code: 'C819 5L', name: 'Vệ sinh bạc ố đen (5 Lít)', badge: 'pro',
+        gallery: [silver_5l_2, silver_5l_3],
+        video: '/silver-5l-video.mp4',
+        seo: 'ICU C819 dung dịch vệ sinh trang sức bạc ố đen 5 lít. Ngâm 15–20 giây, bạc sáng lại tức thì, dùng được nhiều lần. Tiết kiệm chi phí cho tiệm vàng. Dung tích 5 lít.',
+        claims: ['Sạch bạc ố đen – hiệu quả tức thì', 'Dùng được nhiều lần – tiết kiệm', 'Bạc 925 · sterling'],
+        use: 'Ngâm trang sức bạc bị xỉn màu 15–20 giây, rửa qua nước sạch rồi dùng khăn mềm lau khô. Can 5 lít.',
+        formula: 'Chất làm sạch anion, chất hoạt động bề mặt, hương liệu. Loại bỏ lớp ố đen trên bạc, không mài mòn bề mặt.',
       },
     ],
   },
