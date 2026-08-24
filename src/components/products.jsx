@@ -103,6 +103,12 @@ import silver_1l_3 from '../images/silver-1l-3.jpg'
 import silver_5l_main from '../images/silver-5l-main.jpg'
 import silver_5l_2 from '../images/silver-5l-2.jpg'
 import silver_5l_3 from '../images/silver-5l-3.jpg'
+import ultrasonic_1l_4 from '../images/ultrasonic-1l-4.jpg'
+import ultrasonic_1l_5 from '../images/ultrasonic-1l-5.jpg'
+import silver_1l_4 from '../images/silver-1l-4.jpg'
+import silver_1l_5 from '../images/silver-1l-5.jpg'
+import silver_5l_4 from '../images/silver-5l-4.jpg'
+import silver_5l_5 from '../images/silver-5l-5.jpg'
 const families = [
   {
     code: 'DUNG DỊCH TẨY RỬA CÔNG NGHIỆP · GARAGE',
@@ -208,7 +214,7 @@ const families = [
       },
       {
         img: ultrasonic_1l_main, alt: 'ICU dung dịch siêu âm rửa trang sức 1 lít vàng bạc đá quý kim cương', code: 'SIÊU ÂM 1L', name: 'Dung dịch siêu âm (1 lít)', badge: 'pro',
-        gallery: [ultrasonic_1l_2, ultrasonic_1l_3],
+        gallery: [ultrasonic_1l_2, ultrasonic_1l_3, ultrasonic_1l_4, ultrasonic_1l_5],
         video: '/ultrasonic-1l-video.mp4',
         seo: 'ICU dung dịch siêu âm chuyên dụng 1 lít cho máy rửa siêu âm trang sức. Làm sạch sâu vàng, bạc, đá quý, kim cương. Không gây hao mòn, an toàn cho da tay. Tiết kiệm chi phí, hiệu quả tối đa.',
         claims: ['Không gây hao mòn – an toàn da tay', 'Vàng · bạc · đá quý · kim cương', 'Tiết kiệm chi phí – hiệu quả tối đa'],
@@ -217,7 +223,7 @@ const families = [
       },
       {
         img: silver_1l_main, alt: 'ICU C819 vệ sinh bạc ố đen 1 lít phục hồi độ sáng trang sức', code: 'C819 1L', name: 'Vệ sinh bạc ố đen (1 Lít)', badge: 'pro',
-        gallery: [silver_1l_2, silver_1l_3],
+        gallery: [silver_1l_2, silver_1l_3, silver_1l_4, silver_1l_5],
         video: '/silver-1l-video.mp4',
         seo: 'ICU C819 dung dịch vệ sinh trang sức bạc ố đen 1 lít. Ngâm 15–20 giây, bạc sáng lại tức thì, dùng được nhiều lần. Phục hồi độ sáng bạc 925, sterling. Dung tích 1 lít.',
         claims: ['Sạch bạc ố đen – hiệu quả tức thì', 'Dùng được nhiều lần', 'Bạc 925 · sterling'],
@@ -226,7 +232,7 @@ const families = [
       },
       {
         img: silver_5l_main, alt: 'ICU C819 vệ sinh bạc ố đen 5 lít phục hồi độ sáng trang sức', code: 'C819 5L', name: 'Vệ sinh bạc ố đen (5 Lít)', badge: 'pro',
-        gallery: [silver_5l_2, silver_5l_3],
+        gallery: [silver_5l_2, silver_5l_3, silver_5l_4, silver_5l_5],
         video: '/silver-5l-video.mp4',
         seo: 'ICU C819 dung dịch vệ sinh trang sức bạc ố đen 5 lít. Ngâm 15–20 giây, bạc sáng lại tức thì, dùng được nhiều lần. Tiết kiệm chi phí cho tiệm vàng. Dung tích 5 lít.',
         claims: ['Sạch bạc ố đen – hiệu quả tức thì', 'Dùng được nhiều lần – tiết kiệm', 'Bạc 925 · sterling'],
