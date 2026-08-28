@@ -2639,34 +2639,16 @@ html {
   .product:hover > .badge-img { transform: rotate(5deg); }
 }
 
-/* authenticity note: overlay on product image, bottom-left */
+/* authenticity note: bottom-left of every product card */
 .authentic-note {
-  position: absolute;
-  left: 10px;
-  bottom: 10px;
-  z-index: 3;
-  margin: 0;
-  padding: 7px 12px;
-  font-family: 'Be Vietnam Pro', 'Source Sans 3', sans-serif;
-  font-size: 11.5px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  line-height: 1;
-  color: #fff;
-  background: linear-gradient(90deg, rgba(10, 35, 61, 0.94), rgba(10, 35, 61, 0.80));
-  border-radius: 999px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.28);
-  backdrop-filter: blur(3px);
-  pointer-events: none;
-}
-@media (max-width: 620px) {
-  .authentic-note {
-    left: 8px;
-    bottom: 8px;
-    font-size: 10px;
-    padding: 6px 10px;
-  }
+  margin: auto 0 0;
+  padding: 9px 12px 12px;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  color: var(--accent);
+  text-align: left;
+  border-top: 1px dashed var(--border);
 }
 
 /* contact form: real send channels */

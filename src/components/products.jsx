@@ -350,7 +350,6 @@ function ProductCard({ p }) {
           <img src={currentImg || p.img} alt={p.alt} loading="lazy" />
         )}
         <div className="shine" aria-hidden="true" />
-        <p className="authentic-note">Hàng Chính Hãng - Chuẩn Thương Hiệu Việt</p>
       </div>
       <div className="product-thumbs">
         {allThumbs.map((img, i) => (
@@ -406,6 +405,7 @@ function ProductCard({ p }) {
           {tab === 'formula' && <p className="product-formula">{p.formula}</p>}
         </div>
       </div>
+      <p className="authentic-note">Hàng Chính Hãng - Chuẩn Thương Hiệu Việt</p>
     </article>
   )
 }
