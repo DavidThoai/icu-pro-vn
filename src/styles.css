@@ -2639,6 +2639,18 @@ html {
   .product:hover > .badge-img { transform: rotate(5deg); }
 }
 
+/* authenticity note: bottom-left of every product card */
+.authentic-note {
+  margin: auto 0 0;
+  padding: 9px 12px 12px;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  color: var(--accent);
+  text-align: left;
+  border-top: 1px dashed var(--border);
+}
+
 /* contact form: real send channels */
 .form-success .btn { margin-top: 10px; }
 .btn-zalo { background: #0068ff; color: #fff; }
