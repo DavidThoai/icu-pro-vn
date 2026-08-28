@@ -405,7 +405,7 @@ function ProductCard({ p }) {
           {tab === 'formula' && <p className="product-formula">{p.formula}</p>}
         </div>
       </div>
-      <p className="authentic-note">Hàng Chính Hãng<br />- Chuẩn Thương Hiệu Việt</p>
+      <p className="authentic-note">Hàng Chính Hãng<br />Chuẩn Thương Hiệu Việt</p>
     </article>
   )
 }
