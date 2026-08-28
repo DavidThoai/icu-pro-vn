@@ -2643,12 +2643,12 @@ html {
 .authentic-note {
   margin: auto 0 0;
   padding: 10px 12px 12px;
-  font-size: 16.3px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 700;
   letter-spacing: 0.2px;
-  color: var(--accent);
+  color: #fff;
   text-align: left;
-  border-top: 1px dashed var(--border);
+  background: linear-gradient(90deg, rgba(10, 35, 61, 0.94), rgba(10, 35, 61, 0.80));
 }
 
 /* contact form: real send channels */
