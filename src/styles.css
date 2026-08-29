@@ -2640,9 +2640,9 @@ html {
 
 /* authenticity note: two lines, rounded pill, fits its text */
 .authentic-note {
-  margin: auto 0 12px 12px;
+  margin: auto 12px 12px;
   padding: 9px 16px 10px;
-  width: fit-content;
+  width: auto;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.2px;
@@ -2655,8 +2655,7 @@ html {
 }
 @media (max-width: 620px) {
   .authentic-note {
-    margin-left: 10px;
-    margin-bottom: 10px;
+    margin: auto 10px 10px;
     padding: 7px 13px 8px;
     font-size: 15px;
   }
